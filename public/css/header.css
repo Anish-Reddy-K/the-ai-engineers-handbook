@@ -88,9 +88,9 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
+  border-radius: 0;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   color: var(--text-primary);
   padding: 0;
 }
@@ -98,39 +98,50 @@
 .action-button .material-symbols-outlined {
   font-size: 18px;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  transition: color 0.2s ease, font-variation-settings 0.2s ease;
 }
 
-.action-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.1);
-  border-color: var(--accent);
+/* Hover: Brighten/dull the button's original color */
+body.dark-mode .action-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
-.action-button:active {
-  transform: scale(0.95);
+body.light-mode .action-button:hover {
+  background: rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Active state for menu button */
-.menu-toggle.active .menu-icon {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+/* Active state: Opposite theme color filled background */
+/* Dark mode active = Light background with dark icon */
+body.dark-mode .action-button.active {
+  background: var(--light-primary);
+  border-color: var(--wireframe);
 }
 
-body.dark-mode .menu-toggle.active .menu-icon {
-  color: #FFFFFF;
+body.dark-mode .action-button.active .material-symbols-outlined {
+  color: var(--dark-primary);
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
-body.light-mode .menu-toggle.active .menu-icon {
-  color: #03060A;
+/* Light mode active = Dark background with light icon */
+body.light-mode .action-button.active {
+  background: var(--dark-primary);
+  border-color: var(--wireframe);
 }
 
-/* Dark mode button styling */
+body.light-mode .action-button.active .material-symbols-outlined {
+  color: var(--light-primary);
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+/* Default button styling */
 body.dark-mode .action-button {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
   color: var(--light-primary);
 }
 
-/* Light mode button styling */
 body.light-mode .action-button {
   background: rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.2);

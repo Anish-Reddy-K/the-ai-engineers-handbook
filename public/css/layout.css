@@ -33,7 +33,7 @@
 
 .content-wrapper {
   width: 100%;
-  max-width: var(--content-max-width);
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -41,75 +41,15 @@
   border-left: 1px solid var(--wireframe);
   border-right: 1px solid var(--wireframe);
   border-radius: 0;
-  padding: var(--spacing-desktop);
   min-height: 100vh;
-}
-
-/* Menu Toggle Button */
-.menu-toggle {
-  position: fixed;
-  top: var(--spacing-desktop);
-  right: calc(var(--spacing-desktop) + 80px); /* Position next to theme toggle */
-  z-index: var(--z-controls);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-speed) var(--transition-easing);
-  color: var(--text-primary);
+  flex-direction: column;
 }
 
-.menu-toggle .menu-icon {
-  font-size: 28px;
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  transition: font-variation-settings var(--transition-speed) var(--transition-easing);
-}
+/* Legacy button styles removed - buttons now in Zone B */
 
-.menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.1);
-  border-color: var(--accent);
-}
-
-.menu-toggle:active {
-  transform: scale(0.95);
-}
-
-/* Active state - filled icon */
-.menu-toggle.active .menu-icon {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-/* Dark mode button styling */
-body.dark-mode .menu-toggle {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: var(--light-primary);
-}
-
-body.dark-mode .menu-toggle.active .menu-icon {
-  color: #FFFFFF; /* White fill in dark mode */
-}
-
-/* Light mode button styling */
-body.light-mode .menu-toggle {
-  background: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.2);
-  color: var(--dark-primary);
-}
-
-body.light-mode .menu-toggle.active .menu-icon {
-  color: #03060A; /* Dark fill in light mode */
-}
-
-/* Sidebar Hidden State - Desktop */
-@media (min-width: 768px) {
+/* Sidebar Hidden State - Desktop (above overlap breakpoint) */
+@media (min-width: 1480px) {
   .sidebar-hidden .sidebar {
     display: none;
   }
@@ -117,6 +57,25 @@ body.light-mode .menu-toggle.active .menu-icon {
   /* Content wrapper always stays in the exact same centered position */
   .content-wrapper {
     /* Position is fixed - always centered regardless of sidebar */
+  }
+}
+
+/* Overlap Breakpoint - Sidebar auto-hides and becomes overlay when opened */
+@media (min-width: 768px) and (max-width: 1479px) {
+  /* Auto-hide sidebar by default at this breakpoint */
+  .sidebar {
+    display: none;
+    z-index: calc(var(--z-sidebar) + 1); /* Higher z-index for overlay */
+  }
+  
+  /* Show sidebar when manually opened */
+  .sidebar-open .sidebar {
+    display: block;
+  }
+  
+  /* Ensure sidebar doesn't affect content layout */
+  .content-wrapper {
+    max-width: 100%;
   }
 }
 
@@ -150,14 +109,7 @@ body.light-mode .menu-toggle.active .menu-icon {
     border-right: none;
   }
   
-  .menu-toggle {
-    top: var(--spacing-mobile);
-    right: calc(var(--spacing-mobile) + 80px);
-  }
-  
-  .theme-toggle {
-    top: var(--spacing-mobile);
-    right: var(--spacing-mobile);
-  }
+  /* Buttons now in Zone B, no need for fixed positioning */
 }
+
 

@@ -1,0 +1,209 @@
+/* Smart Retracting Header Styles */
+
+/* Zone A: Title and Description */
+.header-zone-a {
+  width: 100%;
+  padding: 24px var(--spacing-desktop);
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--wireframe);
+  transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+  transform: translateY(0);
+  opacity: 1;
+  max-height: var(--zone-a-height);
+  min-height: var(--zone-a-height);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-zone-a.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  pointer-events: none;
+  border-bottom: none;
+}
+
+.site-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.site-description {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* Zone B: Breadcrumb and Actions (Always Sticky) */
+.header-zone-b {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--zone-b-height);
+  min-height: var(--zone-b-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-desktop);
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--wireframe);
+  z-index: var(--z-sidebar);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+
+.breadcrumb-item {
+  color: var(--text-primary);
+}
+
+.breadcrumb-item::after {
+  content: '/';
+  margin-left: 0.5rem;
+  color: var(--wireframe);
+}
+
+.breadcrumb-item:last-child::after {
+  display: none;
+}
+
+.action-cluster {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+.action-button .material-symbols-outlined {
+  font-size: 18px;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+.action-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  border-color: var(--accent);
+}
+
+.action-button:active {
+  transform: scale(0.95);
+}
+
+/* Active state for menu button */
+.menu-toggle.active .menu-icon {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body.dark-mode .menu-toggle.active .menu-icon {
+  color: #FFFFFF;
+}
+
+body.light-mode .menu-toggle.active .menu-icon {
+  color: #03060A;
+}
+
+/* Dark mode button styling */
+body.dark-mode .action-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--light-primary);
+}
+
+/* Light mode button styling */
+body.light-mode .action-button {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: var(--dark-primary);
+}
+
+/* Content Area - Article content limited to 800px */
+.content-area {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing-desktop);
+  background-color: var(--bg-secondary);
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .header-zone-a {
+    padding: var(--spacing-mobile);
+    padding-bottom: calc(var(--spacing-mobile) / 2);
+  }
+  
+  .site-title {
+    font-size: 1.75rem;
+  }
+  
+  .site-description {
+    font-size: 1rem;
+  }
+  
+  .header-zone-b {
+    padding: var(--spacing-mobile);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .breadcrumb {
+    font-size: 0.75rem;
+    width: 100%;
+    order: 2;
+  }
+  
+  .action-cluster {
+    order: 1;
+    gap: 0.5rem;
+  }
+  
+  .action-button {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .action-button .material-symbols-outlined {
+    font-size: 18px;
+  }
+  
+  .content-area {
+    padding: var(--spacing-mobile);
+  }
+}
+

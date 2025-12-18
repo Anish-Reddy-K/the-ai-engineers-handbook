@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="{{ "css/variables.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/layout.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/components/dark_starfield_bg.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/components/light_grid_bg.css" | relURL }}">
 </head>
@@ -25,15 +26,6 @@
   <div id="background-container">
     <canvas id="starfield-canvas" class="starfield-background"></canvas>
   </div>
-  
-  <!-- Control Buttons -->
-  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle sidebar">
-    <span class="material-symbols-outlined menu-icon">menu</span>
-  </button>
-  
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-    <span class="material-symbols-outlined toggle-icon">dark_mode</span>
-  </button>
   
   <!-- Main Layout Container -->
   <div class="main-container">
@@ -45,13 +37,44 @@
     <!-- Main Content -->
     <main class="main-content" role="main">
       <div class="content-wrapper">
-        {{ block "main" . }}{{ end }}
+        <!-- Zone A: Title and Description -->
+        <header class="header-zone-a">
+          <h1 class="site-title">THE ARKR MANUAL</h1>
+          <p class="site-description">{{ block "description" . }}A free, illustrated Computer Science curriculum{{ end }}</p>
+        </header>
+        
+        <!-- Zone B: Breadcrumb and Actions (Sticky) -->
+        <header class="header-zone-b">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            {{ block "breadcrumb" . }}
+              <span class="breadcrumb-item">Home</span>
+            {{ end }}
+          </nav>
+          <div class="action-cluster">
+            <button id="sound-toggle" class="action-button" aria-label="Toggle sound">
+              <span class="material-symbols-outlined">volume_up</span>
+            </button>
+            <button id="theme-toggle" class="action-button theme-toggle" aria-label="Toggle theme">
+              <span class="material-symbols-outlined toggle-icon">dark_mode</span>
+            </button>
+            <button id="menu-toggle" class="action-button menu-toggle" aria-label="Toggle sidebar">
+              <span class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+          </div>
+        </header>
+        
+        <!-- Main Content Area -->
+        <div class="content-area">
+          {{ block "main" . }}{{ end }}
+        </div>
       </div>
     </main>
   </div>
   
   <script src="{{ "js/components/dark_starfield_bg.js" | relURL }}"></script>
   <script src="{{ "js/components/light_grid_bg.js" | relURL }}"></script>
+  <script src="{{ "js/header.js" | relURL }}"></script>
+  <script src="{{ "js/sound.js" | relURL }}"></script>
   <script src="{{ "js/sidebar.js" | relURL }}"></script>
   <script src="{{ "js/main.js" | relURL }}"></script>
 </body>

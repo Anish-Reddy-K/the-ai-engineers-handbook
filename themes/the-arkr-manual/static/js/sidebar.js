@@ -3,9 +3,11 @@
 
     const SIDEBAR_STORAGE_KEY = 'arkr-sidebar-state';
     const MOBILE_BREAKPOINT = 768;
+    const OVERLAP_BREAKPOINT = 1480; // Exact calculation: (280px sidebar + 1200px container) = 1480px viewport
 
     let sidebarOpen = true;
     let isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+    let isOverlap = window.innerWidth >= MOBILE_BREAKPOINT && window.innerWidth < OVERLAP_BREAKPOINT;
 
     const body = document.body;
     const sidebar = document.querySelector('.sidebar');
@@ -21,20 +23,24 @@
             }
         }
         
-        if (isMobile) {
-            // Mobile: show/hide sidebar
+        if (isMobile || isOverlap) {
+            // Mobile or Overlap: show/hide sidebar as overlay
             if (sidebarOpen) {
                 body.classList.add('sidebar-open');
             } else {
                 body.classList.remove('sidebar-open');
             }
+            // Remove desktop hidden class
+            body.classList.remove('sidebar-hidden');
         } else {
-            // Desktop: toggle visibility
+            // Desktop (above overlap): toggle visibility without overlay
             if (sidebarOpen) {
                 body.classList.remove('sidebar-hidden');
             } else {
                 body.classList.add('sidebar-hidden');
             }
+            // Remove overlay class
+            body.classList.remove('sidebar-open');
         }
     }
 
@@ -81,22 +87,38 @@
 
     function handleResize() {
         const wasMobile = isMobile;
-        isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+        const wasOverlap = isOverlap;
+        const width = window.innerWidth;
         
-        // If switching between mobile/desktop, reset sidebar state
-        if (wasMobile !== isMobile) {
+        isMobile = width < MOBILE_BREAKPOINT;
+        isOverlap = width >= MOBILE_BREAKPOINT && width < OVERLAP_BREAKPOINT;
+        
+        // If switching between breakpoints, adjust sidebar state
+        if (wasMobile !== isMobile || wasOverlap !== isOverlap) {
             if (isMobile) {
                 sidebarOpen = false; // Start closed on mobile
+            } else if (isOverlap) {
+                sidebarOpen = false; // Auto-hide at overlap breakpoint
             } else {
-                sidebarOpen = true; // Start open on desktop
+                sidebarOpen = true; // Start open on desktop (above overlap)
             }
             updateSidebarState();
         }
     }
 
     function init() {
+        // Determine initial breakpoint state
+        const width = window.innerWidth;
+        isMobile = width < MOBILE_BREAKPOINT;
+        isOverlap = width >= MOBILE_BREAKPOINT && width < OVERLAP_BREAKPOINT;
+        
         // Load saved sidebar state
         loadSidebarState();
+        
+        // Auto-hide sidebar at overlap breakpoint if it was open
+        if (isOverlap && sidebarOpen) {
+            sidebarOpen = false;
+        }
         
         // Set initial state
         updateSidebarState();
@@ -106,9 +128,9 @@
             menuToggle.addEventListener('click', toggleSidebar);
         }
         
-        // Close sidebar on escape key (mobile only)
+        // Close sidebar on escape key (mobile and overlap)
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && sidebarOpen && isMobile) {
+            if (e.key === 'Escape' && sidebarOpen && (isMobile || isOverlap)) {
                 closeSidebar();
             }
         });
@@ -131,3 +153,4 @@
         init();
     }
 })();
+

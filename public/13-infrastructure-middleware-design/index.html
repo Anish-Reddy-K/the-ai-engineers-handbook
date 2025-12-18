@@ -4,25 +4,82 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>13. Infrastructure &amp; Middleware Design</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="/css/variables.css">
   <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/components/dark_starfield_bg.css">
   <link rel="stylesheet" href="/css/components/light_grid_bg.css">
 </head>
 <body class="dark-mode">
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-    <span class="toggle-icon">🌙</span>
-  </button>
   
-  <div id="background-container"></div>
+  <div id="background-container">
+    <canvas id="starfield-canvas" class="starfield-background"></canvas>
+  </div>
   
   
+  <div class="main-container">
+    
+    <aside class="sidebar" role="complementary" aria-label="Sidebar navigation">
+      
+    </aside>
+    
+    
+    <main class="main-content" role="main">
+      <div class="content-wrapper">
+        
+        <header class="header-zone-a">
+          <h1 class="site-title">THE ARKR MANUAL</h1>
+          <p class="site-description">A free, illustrated Computer Science curriculum</p>
+        </header>
+        
+        
+        <header class="header-zone-b">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            
+              <span class="breadcrumb-item">Home</span>
+            
+          </nav>
+          <div class="action-cluster">
+            <button id="sound-toggle" class="action-button" aria-label="Toggle sound">
+              <span class="material-symbols-outlined">volume_up</span>
+            </button>
+            <button id="theme-toggle" class="action-button theme-toggle" aria-label="Toggle theme">
+              <span class="material-symbols-outlined toggle-icon">dark_mode</span>
+            </button>
+            <button id="menu-toggle" class="action-button menu-toggle" aria-label="Toggle sidebar">
+              <span class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+          </div>
+        </header>
+        
+        
+        <div class="content-area">
+          
   <h1>13. Infrastructure &amp; Middleware Design</h1>
   
   
 
+        </div>
+      </div>
+    </main>
+  </div>
   
   <script src="/js/components/dark_starfield_bg.js"></script>
   <script src="/js/components/light_grid_bg.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/sound.js"></script>
+  <script src="/js/sidebar.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>

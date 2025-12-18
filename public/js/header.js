@@ -2,3 +2,4 @@
 // Zone B is sticky and stays at the top
 // No JavaScript needed - pure CSS solution
 
+

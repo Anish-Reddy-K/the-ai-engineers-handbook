@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:54995/01-the-digital-atom/</loc>
+    <loc>http://localhost:61488/01-the-digital-atom/</loc>
   </url><url>
-    <loc>http://localhost:54995/02-hardware-architecture/</loc>
+    <loc>http://localhost:61488/02-hardware-architecture/</loc>
   </url><url>
-    <loc>http://localhost:54995/03-programming-fundamentals/</loc>
+    <loc>http://localhost:61488/03-programming-fundamentals/</loc>
   </url><url>
-    <loc>http://localhost:54995/04-algorithms-data-structures/</loc>
+    <loc>http://localhost:61488/04-algorithms-data-structures/</loc>
   </url><url>
-    <loc>http://localhost:54995/05-operating-systems/</loc>
+    <loc>http://localhost:61488/05-operating-systems/</loc>
   </url><url>
-    <loc>http://localhost:54995/06-networking/</loc>
+    <loc>http://localhost:61488/06-networking/</loc>
   </url><url>
-    <loc>http://localhost:54995/07-databases/</loc>
+    <loc>http://localhost:61488/07-databases/</loc>
   </url><url>
-    <loc>http://localhost:54995/08-scalable-system-design/</loc>
+    <loc>http://localhost:61488/08-scalable-system-design/</loc>
   </url><url>
-    <loc>http://localhost:54995/09-software-engineering-security/</loc>
+    <loc>http://localhost:61488/09-software-engineering-security/</loc>
   </url><url>
-    <loc>http://localhost:54995/10-artificial-intelligence/</loc>
+    <loc>http://localhost:61488/10-artificial-intelligence/</loc>
   </url><url>
-    <loc>http://localhost:54995/11-applied-engineering-utilities-services/</loc>
+    <loc>http://localhost:61488/11-applied-engineering-utilities-services/</loc>
   </url><url>
-    <loc>http://localhost:54995/12-applied-engineering-consumer-applications/</loc>
+    <loc>http://localhost:61488/12-applied-engineering-consumer-applications/</loc>
   </url><url>
-    <loc>http://localhost:54995/13-infrastructure-middleware-design/</loc>
+    <loc>http://localhost:61488/13-infrastructure-middleware-design/</loc>
   </url><url>
-    <loc>http://localhost:54995/14-internet-scale-architectures/</loc>
+    <loc>http://localhost:61488/14-internet-scale-architectures/</loc>
   </url><url>
-    <loc>http://localhost:54995/tags/blue/</loc>
+    <loc>http://localhost:61488/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/tags/green/</loc>
+    <loc>http://localhost:61488/tags/green/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/posts/post-3/</loc>
+    <loc>http://localhost:61488/posts/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/tags/red/</loc>
+    <loc>http://localhost:61488/tags/red/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/tags/</loc>
+    <loc>http://localhost:61488/tags/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/</loc>
+    <loc>http://localhost:61488/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/posts/post-2/</loc>
+    <loc>http://localhost:61488/posts/post-2/</loc>
     <lastmod>2023-02-15T10:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/posts/post-1/</loc>
+    <loc>http://localhost:61488/posts/post-1/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/posts/</loc>
+    <loc>http://localhost:61488/posts/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:54995/categories/</loc>
+    <loc>http://localhost:61488/categories/</loc>
   </url>
 </urlset>

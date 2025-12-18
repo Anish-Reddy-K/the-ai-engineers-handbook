@@ -1,4 +1,4 @@
 ---
-title: "01. The Digital Atom"
+title: "The Digital Atom"
 weight: 1
 ---

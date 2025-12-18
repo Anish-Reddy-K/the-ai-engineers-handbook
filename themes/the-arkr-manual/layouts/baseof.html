@@ -31,7 +31,12 @@
   <div class="main-container">
     <!-- Sidebar -->
     <aside class="sidebar" role="complementary" aria-label="Sidebar navigation">
-      {{ block "sidebar" . }}{{ end }}
+      <div class="sidebar-header">
+        <h2 class="sidebar-title">Table of Contents</h2>
+      </div>
+      <div class="sidebar-content">
+        {{ block "sidebar" . }}{{ end }}
+      </div>
     </aside>
     
     <!-- Main Content -->

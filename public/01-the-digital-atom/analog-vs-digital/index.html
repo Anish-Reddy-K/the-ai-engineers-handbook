@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54792&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analog vs. Digital</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/components/dark_starfield_bg.css">
+  <link rel="stylesheet" href="/css/components/light_grid_bg.css">
+</head>
+<body class="dark-mode">
+  
+  <div id="background-container">
+    <canvas id="starfield-canvas" class="starfield-background"></canvas>
+  </div>
+  
+  
+  <div class="main-container">
+    
+    <aside class="sidebar" role="complementary" aria-label="Sidebar navigation">
+      <div class="sidebar-header">
+        <h2 class="sidebar-title">Table of Contents</h2>
+      </div>
+      <div class="sidebar-content">
+        <nav class="toc-nav">
+  
+  
+  
+  
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">1.</span>
+        <span class="toc-chapter-title">The Digital Atom</span>
+      </div>
+      
+      
+      
+      
+      
+        <ul class="toc-articles">
+          
+            
+            <li class="toc-article toc-article-active">
+              <a href="/01-the-digital-atom/analog-vs-digital/">Analog vs. Digital</a>
+            </li>
+          
+        </ul>
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">2.</span>
+        <span class="toc-chapter-title">Hardware Architecture</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">3.</span>
+        <span class="toc-chapter-title">Programming Fundamentals</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">4.</span>
+        <span class="toc-chapter-title">Algorithms &amp; Data Structures</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">5.</span>
+        <span class="toc-chapter-title">Operating Systems</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">6.</span>
+        <span class="toc-chapter-title">Networking</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">7.</span>
+        <span class="toc-chapter-title">Databases</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">8.</span>
+        <span class="toc-chapter-title">Scalable System Design</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">9.</span>
+        <span class="toc-chapter-title">Software Engineering &amp; Security</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">10.</span>
+        <span class="toc-chapter-title">Artificial Intelligence</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">11.</span>
+        <span class="toc-chapter-title">Applied Engineering: Utilities &amp; Services</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">12.</span>
+        <span class="toc-chapter-title">Applied Engineering: Consumer Applications</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">13.</span>
+        <span class="toc-chapter-title">Infrastructure &amp; Middleware Design</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="toc-chapter">
+        <span class="toc-chapter-number">14.</span>
+        <span class="toc-chapter-title">Internet-Scale Architectures</span>
+      </div>
+      
+      
+      
+      
+      
+    
+  
+</nav>
+
+      </div>
+    </aside>
+    
+    
+    <main class="main-content" role="main">
+      <div class="content-wrapper">
+        
+        <header class="header-zone-a">
+          <div class="zone-a-left">
+            <p class="site-description">A free, illustrated Computer Science curriculum</p>
+          </div>
+          <div class="zone-a-right">
+            <h1 class="site-title">THE ARKR MANUAL</h1>
+          </div>
+        </header>
+        
+        
+        <header class="header-zone-b">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            
+              <span class="breadcrumb-item">Home</span>
+            
+          </nav>
+          <div class="action-cluster">
+            <button id="menu-toggle" class="action-button menu-toggle" aria-label="Toggle sidebar">
+              <span class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+            <button id="sound-toggle" class="action-button sound-toggle" aria-label="Toggle sound">
+              <span class="material-symbols-outlined sound-icon">volume_up</span>
+            </button>
+            <button id="theme-toggle" class="action-button theme-toggle" aria-label="Toggle theme">
+              <span class="material-symbols-outlined toggle-icon">dark_mode</span>
+            </button>
+          </div>
+        </header>
+        
+        
+        <div class="content-area">
+          
+  <h1>Analog vs. Digital</h1>
+
+  
+    
+
+    <h2 id="understanding-the-fundamental-divide">Understanding the Fundamental Divide</h2>
+<p>The distinction between analog and digital signals lies at the heart of modern computing. An <strong>analog signal</strong> is continuous, representing information through a smooth, unbroken wave that can take on any value within a range. Think of a vinyl record&rsquo;s groove or the voltage in an electrical circuit—these are analog representations where every point along the curve has meaning.</p>
+<p>A <strong>digital signal</strong>, by contrast, is discrete. It represents information using a finite set of values, most commonly binary (0s and 1s). Digital signals sample the analog world at regular intervals, capturing snapshots that approximate the continuous reality.</p>
+<h2 id="sampling-and-quantization">Sampling and Quantization</h2>
+<p>When converting analog to digital, two processes occur:</p>
+<ol>
+<li>
+<p><strong>Sampling</strong>: The analog signal is measured at regular time intervals (the sampling rate). Higher sampling rates capture more detail but require more storage.</p>
+</li>
+<li>
+<p><strong>Quantization</strong>: Each sample is rounded to the nearest discrete value. This introduces <strong>quantization error</strong>—the difference between the true analog value and its digital approximation.</p>
+</li>
+</ol>
+<h2 id="why-digital-wins">Why Digital Wins</h2>
+<p>Despite this approximation, digital representation offers crucial advantages:</p>
+<ul>
+<li><strong>Storage</strong>: Digital data can be copied perfectly without degradation. An analog copy loses fidelity with each generation.</li>
+<li><strong>Transmission</strong>: Digital signals are more resilient to noise. Errors can be detected and corrected.</li>
+<li><strong>Processing</strong>: Computers excel at manipulating discrete values, enabling complex operations impossible with analog systems.</li>
+</ul>
+<p>The trade-off is clear: we accept small quantization errors in exchange for reliability, reproducibility, and computational power.</p>
+
+    
+
+  
+
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="/js/components/dark_starfield_bg.js"></script>
+  <script src="/js/components/light_grid_bg.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/sound.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>01. The Digital Atom on The Arkr Manual</title>
-    <link>http://localhost:49184/01-the-digital-atom/</link>
-    <description>Recent content in 01. The Digital Atom on The Arkr Manual</description>
+    <title>The Digital Atom on The Arkr Manual</title>
+    <link>http://localhost:54995/01-the-digital-atom/</link>
+    <description>Recent content in The Digital Atom on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:49184/01-the-digital-atom/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:54995/01-the-digital-atom/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

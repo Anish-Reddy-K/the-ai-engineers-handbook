@@ -1,4 +1,8 @@
-/* Smart Retracting Header Styles */
+/* Smart Responsive Header Styles */
+
+/* ==========================================================================
+   Base Header Structure (Mobile First Approach)
+   ========================================================================== */
 
 /* Zone A: Title and Description - Scrolls naturally with page */
 .header-zone-a {
@@ -6,60 +10,53 @@
   padding: 0;
   background-color: var(--bg-secondary);
   border-bottom: 2px solid var(--wireframe);
-  min-height: var(--zone-a-height);
-  display: grid;
-  grid-template-columns: 4fr 8fr;
-  grid-template-rows: 1fr;
-  gap: 0;
-  align-items: stretch;
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.zone-a-left {
-  grid-column: 1;
-  grid-row: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 16px 24px 16px 24px;
-  border-right: 2px solid var(--wireframe);
   box-sizing: border-box;
   overflow: hidden;
-  min-width: 0;
-  width: 100%;
-  height: 100%;
+  /* Default Mobile State: Title on top, Description below */
 }
 
+/* Zone A Left: Description */
+.zone-a-left {
+  width: 100%;
+  padding: 1rem; /* Compact padding for mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 0; /* No border between stacked items by default */
+  order: 2; /* Description below title on mobile */
+  box-sizing: border-box;
+}
+
+/* Zone A Right: Title */
 .zone-a-right {
-  grid-column: 2;
-  grid-row: 1;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   align-items: center;
-  padding: 0;
+  justify-content: center;
+  border-bottom: 2px solid var(--wireframe); /* Separator in stacked mode */
+  order: 1; /* Title on top on mobile */
   box-sizing: border-box;
-  overflow: hidden;
-  min-width: 0;
-  width: 100%;
-  height: 100%;
 }
 
+/* Typography Defaults (Mobile) */
 .site-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(4rem, 4vw, 4.85rem);
+  /* Fluid typography for title */
+  font-size: clamp(2rem, 10vw, 3.5rem);
   font-weight: 700;
   color: var(--text-primary);
   margin: 0;
-  padding: 24px;
-  border: 0;
-  letter-spacing: 0.05em;
-  line-height: 1;
+  padding: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
   white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .site-description {
@@ -67,10 +64,8 @@
   font-size: 0.875rem;
   color: var(--text-secondary);
   margin: 0;
-  font-style: normal;
   line-height: 1.4;
-  width: 100%;
-  display: block;
+  max-width: 600px; /* Readability limit */
 }
 
 .site-author {
@@ -78,10 +73,7 @@
   font-size: 0.875rem;
   color: var(--text-secondary);
   margin: 0.5rem 0 0 0;
-  font-style: normal;
   line-height: 1.4;
-  width: 100%;
-  display: block;
 }
 
 .site-author .author-link {
@@ -94,192 +86,138 @@
   opacity: 0.8;
 }
 
-/* Zone B: Breadcrumb and Actions (Always Sticky) */
+/* Zone B: Navigation & Actions - Sticky */
 .header-zone-b {
   position: sticky;
   top: 0;
+  z-index: 100;
   width: 100%;
-  height: var(--zone-b-height);
   min-height: var(--zone-b-height);
+  background-color: var(--bg-secondary);
+  border-bottom: 2px solid var(--wireframe);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--spacing-desktop);
-  background-color: var(--bg-secondary);
-  border-bottom: 2px solid var(--wireframe);
-  z-index: 10;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
 }
 
 .breadcrumb {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-family: 'IBM Plex Serif', serif;
   font-size: 0.75rem;
+  font-weight: 500;
   color: var(--text-secondary);
-  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .breadcrumb-item {
   color: var(--text-primary);
 }
 
-.breadcrumb-item::after {
-  content: '/';
-  margin-left: 0.5rem;
-  color: var(--wireframe);
-}
-
-.breadcrumb-item:last-child::after {
-  display: none;
-}
-
 .action-cluster {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .action-button {
-  width: 32px;
-  height: 32px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0;
-  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--wireframe);
   color: var(--text-primary);
+  cursor: pointer;
   padding: 0;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-secondary);
 }
 
 .action-button .material-symbols-outlined {
-  font-size: 18px;
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  font-size: 1.25rem;
 }
 
-/* Hover: Brighten/dull the button's original color */
-body.dark-mode .action-button:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-body.light-mode .action-button:hover {
-  background: rgba(0, 0, 0, 0.25);
-  border-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Active state: Opposite theme color filled background */
-/* Dark mode active = Light background with dark icon */
-body.dark-mode .action-button.active {
-  background: var(--light-primary);
-  border-color: var(--wireframe);
-}
-
-body.dark-mode .action-button.active .material-symbols-outlined {
-  color: var(--dark-primary);
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
-}
-
-/* Light mode active = Dark background with light icon */
-body.light-mode .action-button.active {
-  background: var(--dark-primary);
-  border-color: var(--wireframe);
-}
-
-body.light-mode .action-button.active .material-symbols-outlined {
-  color: var(--light-primary);
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
-}
-
-/* Default button styling */
-body.dark-mode .action-button {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
-  color: var(--light-primary);
-}
-
-body.light-mode .action-button {
-  background: rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.2);
-  color: var(--dark-primary);
-}
-
-/* Content Area - Article content limited to 800px */
+/* Content Area */
 .content-area {
   width: 100%;
   max-width: var(--content-max-width);
-  margin-left: auto;
-  margin-right: auto;
-  padding: var(--spacing-desktop);
-  background-color: var(--bg-secondary);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
-  .header-zone-a {
-    padding: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 0;
-  }
-  
-  .zone-a-left {
-    grid-column: 1;
-    grid-row: 1;
-    padding: var(--spacing-mobile);
-    border-right: none;
-    border-bottom: 2px solid var(--wireframe);
-    width: 100%;
-    height: auto;
-  }
-  
-  .zone-a-right {
-    grid-column: 1;
-    grid-row: 2;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  .site-title {
-    font-size: 1.75rem;
-  }
-  
-  .site-description {
-    font-size: 0.875rem;
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+/* Tablet (768px - 1199px) */
+@media (min-width: 768px) {
+  /* Slightly more padding for tablet */
+  .zone-a-left, .zone-a-right {
+    padding: 2rem;
   }
   
   .header-zone-b {
-    padding: var(--spacing-mobile);
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    padding: 0.75rem 2rem;
   }
-  
-  .breadcrumb {
-    font-size: 0.75rem;
-    width: 100%;
-    order: 2;
-  }
-  
-  .action-cluster {
-    order: 1;
-    gap: 0.5rem;
-  }
-  
-  .action-button {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .action-button .material-symbols-outlined {
-    font-size: 18px;
+
+  /* Title Size increase */
+  .site-title {
+    font-size: clamp(3rem, 8vw, 4.5rem);
   }
   
   .content-area {
-    padding: var(--spacing-mobile);
+    padding: 3rem 2rem;
   }
 }
 
+/* Desktop (> 1199px) */
+@media (min-width: 1200px) {
+  /* Switch to Grid Layout */
+  .header-zone-a {
+    display: grid;
+    /* Ratio: Description (Left) | Title (Right) */
+    grid-template-columns: 1fr 2fr; 
+    align-items: stretch;
+  }
+
+  /* Reset Order for Desktop */
+  .zone-a-left {
+    order: 1; /* Description First (Left) */
+    align-items: flex-start;
+    text-align: left;
+    border-bottom: none;
+    border-right: 2px solid var(--wireframe);
+    padding: 2.5rem;
+  }
+
+  .zone-a-right {
+    order: 2; /* Title Second (Right) */
+    border-bottom: none;
+    padding: 2.5rem;
+    justify-content: center; /* Center title in its box */
+  }
+
+  .site-title {
+    /* Large fixed size or responsive scaling for desktop */
+    font-size: 5rem; 
+    white-space: nowrap;
+  }
+
+  .site-description {
+    font-size: 1rem;
+  }
+  
+  .header-zone-b {
+    padding: 0.75rem 2.5rem;
+  }
+}

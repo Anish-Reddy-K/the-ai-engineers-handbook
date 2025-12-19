@@ -33,4 +33,16 @@ code, pre {
     z-index: -1;
 }
 
+/* Hide background on mobile - solid color matching content */
+@media (max-width: 550px) {
+    #background-container {
+        display: none;
+    }
+    
+    body,
+    html {
+        background-color: var(--bg-secondary);
+    }
+}
+
 /* Legacy theme toggle styles removed - now in Zone B action cluster */

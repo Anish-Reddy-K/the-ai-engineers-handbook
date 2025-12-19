@@ -107,7 +107,7 @@
   
   /* Ensure sidebar doesn't affect content layout */
   .content-wrapper {
-    max-width: 100%;
+    /* Keep the max-width consistent with the design spec */
   }
 }
 
@@ -150,6 +150,15 @@
   }
   
   /* Buttons now in Zone B, no need for fixed positioning */
+}
+
+/* Small mobile - solid background, no gaps */
+@media (max-width: 550px) {
+  .main-container,
+  .main-content,
+  .content-wrapper {
+    background-color: var(--bg-secondary);
+  }
 }
 
 

@@ -2,10 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>03. Programming Fundamentals on The Arkr Manual</title>
-    <link>http://localhost:61488/03-programming-fundamentals/</link>
+    <link>http://localhost:50449/03-programming-fundamentals/</link>
     <description>Recent content in 03. Programming Fundamentals on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:61488/03-programming-fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50449/03-programming-fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Code</title>
+      <link>http://localhost:50449/03-programming-fundamentals/machine-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/machine-code/</guid>
+      <description>&lt;p&gt;Opcodes, operands, raw binary instructions, hex dumps.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assembly Language</title>
+      <link>http://localhost:50449/03-programming-fundamentals/assembly-language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/assembly-language/</guid>
+      <description>&lt;p&gt;Mnemonics, moving data to registers, basic jumps, 1:1 mapping to hardware.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>High-Level Languages</title>
+      <link>http://localhost:50449/03-programming-fundamentals/high-level-languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/high-level-languages/</guid>
+      <description>&lt;p&gt;Abstraction layers, &amp;ldquo;The C Language&amp;rdquo; as the baseline, compiled vs. interpreted vs. JIT.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Toolchain</title>
+      <link>http://localhost:50449/03-programming-fundamentals/the-toolchain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/the-toolchain/</guid>
+      <description>&lt;p&gt;IDEs, linters, linkers, build systems, what happens when you press &amp;ldquo;Run&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Variables &amp; Scope</title>
+      <link>http://localhost:50449/03-programming-fundamentals/variables-scope/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/variables-scope/</guid>
+      <description>&lt;p&gt;Stack vs. Heap memory, block scope, global scope, variable lifetime, stack overflow.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Types</title>
+      <link>http://localhost:50449/03-programming-fundamentals/data-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/data-types/</guid>
+      <description>&lt;p&gt;Primitives (int, bool, float) vs. Reference types (objects, pointers), null/nil safety.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Static vs. Dynamic Typing</title>
+      <link>http://localhost:50449/03-programming-fundamentals/static-vs-dynamic-typing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/static-vs-dynamic-typing/</guid>
+      <description>&lt;p&gt;Type systems, compile-time vs. runtime errors, type inference, &amp;ldquo;strongly&amp;rdquo; typed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Flow</title>
+      <link>http://localhost:50449/03-programming-fundamentals/control-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/control-flow/</guid>
+      <description>&lt;p&gt;If/Else branching, switch statements, loops (for, while), jump tables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>http://localhost:50449/03-programming-fundamentals/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/functions/</guid>
+      <description>&lt;p&gt;The Call Stack, stack frames, parameters, return values, pass-by-value vs. pass-by-reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Recursion</title>
+      <link>http://localhost:50449/03-programming-fundamentals/recursion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/recursion/</guid>
+      <description>&lt;p&gt;Base cases, recursive steps, visualizing the stack, tail-call optimization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paradigm: Imperative</title>
+      <link>http://localhost:50449/03-programming-fundamentals/paradigm-imperative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/paradigm-imperative/</guid>
+      <description>&lt;p&gt;Procedural programming, changing state, spaghetti code risks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paradigm: OOP</title>
+      <link>http://localhost:50449/03-programming-fundamentals/paradigm-oop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/paradigm-oop/</guid>
+      <description>&lt;p&gt;Classes, Objects, Inheritance, Encapsulation, Polymorphism.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paradigm: Functional</title>
+      <link>http://localhost:50449/03-programming-fundamentals/paradigm-functional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/paradigm-functional/</guid>
+      <description>&lt;p&gt;Immutability, pure functions, higher-order functions, map/reduce/filter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Design Patterns</title>
+      <link>http://localhost:50449/03-programming-fundamentals/design-patterns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/design-patterns/</guid>
+      <description>&lt;p&gt;Singleton, Factory, Observer, Strategy, Decorator (The Gang of Four).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Error Handling</title>
+      <link>http://localhost:50449/03-programming-fundamentals/error-handling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/error-handling/</guid>
+      <description>&lt;p&gt;Return codes vs. Exceptions, Try/Catch blocks, stack traces, defensive programming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Regex</title>
+      <link>http://localhost:50449/03-programming-fundamentals/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/regex/</guid>
+      <description>&lt;p&gt;Regular expressions syntax, pattern matching, capture groups, performance pitfalls.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Environment Variables</title>
+      <link>http://localhost:50449/03-programming-fundamentals/environment-variables/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/environment-variables/</guid>
+      <description>&lt;p&gt;&lt;code&gt;.env&lt;/code&gt; files, secrets management, configuration separation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why C &amp; Rust are Fast</title>
+      <link>http://localhost:50449/03-programming-fundamentals/why-c-rust-are-fast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/03-programming-fundamentals/why-c-rust-are-fast/</guid>
+      <description>&lt;p&gt;Memory layout, zero-cost abstractions, manual memory management vs. Garbage Collection.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

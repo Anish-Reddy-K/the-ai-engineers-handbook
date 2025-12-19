@@ -2,10 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>10. Artificial Intelligence on The Arkr Manual</title>
-    <link>http://localhost:61488/10-artificial-intelligence/</link>
+    <link>http://localhost:50449/10-artificial-intelligence/</link>
     <description>Recent content in 10. Artificial Intelligence on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:61488/10-artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50449/10-artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI vs. ML vs. DL</title>
+      <link>http://localhost:50449/10-artificial-intelligence/ai-vs-ml-vs-dl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/ai-vs-ml-vs-dl/</guid>
+      <description>&lt;p&gt;Definitions, the history, the hierarchy of intelligence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Statistics for ML</title>
+      <link>http://localhost:50449/10-artificial-intelligence/statistics-for-ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/statistics-for-ml/</guid>
+      <description>&lt;p&gt;Probability, Bayes&amp;rsquo; Theorem, Standard Deviation, Distributions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feature Engineering</title>
+      <link>http://localhost:50449/10-artificial-intelligence/feature-engineering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/feature-engineering/</guid>
+      <description>&lt;p&gt;Cleaning data, normalization, one-hot encoding, vectors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supervised Learning</title>
+      <link>http://localhost:50449/10-artificial-intelligence/supervised-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/supervised-learning/</guid>
+      <description>&lt;p&gt;Regression (Linear/Logistic), Classification, Labeling data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unsupervised Learning</title>
+      <link>http://localhost:50449/10-artificial-intelligence/unsupervised-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/unsupervised-learning/</guid>
+      <description>&lt;p&gt;Clustering (K-Means), Dimensionality reduction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neural Networks</title>
+      <link>http://localhost:50449/10-artificial-intelligence/neural-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/neural-networks/</guid>
+      <description>&lt;p&gt;Perceptrons, Weights, Biases, Activation Functions (ReLU, Sigmoid).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:50449/10-artificial-intelligence/learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/learning/</guid>
+      <description>&lt;p&gt;Loss functions, Gradient Descent, Backpropagation, Epochs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer Vision</title>
+      <link>http://localhost:50449/10-artificial-intelligence/computer-vision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/computer-vision/</guid>
+      <description>&lt;p&gt;Convolutional Neural Networks (CNNs), kernels, pooling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NLP</title>
+      <link>http://localhost:50449/10-artificial-intelligence/nlp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/nlp/</guid>
+      <description>&lt;p&gt;Tokenization, Word Embeddings (Word2Vec), Sequence models (RNNs).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transformers</title>
+      <link>http://localhost:50449/10-artificial-intelligence/transformers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/transformers/</guid>
+      <description>&lt;p&gt;The Attention Mechanism, Self-Attention, Encoders/Decoders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLMs</title>
+      <link>http://localhost:50449/10-artificial-intelligence/llms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/llms/</guid>
+      <description>&lt;p&gt;Training pipelines, Pre-training vs. Fine-tuning, RLHF, Context windows.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG</title>
+      <link>http://localhost:50449/10-artificial-intelligence/rag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/rag/</guid>
+      <description>&lt;p&gt;Retrieval-Augmented Generation, Vector Databases, grounding AI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Ethics</title>
+      <link>http://localhost:50449/10-artificial-intelligence/ai-ethics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/ai-ethics/</guid>
+      <description>&lt;p&gt;Bias in training data, hallucinations, alignment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>http://localhost:50449/10-artificial-intelligence/mcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/mcp/</guid>
+      <description>&lt;p&gt;Model Context Protocol, standardized interfaces for AI systems to access external tools and data sources, enabling LLMs to interact with databases, APIs, and services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agents</title>
+      <link>http://localhost:50449/10-artificial-intelligence/ai-agents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/10-artificial-intelligence/ai-agents/</guid>
+      <description>&lt;p&gt;Autonomous systems that perceive their environment, reason about goals, and take actions to achieve objectives. Agent architectures, tool use, planning, and multi-agent systems.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -2,10 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>08. Scalable System Design on The Arkr Manual</title>
-    <link>http://localhost:61488/08-scalable-system-design/</link>
+    <link>http://localhost:50449/08-scalable-system-design/</link>
     <description>Recent content in 08. Scalable System Design on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:61488/08-scalable-system-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50449/08-scalable-system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scaling</title>
+      <link>http://localhost:50449/08-scalable-system-design/scaling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/scaling/</guid>
+      <description>&lt;p&gt;Vertical (hardware upgrade) vs. Horizontal (add more nodes).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Load Balancing</title>
+      <link>http://localhost:50449/08-scalable-system-design/load-balancing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/load-balancing/</guid>
+      <description>&lt;p&gt;L4 (Transport) vs. L7 (Application) balancing, Round Robin, Least Connections.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stateless vs. Stateful</title>
+      <link>http://localhost:50449/08-scalable-system-design/stateless-vs-stateful/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/stateless-vs-stateful/</guid>
+      <description>&lt;p&gt;Handling sessions, sticky sessions vs. external stores (Redis).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Message Queues</title>
+      <link>http://localhost:50449/08-scalable-system-design/message-queues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/message-queues/</guid>
+      <description>&lt;p&gt;Producers, Consumers, Brokers (RabbitMQ), decoupling services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pub/Sub Systems</title>
+      <link>http://localhost:50449/08-scalable-system-design/pubsub-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/pubsub-systems/</guid>
+      <description>&lt;p&gt;Kafka, Topics, Partitions, Consumer Groups, event streaming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CDNs</title>
+      <link>http://localhost:50449/08-scalable-system-design/cdns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/cdns/</guid>
+      <description>&lt;p&gt;Edge locations, caching static assets, reducing latency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributed Consensus</title>
+      <link>http://localhost:50449/08-scalable-system-design/distributed-consensus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/distributed-consensus/</guid>
+      <description>&lt;p&gt;The Generals Problem, Paxos, Raft, Quorums.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributed Transactions</title>
+      <link>http://localhost:50449/08-scalable-system-design/distributed-transactions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/distributed-transactions/</guid>
+      <description>&lt;p&gt;Two-Phase Commit (2PC), Sagas pattern.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Idempotency</title>
+      <link>http://localhost:50449/08-scalable-system-design/idempotency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/idempotency/</guid>
+      <description>&lt;p&gt;Making retries safe, unique request IDs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fault Tolerance</title>
+      <link>http://localhost:50449/08-scalable-system-design/fault-tolerance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/fault-tolerance/</guid>
+      <description>&lt;p&gt;Circuit Breakers, Bulkheads, Retries with Exponential Backoff.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Consistent Hashing</title>
+      <link>http://localhost:50449/08-scalable-system-design/consistent-hashing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/consistent-hashing/</guid>
+      <description>&lt;p&gt;Distributed hash tables, adding/removing nodes without downtime.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unique IDs</title>
+      <link>http://localhost:50449/08-scalable-system-design/unique-ids/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/unique-ids/</guid>
+      <description>&lt;p&gt;UUIDs, Snowflake IDs (Twitter), solving distributed ordering.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>http://localhost:50449/08-scalable-system-design/microservices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/microservices/</guid>
+      <description>&lt;p&gt;Monolith decomposition, Service Discovery, API Gateways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>http://localhost:50449/08-scalable-system-design/observability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/observability/</guid>
+      <description>&lt;p&gt;Structured Logging, Metrics (Prometheus), Distributed Tracing (OpenTelemetry).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>http://localhost:50449/08-scalable-system-design/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/08-scalable-system-design/serverless/</guid>
+      <description>&lt;p&gt;Function-as-a-Service (Lambda), Cold starts, Event triggers.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

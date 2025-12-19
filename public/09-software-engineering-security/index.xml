@@ -2,10 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>09. Software Engineering &amp; Security on The Arkr Manual</title>
-    <link>http://localhost:61488/09-software-engineering-security/</link>
+    <link>http://localhost:50449/09-software-engineering-security/</link>
     <description>Recent content in 09. Software Engineering &amp; Security on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:61488/09-software-engineering-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:50449/09-software-engineering-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Version Control</title>
+      <link>http://localhost:50449/09-software-engineering-security/version-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/version-control/</guid>
+      <description>&lt;p&gt;Git internals, Blobs/Trees/Commits, Merging, Branching strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SDLC</title>
+      <link>http://localhost:50449/09-software-engineering-security/sdlc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/sdlc/</guid>
+      <description>&lt;p&gt;Agile, Waterfall, Scrum, JIRA, the lifecycle of a feature.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>http://localhost:50449/09-software-engineering-security/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/testing/</guid>
+      <description>&lt;p&gt;Unit tests, Integration tests, End-to-End (E2E) tests, TDD, Mocks/Stubs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CI/CD</title>
+      <link>http://localhost:50449/09-software-engineering-security/cicd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/cicd/</guid>
+      <description>&lt;p&gt;Continuous Integration pipelines, Continuous Deployment, Artifacts, Linters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>http://localhost:50449/09-software-engineering-security/infrastructure-as-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/infrastructure-as-code/</guid>
+      <description>&lt;p&gt;Terraform, Ansible, declarative infrastructure, &amp;ldquo;Pet vs Cattle&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Authentication (AuthN)</title>
+      <link>http://localhost:50449/09-software-engineering-security/authentication-authn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/authentication-authn/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Who are you?&amp;rdquo;, Passwords, MFA, SSO.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Authorization (AuthZ)</title>
+      <link>http://localhost:50449/09-software-engineering-security/authorization-authz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/authorization-authz/</guid>
+      <description>&lt;p&gt;&amp;ldquo;What can you do?&amp;rdquo;, RBAC (Role Based), ABAC (Attribute Based).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Auth Protocols</title>
+      <link>http://localhost:50449/09-software-engineering-security/auth-protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/auth-protocols/</guid>
+      <description>&lt;p&gt;OAuth 2.0 flows, OpenID Connect (OIDC), SAML.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Session Management</title>
+      <link>http://localhost:50449/09-software-engineering-security/session-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/session-management/</guid>
+      <description>&lt;p&gt;Cookies (Secure/HttpOnly), JSON Web Tokens (JWT), Refresh tokens.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>http://localhost:50449/09-software-engineering-security/cryptography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/cryptography/</guid>
+      <description>&lt;p&gt;Hashing (SHA-256), Salting, Peppering, Symmetric (AES), Asymmetric (RSA).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web Attacks</title>
+      <link>http://localhost:50449/09-software-engineering-security/web-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/web-attacks/</guid>
+      <description>&lt;p&gt;SQL Injection, XSS (Cross-Site Scripting), CSRF, Man-in-the-Middle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Attacks</title>
+      <link>http://localhost:50449/09-software-engineering-security/network-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/network-attacks/</guid>
+      <description>&lt;p&gt;DDOS (Volumetric vs. Protocol), Syn floods, amplification attacks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security Best Practices</title>
+      <link>http://localhost:50449/09-software-engineering-security/security-best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:50449/09-software-engineering-security/security-best-practices/</guid>
+      <description>&lt;p&gt;Principle of Least Privilege, Zero Trust, Secrets management.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

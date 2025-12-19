@@ -21,8 +21,8 @@
   --breakpoint-mobile: 768px;
   --breakpoint-overlap: 1480px; /* Exact point: (280px sidebar + 1200px container) = 1480px viewport */
   --button-spacing: 80px; /* Space between menu and theme toggle buttons */
-  --zone-a-height: 128px; /* Proposed: 120px, 128px, 136px, or 144px */
-  --zone-b-height: 56px; /* Proposed: 48px, 56px, 64px, or 72px */
+  --zone-a-height: auto; /* Let content determine height - scales with zoom */
+  --zone-b-height: 3.5rem; /* ~56px at default, scales with browser zoom */
   --transition-speed: 0.3s;
   --transition-easing: ease;
   

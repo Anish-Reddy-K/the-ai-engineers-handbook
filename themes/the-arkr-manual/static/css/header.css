@@ -20,7 +20,7 @@
 /* Zone A Left: Description */
 .zone-a-left {
   width: 100%;
-  padding: 1rem; /* Compact padding for mobile */
+  padding: 0 1rem 1rem 1rem; /* Reduced top padding to close gap with title */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,11 +34,11 @@
 /* Zone A Right: Title */
 .zone-a-right {
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem; /* Reduced bottom padding to close gap with description */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid var(--wireframe); /* Separator in stacked mode */
+  border-bottom: 0; /* No separator in stacked mode */
   order: 1; /* Title on top on mobile */
   box-sizing: border-box;
 }
@@ -68,6 +68,37 @@
   max-width: 600px; /* Readability limit */
 }
 
+/* Typewriter Effect Styles */
+.static-text {
+  display: inline;
+}
+
+.typewriter-text {
+  display: inline;
+  color: var(--text-secondary);
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--text-secondary);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Mobile break - hidden on all screens to keep text on one line */
+.mobile-break {
+  display: none;
+}
+
 .site-author {
   font-family: 'IBM Plex Serif', serif;
   font-size: 0.875rem;
@@ -83,7 +114,7 @@
 }
 
 .site-author .author-link:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* Zone B: Navigation & Actions - Sticky */
@@ -162,12 +193,16 @@
 /* Tablet (768px - 1199px) */
 @media (min-width: 768px) {
   /* Slightly more padding for tablet */
-  .zone-a-left, .zone-a-right {
-    padding: 2rem;
+  .zone-a-right {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem; /* Tighter bottom spacing */
+  }
+  
+  .zone-a-left {
+    padding: 0 1.5rem 1.5rem 1.5rem; /* Tighter top spacing */
   }
   
   .header-zone-b {
-    padding: 0.75rem 2rem;
+    padding: 0.75rem 1.5rem;
   }
 
   /* Title Size increase */
@@ -196,14 +231,14 @@
     align-items: flex-start;
     text-align: left;
     border-bottom: none;
-    border-right: 2px solid var(--wireframe);
-    padding: 2.5rem;
+    border-right: none;
+    padding: 2rem 0 2rem 2rem; /* top, right, bottom, left - no right padding */
   }
 
   .zone-a-right {
     order: 2; /* Title Second (Right) */
     border-bottom: none;
-    padding: 2.5rem;
+    padding: 2rem;
     justify-content: center; /* Center title in its box */
   }
 
@@ -214,10 +249,12 @@
   }
 
   .site-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    max-width: none;
   }
   
   .header-zone-b {
-    padding: 0.75rem 2.5rem;
+    padding: 0.75rem 2rem;
   }
 }

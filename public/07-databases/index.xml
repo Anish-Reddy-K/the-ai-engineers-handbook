@@ -2,101 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>07. Databases on The Arkr Manual</title>
-    <link>http://localhost:50449/07-databases/</link>
+    <link>http://localhost:62741/07-databases/</link>
     <description>Recent content in 07. Databases on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:50449/07-databases/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Database</title>
-      <link>http://localhost:50449/07-databases/the-database/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/the-database/</guid>
-      <description>&lt;p&gt;Flat files vs. DBMS, integrity, structured storage.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Relational (SQL)</title>
-      <link>http://localhost:50449/07-databases/relational-sql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/relational-sql/</guid>
-      <description>&lt;p&gt;Tables, Rows, Columns, Schemas, Primary Keys, Foreign Keys.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SQL Language</title>
-      <link>http://localhost:50449/07-databases/sql-language/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/sql-language/</guid>
-      <description>&lt;p&gt;SELECT, INSERT, UPDATE, DELETE, WHERE, JOINs (Inner, Left, Right).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Normalization</title>
-      <link>http://localhost:50449/07-databases/normalization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/normalization/</guid>
-      <description>&lt;p&gt;1NF, 2NF, 3NF, reducing redundancy, data integrity.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ACID Properties</title>
-      <link>http://localhost:50449/07-databases/acid-properties/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/acid-properties/</guid>
-      <description>&lt;p&gt;Atomicity, Consistency, Isolation, Durability.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Indexing</title>
-      <link>http://localhost:50449/07-databases/indexing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/indexing/</guid>
-      <description>&lt;p&gt;B-Trees, how indexes speed up reads but slow down writes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Transactions</title>
-      <link>http://localhost:50449/07-databases/transactions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/transactions/</guid>
-      <description>&lt;p&gt;Commit, Rollback, Savepoints, Concurrency control.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NoSQL</title>
-      <link>http://localhost:50449/07-databases/nosql/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/nosql/</guid>
-      <description>&lt;p&gt;Document stores (MongoDB), Key-Value (Redis), Columnar (Cassandra), Graph (Neo4j).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Replication</title>
-      <link>http://localhost:50449/07-databases/replication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/replication/</guid>
-      <description>&lt;p&gt;Master-Slave, Master-Master, Read replicas, replication lag.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sharding</title>
-      <link>http://localhost:50449/07-databases/sharding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/sharding/</guid>
-      <description>&lt;p&gt;Horizontal partitioning, shard keys, re-balancing data.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>CAP Theorem</title>
-      <link>http://localhost:50449/07-databases/cap-theorem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/cap-theorem/</guid>
-      <description>&lt;p&gt;Consistency vs. Availability vs. Partition Tolerance.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Caching Strategies</title>
-      <link>http://localhost:50449/07-databases/caching-strategies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/caching-strategies/</guid>
-      <description>&lt;p&gt;Write-through, Write-back, Look-aside, Eviction policies (LRU).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Data Engineering</title>
-      <link>http://localhost:50449/07-databases/data-engineering/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:50449/07-databases/data-engineering/</guid>
-      <description>&lt;p&gt;Data Warehouses (OLAP) vs. Databases (OLTP), ETL pipelines, Data Lakes.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="http://localhost:62741/07-databases/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

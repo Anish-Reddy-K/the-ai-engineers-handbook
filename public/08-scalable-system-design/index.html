@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=50449&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=62741&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>08. Scalable System Design</title>
@@ -45,7 +45,11 @@
         
         <header class="header-zone-a">
           <div class="zone-a-left">
-            <p class="site-description">A free, illustrated, open-source Computer Science curriculum taking you from raw binary to complex system architecture.</p>
+            <p class="site-description">
+              <span class="static-text">The open-source blueprint for </span>
+              <br class="mobile-break">
+              <span id="typewriter-text" class="typewriter-text"></span><span class="cursor">|</span>
+            </p>
             <p class="site-author">written and illustrated by <a href="https://arkr.ca" class="author-link" target="_blank" rel="noopener noreferrer">Anish Reddy</a>.</p>
           </div>
           <div class="zone-a-right">
@@ -78,81 +82,6 @@
           
   <h1>08. Scalable System Design</h1>
   
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/scaling/">Scaling</a></h2>
-      <p>Vertical (hardware upgrade) vs. Horizontal (add more nodes).</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/load-balancing/">Load Balancing</a></h2>
-      <p>L4 (Transport) vs. L7 (Application) balancing, Round Robin, Least Connections.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/stateless-vs-stateful/">Stateless vs. Stateful</a></h2>
-      <p>Handling sessions, sticky sessions vs. external stores (Redis).</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/message-queues/">Message Queues</a></h2>
-      <p>Producers, Consumers, Brokers (RabbitMQ), decoupling services.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/pubsub-systems/">Pub/Sub Systems</a></h2>
-      <p>Kafka, Topics, Partitions, Consumer Groups, event streaming.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/cdns/">CDNs</a></h2>
-      <p>Edge locations, caching static assets, reducing latency.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/distributed-consensus/">Distributed Consensus</a></h2>
-      <p>The Generals Problem, Paxos, Raft, Quorums.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/distributed-transactions/">Distributed Transactions</a></h2>
-      <p>Two-Phase Commit (2PC), Sagas pattern.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/idempotency/">Idempotency</a></h2>
-      <p>Making retries safe, unique request IDs.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/fault-tolerance/">Fault Tolerance</a></h2>
-      <p>Circuit Breakers, Bulkheads, Retries with Exponential Backoff.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/consistent-hashing/">Consistent Hashing</a></h2>
-      <p>Distributed hash tables, adding/removing nodes without downtime.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/unique-ids/">Unique IDs</a></h2>
-      <p>UUIDs, Snowflake IDs (Twitter), solving distributed ordering.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/microservices/">Microservices</a></h2>
-      <p>Monolith decomposition, Service Discovery, API Gateways.</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/observability/">Observability</a></h2>
-      <p>Structured Logging, Metrics (Prometheus), Distributed Tracing (OpenTelemetry).</p>
-    </section>
-  
-    <section>
-      <h2><a href="/08-scalable-system-design/serverless/">Serverless</a></h2>
-      <p>Function-as-a-Service (Lambda), Cold starts, Event triggers.</p>
-    </section>
   
 
         </div>

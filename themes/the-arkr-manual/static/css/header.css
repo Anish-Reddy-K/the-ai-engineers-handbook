@@ -232,13 +232,13 @@
     text-align: left;
     border-bottom: none;
     border-right: none;
-    padding: 2rem 0 2rem 2rem; /* top, right, bottom, left - no right padding */
+    padding: 1rem 0 1rem 2rem; /* top, right, bottom, left */
   }
 
   .zone-a-right {
     order: 2; /* Title Second (Right) */
     border-bottom: none;
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem; /* top, right, bottom, left */
     justify-content: center; /* Center title in its box */
   }
 

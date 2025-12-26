@@ -207,7 +207,7 @@
 
 .content-area article pre {
   position: relative;
-  background-color: var(--bg-primary);
+  background-color: var(--bg-primary) !important;
   border: 2px solid var(--wireframe);
   border-radius: 0;
   padding: 1rem;
@@ -218,12 +218,27 @@
   line-height: 1.5;
 }
 
+/* Override Hugo syntax highlighting backgrounds */
+.content-area article pre.chroma,
+.content-area article .chroma,
+.content-area article pre.highlight,
+.content-area article .highlight {
+  background-color: var(--bg-primary) !important;
+}
+
 .content-area article pre code {
-  background: transparent;
+  background: transparent !important;
   border: none;
   padding: 0;
   font-size: inherit;
   color: var(--text-primary);
+}
+
+/* Override syntax highlighting code element backgrounds */
+.content-area article pre code,
+.content-area article pre.chroma code,
+.content-area article .chroma code {
+  background: transparent !important;
 }
 
 /* Code block wrapper for copy button */
@@ -249,7 +264,7 @@
   font-size: 0.75rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 10;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 0.25rem;

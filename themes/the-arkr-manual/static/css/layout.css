@@ -279,7 +279,7 @@
 
 .sidebar-article-link {
   font-family: 'IBM Plex Serif', serif;
-  font-size: 0.75rem; /* Reduced from 0.875rem */
+  font-size: 0.8125rem; /* Slightly increased from 0.75rem */
   font-weight: 400;
   color: var(--text-secondary);
   text-decoration: none;
@@ -320,7 +320,7 @@
   }
   
   .sidebar-article-link {
-    font-size: 0.875rem; /* Increased for better readability */
+    font-size: 0.9375rem; /* Slightly increased from 0.875rem */
     padding: 0.625rem 0.5rem; /* Reduced padding but still maintains touch target */
     line-height: 1.4; /* Slightly reduced line height */
     -webkit-line-clamp: 3; /* Allow 3 lines on mobile for longer titles */
@@ -366,7 +366,7 @@
   }
   
   .sidebar-article-link {
-    font-size: 0.875rem; /* Larger for tablet */
+    font-size: 0.9375rem; /* Slightly increased from 0.875rem */
     padding: 0.75rem 0.5rem; /* More padding for better touch targets */
     line-height: 1.5;
     -webkit-line-clamp: 3; /* Allow 3 lines for longer titles */

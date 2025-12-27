@@ -1,10 +1,22 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-  {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-{{ end }}
+{{- define "main" -}}
+  {{- $env := getenv "HUGO_ENV" | default "prod" -}}
+  {{- $isDev := eq $env "dev" -}}
+  
+  {{- if and .Draft (not $isDev) -}}
+    {{- /* Draft article in production mode - show placeholder */ -}}
+    {{- partial "draft-placeholder.html" . -}}
+  {{- else -}}
+    {{- /* Regular article or draft in dev mode - show full content */ -}}
+    <article class="article-content">
+      <header class="article-header">
+        <h1 class="article-title">{{ .Title }}</h1>
+        {{- if gt .ReadingTime 0 -}}
+          <p class="article-reading-time">{{ .ReadingTime }} min read</p>
+        {{- end -}}
+      </header>
+      <div class="article-body">
+        {{ .Content }}
+      </div>
+    </article>
+  {{- end -}}
+{{- end -}}

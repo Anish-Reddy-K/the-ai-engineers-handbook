@@ -1,10 +1,21 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
-{{ end }}
+{{- define "main" -}}
+  {{- /* Chapter pages are organizational only - show content if available */ -}}
+  {{- if .Content -}}
+    <article class="section-content">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  {{- else -}}
+    {{- /* No content in _index.md - chapters are just organizational */ -}}
+    <article class="section-content">
+      <h1>{{ .Title }}</h1>
+      <p>This chapter contains the following articles:</p>
+      <ul>
+        {{- $pages := where .Pages "Draft" "ne" true -}}
+        {{- range $pages.ByWeight -}}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{- end -}}
+      </ul>
+    </article>
+  {{- end -}}
+{{- end -}}

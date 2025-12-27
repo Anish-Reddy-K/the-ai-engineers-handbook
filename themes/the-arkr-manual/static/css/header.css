@@ -151,12 +151,20 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-secondary);
   letter-spacing: 0.05em;
+}
+
+.breadcrumb-chapter {
+  color: var(--text-secondary);
   text-transform: uppercase;
+}
+
+.breadcrumb-separator {
+  color: var(--text-secondary);
 }
 
 .breadcrumb-item {

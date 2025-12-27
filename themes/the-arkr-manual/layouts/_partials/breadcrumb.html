@@ -1,0 +1,23 @@
+{{- /*
+  Breadcrumb Navigation
+  Format: < CHAPTER TITLE / ARTICLE TITLE >
+  Chapter title from section's _index.md
+  Article title from page front matter
+*/ -}}
+
+{{- if .IsPage -}}
+  {{- $parent := .Parent -}}
+  {{- if and $parent (ne $parent.Kind "home") -}}
+    <span class="breadcrumb-chapter">{{ $parent.Title }}</span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item">{{ .Title }}</span>
+  {{- else -}}
+    <span class="breadcrumb-item">{{ .Title }}</span>
+  {{- end -}}
+{{- else if .IsHome -}}
+  <span class="breadcrumb-item">Home</span>
+{{- else -}}
+  {{- /* Section/chapter page - show chapter title only */ -}}
+  <span class="breadcrumb-item">{{ .Title }}</span>
+{{- end -}}
+

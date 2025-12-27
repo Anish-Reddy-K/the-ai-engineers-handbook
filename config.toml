@@ -3,6 +3,17 @@ languageCode = 'en-us'
 title = 'The Arkr Manual'
 theme = 'the-arkr-manual'
 
+[permalinks]
+  # Flat URL structure: /slug/ instead of /chapter/slug/
+  # This applies to all pages in sections
+  posts = "/:slug/"
+  # Also set default permalink pattern
+  default = "/:slug/"
+
+[params]
+  # Environment-based draft handling
+  # Set HUGO_ENV=dev or HUGO_ENV=prod when running hugo server
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

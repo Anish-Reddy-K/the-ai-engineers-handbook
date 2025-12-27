@@ -1,0 +1,45 @@
+{{- /*
+  Sidebar Table of Contents
+  Iterates through all sections (chapters) and their pages (articles)
+  Filters out draft articles from ToC in production mode
+  Shows all articles (including drafts) in dev mode
+  Sorts by weight
+  Applies active state to current page
+*/ -}}
+
+<nav class="sidebar-nav" aria-label="Table of Contents">
+  {{- $currentPage := . -}}
+  {{- $env := getenv "HUGO_ENV" | default "prod" -}}
+  {{- $isDev := eq $env "dev" -}}
+  {{- $sections := site.Sections -}}
+  
+  {{- range $sections.ByWeight -}}
+    {{- $section := . -}}
+    {{- $pages := .RegularPages -}}
+    {{- if not $isDev -}}
+      {{- /* Filter out drafts in production mode */ -}}
+      {{- $pages = where $pages "Draft" "ne" true -}}
+    {{- end -}}
+    
+    {{- if gt (len $pages) 0 -}}
+      <div class="sidebar-chapter">
+        <h3 class="sidebar-chapter-title">{{ $section.Title }}</h3>
+        <ul class="sidebar-article-list">
+          {{- range $pages.ByWeight -}}
+            {{- $isActive := eq $currentPage.RelPermalink .RelPermalink -}}
+            <li class="sidebar-article-item">
+              <a 
+                href="{{ .RelPermalink }}" 
+                class="sidebar-article-link{{ if $isActive }} active{{ end }}{{ if .Draft }} draft{{ end }}"
+                {{- if $isActive }} aria-current="page"{{ end }}
+              >
+                {{ .Title }}
+              </a>
+            </li>
+          {{- end -}}
+        </ul>
+      </div>
+    {{- end -}}
+  {{- end -}}
+</nav>
+

@@ -29,7 +29,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 16px var(--spacing-desktop);
+  padding: 12px 16px;
   background-color: var(--bg-secondary);
   border-bottom: 2px solid var(--wireframe);
   z-index: 1;
@@ -51,8 +51,10 @@
 .sidebar-content {
   flex: 1;
   overflow-y: auto;
-  padding: var(--spacing-desktop);
+  padding: 16px;
   min-height: 0;
+  /* Prevent flash by ensuring content is ready before showing */
+  will-change: scroll-position;
 }
 
 /* Main Content Area - Always centered, fixed position */
@@ -128,11 +130,11 @@
   }
   
   .sidebar-header {
-    padding: 16px var(--spacing-mobile);
+    padding: 12px 16px;
   }
   
   .sidebar-content {
-    padding: var(--spacing-mobile);
+    padding: 16px;
   }
   
   .sidebar-open .sidebar {
@@ -158,6 +160,86 @@
   .main-content,
   .content-wrapper {
     background-color: var(--bg-secondary);
+  }
+}
+
+/* ==========================================================================
+   Sidebar Navigation (Table of Contents)
+   ========================================================================== */
+
+.sidebar-nav {
+  width: 100%;
+}
+
+.sidebar-chapter {
+  margin-bottom: 1rem;
+}
+
+.sidebar-chapter:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-chapter-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  /* Non-clickable - no link styling */
+  cursor: default;
+}
+
+.sidebar-article-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.sidebar-article-item {
+  margin: 0.25rem 0;
+}
+
+.sidebar-article-link {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: block;
+  padding: 0.125rem 0;
+  transition: color 0.2s ease;
+  /* Text overflow handling */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-article-link:hover {
+  color: var(--accent);
+}
+
+.sidebar-article-link.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.sidebar-article-link.active::before {
+  content: "→ ";
+  margin-right: 0.25rem;
+}
+
+/* Mobile adjustments for sidebar navigation */
+@media (max-width: 767px) {
+  .sidebar-chapter-title {
+    font-size: 0.8125rem;
+  }
+  
+  .sidebar-article-link {
+    font-size: 0.8125rem;
   }
 }
 

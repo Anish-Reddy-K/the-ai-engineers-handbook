@@ -1,0 +1,28 @@
+{{- /*
+  Draft Placeholder Template
+  Shows "coming soon" message for draft articles in production mode
+*/ -}}
+
+<div class="draft-placeholder">
+  <h1 class="draft-title">{{ .Title }}</h1>
+  <p class="draft-message">This article is coming soon...</p>
+  <p class="draft-description">I'm working on this content and will publish it soon. Enter your email below to be notified when it's ready.</p>
+  <div class="email-signup-component">
+    <p class="email-signup-text">I'll email you when a new article drops. No spam. No ads.</p>
+    <form class="email-signup-form" action="/submit.php" method="POST">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required 
+        class="email-input"
+        aria-label="Email address"
+      >
+      <button type="submit" class="email-submit-button">
+        <span class="button-text">JOIN THE MANUAL</span>
+      </button>
+    </form>
+    <div class="email-message"></div>
+  </div>
+</div>
+

@@ -6,6 +6,8 @@
   border: 2px solid var(--wireframe);
   /* Slightly different background from main content */
   background-color: var(--bg-primary);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Dark mode: slightly lighter than bg-secondary */

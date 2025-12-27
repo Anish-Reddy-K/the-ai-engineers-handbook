@@ -1,28 +1,43 @@
 {{- /*
   Draft Placeholder Template
   Shows "coming soon" message for draft articles in production mode
+  Uses same header structure as regular articles
 */ -}}
 
-<div class="draft-placeholder">
-  <h1 class="draft-title">{{ .Title }}</h1>
-  <p class="draft-message">This article is coming soon...</p>
-  <p class="draft-description">I'm working on this content and will publish it soon. Enter your email below to be notified when it's ready.</p>
-  <div class="email-signup-component">
-    <p class="email-signup-text">I'll email you when a new article drops. No spam. No ads.</p>
-    <form class="email-signup-form" action="/submit.php" method="POST">
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="> enter your email" 
-        required 
-        class="email-input"
-        aria-label="Email address"
-      >
-      <button type="submit" class="email-submit-button">
-        <span class="button-text">JOIN THE MANUAL</span>
-      </button>
-    </form>
-    <div class="email-message"></div>
+<article class="article-content">
+  <header class="article-header">
+    {{- /* Get all articles across all sections to calculate article number */ -}}
+    {{- $allArticles := slice -}}
+    {{- range site.Sections.ByWeight -}}
+      {{- $pages := .RegularPages -}}
+      {{- range $pages.ByWeight -}}
+        {{- $allArticles = $allArticles | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* Find current article index */ -}}
+    {{- $articleNumber := 0 -}}
+    {{- range $index, $page := $allArticles -}}
+      {{- if eq $page.RelPermalink $.RelPermalink -}}
+        {{- $articleNumber = add $index 1 -}}
+      {{- end -}}
+    {{- end -}}
+    {{- /* Format article number with leading zeros */ -}}
+    {{- $formattedNumber := printf "%03d" $articleNumber -}}
+    <p class="article-number">No. {{ $formattedNumber }}</p>
+    <h1 class="article-title">{{ .Title }}</h1>
+    <p class="article-meta">
+      <span class="article-reading-time">XX min read</span><span class="article-meta-separator">|</span><span class="article-author">Anish Reddy</span>
+    </p>
+  </header>
+  <div class="article-body">
+    {{- $draftFile := "themes/the-arkr-manual/data/draft-placeholder.md" -}}
+    {{- if fileExists $draftFile -}}
+      {{- $draftContent := readFile $draftFile -}}
+      {{- $draftContent | $.Page.RenderString -}}
+    {{- else -}}
+      <p>This article is coming soon...</p>
+      <p>I'm working on this content and will publish it soon.</p>
+    {{- end -}}
   </div>
-</div>
+</article>
 

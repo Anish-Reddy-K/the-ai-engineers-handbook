@@ -310,11 +310,11 @@ body.light-mode .action-button.active {
 
 /* Feedback Link */
 .feedback-link {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-primary);
-  text-decoration: none;
+  text-decoration: underline;
   letter-spacing: 0.05em;
   display: inline-flex;
   align-items: center;

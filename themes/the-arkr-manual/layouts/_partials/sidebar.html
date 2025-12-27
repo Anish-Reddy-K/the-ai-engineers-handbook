@@ -5,6 +5,7 @@
   Draft articles appear in ToC but show placeholder content when viewed
   Sorts by weight
   Applies active state to current page
+  Chapters are collapsible - current chapter expanded by default
 */ -}}
 
 <nav class="sidebar-nav" aria-label="Table of Contents">
@@ -16,12 +17,23 @@
     {{- $pages := .RegularPages -}}
     
     {{- if gt (len $pages) 0 -}}
-      <div class="sidebar-chapter">
-        <h3 class="sidebar-chapter-title">{{ $section.Title }}</h3>
+      {{- /* Check if current page is in this chapter */ -}}
+      {{- $isCurrentChapter := false -}}
+      {{- if $currentPage.IsPage -}}
+        {{- if eq $currentPage.Parent.RelPermalink $section.RelPermalink -}}
+          {{- $isCurrentChapter = true -}}
+        {{- end -}}
+      {{- end -}}
+      
+      <div class="sidebar-chapter{{ if $isCurrentChapter }} sidebar-chapter-expanded{{ end }}" data-chapter-slug="{{ $section.Title | urlize }}">
+        <button class="sidebar-chapter-toggle" aria-expanded="{{ if $isCurrentChapter }}true{{ else }}false{{ end }}" aria-label="Toggle {{ $section.Title }}">
+          <span class="sidebar-chapter-title">{{ $section.Title }}</span>
+          <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>
+        </button>
         <ul class="sidebar-article-list">
           {{- range $pages.ByWeight -}}
             {{- $isActive := eq $currentPage.RelPermalink .RelPermalink -}}
-            <li class="sidebar-article-item">
+            <li class="sidebar-article-item{{ if $isActive }} active-item{{ end }}">
               <a 
                 href="{{ .RelPermalink }}" 
                 class="sidebar-article-link{{ if $isActive }} active{{ end }}{{ if .Draft }} draft{{ end }}"

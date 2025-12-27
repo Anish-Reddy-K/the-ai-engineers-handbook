@@ -3,6 +3,7 @@
 
     const SIDEBAR_STORAGE_KEY = 'arkr-sidebar-state';
     const SIDEBAR_SCROLL_KEY = 'arkr-sidebar-scroll';
+    const CHAPTER_STATE_KEY = 'arkr-chapter-states';
     const MOBILE_BREAKPOINT = 768;
     const OVERLAP_BREAKPOINT = 1480; // Exact calculation: (280px sidebar + 1200px container) = 1480px viewport
 
@@ -248,6 +249,96 @@
         
         // Initial resize check
         handleResize();
+        
+        // Initialize collapsible chapters
+        initCollapsibleChapters();
+    }
+
+    function getChapterStates() {
+        try {
+            const saved = localStorage.getItem(CHAPTER_STATE_KEY);
+            if (saved) {
+                return JSON.parse(saved);
+            }
+        } catch (e) {
+            console.warn('Could not load chapter states from localStorage:', e);
+        }
+        return {};
+    }
+
+    function saveChapterStates(states) {
+        try {
+            localStorage.setItem(CHAPTER_STATE_KEY, JSON.stringify(states));
+        } catch (e) {
+            console.warn('Could not save chapter states to localStorage:', e);
+        }
+    }
+
+    function toggleChapter(chapterElement, chapterSlug) {
+        const isExpanded = chapterElement.classList.contains('sidebar-chapter-expanded');
+        const button = chapterElement.querySelector('.sidebar-chapter-toggle');
+        
+        if (isExpanded) {
+            chapterElement.classList.remove('sidebar-chapter-expanded');
+            chapterElement.classList.add('sidebar-chapter-collapsed');
+            if (button) {
+                button.setAttribute('aria-expanded', 'false');
+            }
+        } else {
+            chapterElement.classList.remove('sidebar-chapter-collapsed');
+            chapterElement.classList.add('sidebar-chapter-expanded');
+            if (button) {
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+        
+        // Save state
+        const states = getChapterStates();
+        states[chapterSlug] = !isExpanded;
+        saveChapterStates(states);
+    }
+
+    function initCollapsibleChapters() {
+        const chapters = document.querySelectorAll('.sidebar-chapter');
+        const savedStates = getChapterStates();
+        const activeChapter = document.querySelector('.sidebar-chapter-expanded');
+        
+        chapters.forEach(function(chapter) {
+            const button = chapter.querySelector('.sidebar-chapter-toggle');
+            if (!button) return;
+            
+            const chapterSlug = chapter.getAttribute('data-chapter-slug');
+            if (!chapterSlug) return;
+            
+            // Check if this is the active chapter (should be expanded)
+            const isActiveChapter = chapter.classList.contains('sidebar-chapter-expanded');
+            
+            // Check saved state, but prioritize active chapter
+            const savedState = savedStates[chapterSlug];
+            
+            if (!isActiveChapter && savedState === false) {
+                // Collapse if saved state says so and it's not the active chapter
+                chapter.classList.remove('sidebar-chapter-expanded');
+                chapter.classList.add('sidebar-chapter-collapsed');
+                button.setAttribute('aria-expanded', 'false');
+            } else if (isActiveChapter) {
+                // Always expand active chapter
+                chapter.classList.remove('sidebar-chapter-collapsed');
+                chapter.classList.add('sidebar-chapter-expanded');
+                button.setAttribute('aria-expanded', 'true');
+            } else if (savedState === undefined) {
+                // No saved state - default to collapsed (except active chapter)
+                chapter.classList.remove('sidebar-chapter-expanded');
+                chapter.classList.add('sidebar-chapter-collapsed');
+                button.setAttribute('aria-expanded', 'false');
+            }
+            
+            // Add click handler
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                toggleChapter(chapter, chapterSlug);
+            });
+        });
     }
 
     // Initialize when DOM is ready

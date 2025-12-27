@@ -2,20 +2,27 @@
   Breadcrumb Navigation
   Format: < CHAPTER TITLE / ARTICLE TITLE >
   With prev/next navigation buttons
+  Buttons are always visible but disabled on homepage and section pages
 */ -}}
 
+{{- /* Get all articles across all sections (including drafts) */ -}}
+{{- $allArticles := slice -}}
+{{- range site.Sections.ByWeight -}}
+  {{- $pages := .RegularPages -}}
+  {{- range $pages.ByWeight -}}
+    {{- $allArticles = $allArticles | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Initialize prev/next pages as false (disabled) */ -}}
+{{- $prevPage := false -}}
+{{- $nextPage := false -}}
+{{- $breadcrumbText := "" -}}
+
 {{- if .IsPage -}}
+  {{- /* Article page - find prev/next articles */ -}}
   {{- $currentPage := . -}}
   {{- $parent := .Parent -}}
-  
-  {{- /* Get all articles across all sections (including drafts) */ -}}
-  {{- $allArticles := slice -}}
-  {{- range site.Sections.ByWeight -}}
-    {{- $pages := .RegularPages -}}
-    {{- range $pages.ByWeight -}}
-      {{- $allArticles = $allArticles | append . -}}
-    {{- end -}}
-  {{- end -}}
   
   {{- /* Find current article index */ -}}
   {{- $currentIndex := -1 -}}
@@ -26,8 +33,6 @@
   {{- end -}}
   
   {{- /* Get previous and next articles */ -}}
-  {{- $prevPage := false -}}
-  {{- $nextPage := false -}}
   {{- if ge $currentIndex 0 -}}
     {{- if gt $currentIndex 0 -}}
       {{- $prevPage = index $allArticles (sub $currentIndex 1) -}}
@@ -37,41 +42,47 @@
     {{- end -}}
   {{- end -}}
   
-  {{- if and $parent (ne $parent.Kind "home") -}}
-    <div class="breadcrumb-nav">
-      {{- if $prevPage -}}
-        <a href="{{ $prevPage.RelPermalink }}" class="action-button breadcrumb-nav-prev" aria-label="Previous article">
-          <span class="material-symbols-outlined">arrow_back</span>
-        </a>
-      {{- else -}}
-        <span class="action-button breadcrumb-nav-prev breadcrumb-nav-disabled" aria-label="No previous article">
-          <span class="material-symbols-outlined">arrow_back</span>
-        </span>
-      {{- end -}}
-      
-      <span class="breadcrumb-content">
+  {{- /* Set breadcrumb text for article page - only article title, chapter shown separately */ -}}
+  {{- $breadcrumbText = .Title -}}
+{{- else if .IsHome -}}
+  {{- /* Homepage - buttons disabled */ -}}
+  {{- $breadcrumbText = "Home" -}}
+{{- else -}}
+  {{- /* Section/chapter page - buttons disabled */ -}}
+  {{- $breadcrumbText = .Title -}}
+{{- end -}}
+
+{{- /* Always render breadcrumb nav with buttons */ -}}
+<div class="breadcrumb-nav">
+  {{- if $prevPage -}}
+    <a href="{{ $prevPage.RelPermalink }}" class="action-button breadcrumb-nav-prev" aria-label="Previous article">
+      <span class="material-symbols-outlined">arrow_back</span>
+    </a>
+  {{- else -}}
+    <span class="action-button breadcrumb-nav-prev breadcrumb-nav-disabled" aria-label="No previous article">
+      <span class="material-symbols-outlined">arrow_back</span>
+    </span>
+  {{- end -}}
+  
+  <span class="breadcrumb-content">
+    {{- if .IsPage -}}
+      {{- $parent := .Parent -}}
+      {{- if and $parent (ne $parent.Kind "home") -}}
         <span class="breadcrumb-chapter">{{ $parent.Title }}</span>
         <span class="breadcrumb-separator">/</span>
-        <span class="breadcrumb-item">{{ .Title }}</span>
-      </span>
-      
-      {{- if $nextPage -}}
-        <a href="{{ $nextPage.RelPermalink }}" class="action-button breadcrumb-nav-next" aria-label="Next article">
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
-      {{- else -}}
-        <span class="action-button breadcrumb-nav-next breadcrumb-nav-disabled" aria-label="No next article">
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </span>
       {{- end -}}
-    </div>
+    {{- end -}}
+    <span class="breadcrumb-item">{{ $breadcrumbText }}</span>
+  </span>
+  
+  {{- if $nextPage -}}
+    <a href="{{ $nextPage.RelPermalink }}" class="action-button breadcrumb-nav-next" aria-label="Next article">
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </a>
   {{- else -}}
-    <span class="breadcrumb-item">{{ .Title }}</span>
+    <span class="action-button breadcrumb-nav-next breadcrumb-nav-disabled" aria-label="No next article">
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </span>
   {{- end -}}
-{{- else if .IsHome -}}
-  <span class="breadcrumb-item">Home</span>
-{{- else -}}
-  {{- /* Section/chapter page - show chapter title only */ -}}
-  <span class="breadcrumb-item">{{ .Title }}</span>
-{{- end -}}
+</div>
 

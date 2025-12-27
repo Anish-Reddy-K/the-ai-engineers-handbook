@@ -172,54 +172,126 @@
 }
 
 .sidebar-chapter {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Reduced from 1rem */
 }
 
 .sidebar-chapter:last-child {
   margin-bottom: 0;
 }
 
-.sidebar-chapter-title {
+.sidebar-chapter-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 0.375rem 0; /* Reduced padding */
+  margin: 0 0 0.25rem 0; /* Reduced margin */
+  cursor: pointer;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.75rem; /* Reduced from 0.875rem */
   font-weight: 700;
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin: 0 0 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.sidebar-chapter-toggle:hover {
+  color: var(--accent);
+}
+
+.sidebar-chapter-title {
+  flex: 1;
+  text-align: left;
+  margin: 0;
   padding: 0;
-  /* Non-clickable - no link styling */
-  cursor: default;
+}
+
+.sidebar-chapter-icon {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.sidebar-chapter-collapsed .sidebar-chapter-icon {
+  transform: rotate(-90deg);
+}
+
+.sidebar-chapter-expanded .sidebar-chapter-icon {
+  transform: rotate(0deg);
 }
 
 .sidebar-article-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 1rem;
+  padding-left: 0.75rem; /* Increased to accommodate bullets */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin 0.3s ease;
+}
+
+/* Default: chapters are collapsed unless explicitly expanded */
+.sidebar-chapter:not(.sidebar-chapter-expanded) .sidebar-article-list {
+  max-height: 0;
+  margin-top: 0;
+}
+
+.sidebar-chapter-expanded .sidebar-article-list {
+  max-height: 5000px; /* Large enough for all articles */
+  margin-top: 0.25rem; /* Small margin when expanded */
 }
 
 .sidebar-article-item {
-  margin: 0.25rem 0;
+  margin: 0.125rem 0; /* Reduced from 0.25rem */
+  position: relative;
+  padding-left: 0.75rem; /* Space for bullet */
+}
+
+/* Bullet point for all articles */
+.sidebar-article-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  opacity: 0.5;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Active article bullet - accent color */
+.sidebar-article-item.active-item::before {
+  color: var(--accent);
+  opacity: 1;
+  font-weight: bold;
 }
 
 .sidebar-article-link {
   font-family: 'IBM Plex Serif', serif;
-  font-size: 0.875rem;
+  font-size: 0.75rem; /* Reduced from 0.875rem */
   font-weight: 400;
   color: var(--text-secondary);
   text-decoration: none;
-  display: block;
-  padding: 0.125rem 0;
+  padding: 0.0625rem 0; /* Reduced from 0.125rem */
   transition: color 0.2s ease;
-  /* Text overflow handling */
+  /* Allow wrapping to 2 lines */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.3; /* Reduced from 1.4 */
+  word-wrap: break-word;
 }
 
 .sidebar-article-link:hover {
-  color: var(--accent);
+  color: var(--text-primary);
+  opacity: 0.9;
 }
 
 .sidebar-article-link.active {
@@ -227,19 +299,14 @@
   font-weight: 600;
 }
 
-.sidebar-article-link.active::before {
-  content: "→ ";
-  margin-right: 0.25rem;
-}
-
 /* Mobile adjustments for sidebar navigation */
 @media (max-width: 767px) {
-  .sidebar-chapter-title {
-    font-size: 0.8125rem;
+  .sidebar-chapter-toggle {
+    font-size: 0.6875rem; /* Reduced from 0.8125rem */
   }
   
   .sidebar-article-link {
-    font-size: 0.8125rem;
+    font-size: 0.6875rem; /* Reduced from 0.8125rem */
   }
 }
 

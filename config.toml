@@ -9,7 +9,7 @@ uglyURLs = true
   # This ensures all pages use only their slug from front matter
   default = "/:slug/"
   # Explicitly override section permalinks to remove section name from URL
-  "01-the-digital-atom" = "/:slug/"
+  "01-digital-fundamentals" = "/:slug/"
   "02-hardware-architecture" = "/:slug/"
   "03-programming-fundamentals" = "/:slug/"
   "04-algorithms-data-structures" = "/:slug/"

@@ -314,25 +314,24 @@
     font-size: 0.9375rem; /* Slightly increased from 0.875rem */
     padding: 0.625rem 0.5rem; /* Reduced padding but still maintains touch target */
     margin: 0.125rem 0; /* Reduced spacing between items */
-    min-height: 44px; /* Minimum touch target size */
+    min-height: 24px; /* Minimum touch target size */
     display: flex;
     align-items: center;
   }
   
   .sidebar-article-link {
-    font-size: 0.9375rem; /* Slightly increased from 0.875rem */
-    padding: 0.625rem 0.5rem; /* Reduced padding but still maintains touch target */
-    line-height: 1.4; /* Slightly reduced line height */
-    -webkit-line-clamp: 3; /* Allow 3 lines on mobile for longer titles */
-    min-height: 44px; /* Minimum touch target size - works with webkit-box */
-    display: -webkit-box; /* Keep webkit-box for text truncation */
+    font-size: 0.9375rem;
+    padding: 0.5rem 0.5rem;
+    line-height: 1.2;
+    min-height: 24px;
+    display: -webkit-box;
     -webkit-box-orient: vertical;
   }
   
   .sidebar-article-item {
-    margin: 0.125rem 0; /* Reduced spacing between items */
-    padding-left: 0.5rem; /* Adjusted for larger touch area */
-    min-height: 44px; /* Ensure parent also has minimum height */
+    margin: 0.125rem 0;
+    padding-left: 0.5rem;
+    min-height: 24px;
     display: flex;
     align-items: center;
   }
@@ -367,10 +366,10 @@
   
   .sidebar-article-link {
     font-size: 0.9375rem; /* Slightly increased from 0.875rem */
-    padding: 0.75rem 0.5rem; /* More padding for better touch targets */
+    padding: 0.4rem 0.5rem; /* More padding for better touch targets */
     line-height: 1.5;
     -webkit-line-clamp: 3; /* Allow 3 lines for longer titles */
-    min-height: 48px; /* Larger touch target for tablet */
+    min-height: 24px; /* Larger touch target for tablet */
     display: -webkit-box;
     -webkit-box-orient: vertical;
   }
@@ -378,7 +377,7 @@
   .sidebar-article-item {
     margin: 0.03125rem 0; /* Minimal spacing between items */
     padding-left: 0.5rem;
-    min-height: 48px; /* Larger touch target for tablet */
+    min-height: 24px;/* Larger touch target for tablet */
     display: flex;
     align-items: center;
   }

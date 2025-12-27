@@ -1,2 +1,5 @@
 /context
 /public
+.env
+.env.local
+.env.*.local

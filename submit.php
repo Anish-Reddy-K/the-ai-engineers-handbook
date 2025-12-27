@@ -1,4 +1,51 @@
 <?php
+/**
+ * Load environment variables from .env file
+ * Looks for .env in current directory, then parent directories
+ */
+function loadEnv($path = null) {
+    if ($path === null) {
+        // Try multiple locations: current dir, parent dir, project root
+        $paths = [
+            __DIR__ . '/.env',
+            __DIR__ . '/../.env',
+            dirname(__DIR__) . '/.env',
+            $_SERVER['DOCUMENT_ROOT'] . '/.env',
+        ];
+        
+        foreach ($paths as $tryPath) {
+            if (file_exists($tryPath)) {
+                $path = $tryPath;
+                break;
+            }
+        }
+    }
+    
+    if ($path && file_exists($path)) {
+        $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line) {
+            // Skip comments
+            if (strpos(trim($line), '#') === 0) {
+                continue;
+            }
+            
+            // Parse KEY=VALUE
+            if (strpos($line, '=') !== false) {
+                list($key, $value) = explode('=', $line, 2);
+                $key = trim($key);
+                $value = trim($value);
+                // Remove quotes if present
+                $value = trim($value, '"\'');
+                $_ENV[$key] = $value;
+                putenv("$key=$value");
+            }
+        }
+    }
+}
+
+// Load environment variables
+loadEnv();
+
 // Set headers
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
@@ -32,10 +79,16 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// PocketBase API endpoint
-$apiUrl = 'https://api.arkr.ca/api/collections/arkr_manual_emails/records';
+// PocketBase API configuration from environment variables
+$apiUrl = getenv('POCKETBASE_API_URL') ?: 'https://api.arkr.ca/api/collections/arkr_manual_emails/records';
+$secretKey = getenv('POCKETBASE_SECRET_KEY');
 
-$secretKey = 'semzyk-vowgaJ-8gossy';
+if (empty($secretKey)) {
+    error_log('PocketBase secret key not found in environment variables');
+    http_response_code(500);
+    echo json_encode(['success' => false, 'message' => 'Server configuration error. Please contact support.']);
+    exit;
+}
 
 // Prepare data for PocketBase
 $data = [

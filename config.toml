@@ -2,13 +2,27 @@ baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'The Arkr Manual'
 theme = 'the-arkr-manual'
+uglyURLs = true
 
 [permalinks]
-  # Flat URL structure: /slug/ instead of /chapter/slug/
-  # This applies to all pages in sections
-  posts = "/:slug/"
-  # Also set default permalink pattern
+  # Flat URL structure: /slug.html (with uglyURLs) - no chapter name in URL
+  # This ensures all pages use only their slug from front matter
   default = "/:slug/"
+  # Explicitly override section permalinks to remove section name from URL
+  "01-the-digital-atom" = "/:slug/"
+  "02-hardware-architecture" = "/:slug/"
+  "03-programming-fundamentals" = "/:slug/"
+  "04-algorithms-data-structures" = "/:slug/"
+  "05-operating-systems" = "/:slug/"
+  "06-networking" = "/:slug/"
+  "07-databases" = "/:slug/"
+  "08-scalable-system-design" = "/:slug/"
+  "09-software-engineering-security" = "/:slug/"
+  "10-artificial-intelligence" = "/:slug/"
+  "11-applied-engineering-utilities-services" = "/:slug/"
+  "12-applied-engineering-consumer-applications" = "/:slug/"
+  "13-infrastructure-middleware-design" = "/:slug/"
+  "14-internet-scale-architectures" = "/:slug/"
 
 [params]
   # Environment-based draft handling

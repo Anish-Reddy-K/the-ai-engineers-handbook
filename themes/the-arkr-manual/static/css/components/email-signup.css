@@ -33,7 +33,7 @@
   border: 2px solid var(--wireframe);
   border-radius: 0;
   outline: none;
-  transition: border-color 0.2s ease;
+  transition: none; /* Instant, no delay */
   box-sizing: border-box;
 }
 

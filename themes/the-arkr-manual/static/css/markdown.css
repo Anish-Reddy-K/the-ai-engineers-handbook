@@ -139,7 +139,7 @@
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 2px;
-  transition: opacity 0.2s ease;
+  transition: none; /* Instant, no delay */
 }
 
 .article-body a:hover {
@@ -384,7 +384,7 @@
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 2px;
-  transition: opacity 0.2s ease;
+  transition: none; /* Instant, no delay */
 }
 
 .content-area article a:hover {
@@ -575,7 +575,7 @@ body.light-mode .code-copy-button.copied {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: none; /* Instant, no delay */
   z-index: 1;
   display: flex;
   align-items: center;

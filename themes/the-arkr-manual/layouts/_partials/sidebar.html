@@ -25,7 +25,7 @@
         {{- end -}}
       {{- end -}}
       
-      <div class="sidebar-chapter{{ if $isCurrentChapter }} sidebar-chapter-expanded{{ end }}" data-chapter-slug="{{ $section.Title | urlize }}">
+      <div class="sidebar-chapter{{ if $isCurrentChapter }} sidebar-chapter-expanded{{ end }}">
         <button class="sidebar-chapter-toggle" aria-expanded="{{ if $isCurrentChapter }}true{{ else }}false{{ end }}" aria-label="Toggle {{ $section.Title }}">
           <span class="sidebar-chapter-title">{{ $section.Title }}</span>
           <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>

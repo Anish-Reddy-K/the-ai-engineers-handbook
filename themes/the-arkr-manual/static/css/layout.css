@@ -195,10 +195,15 @@
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: color 0.2s ease;
+  transition: none; /* Instant, no delay */
 }
 
 .sidebar-chapter-toggle:hover {
+  color: var(--accent);
+}
+
+/* Highlight current chapter title */
+.sidebar-chapter-expanded .sidebar-chapter-toggle {
   color: var(--accent);
 }
 
@@ -211,9 +216,9 @@
 
 .sidebar-chapter-icon {
   font-size: 1rem;
-  transition: transform 0.2s ease;
   flex-shrink: 0;
   margin-left: 0.5rem;
+  transition: none; /* Instant, no animation */
 }
 
 .sidebar-chapter-collapsed .sidebar-chapter-icon {
@@ -229,20 +234,19 @@
   margin: 0;
   padding: 0;
   padding-left: 0.75rem; /* Increased to accommodate bullets */
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, margin 0.3s ease;
+  transition: none; /* Instant, no animation */
 }
 
-/* Default: chapters are collapsed unless explicitly expanded */
-.sidebar-chapter:not(.sidebar-chapter-expanded) .sidebar-article-list {
-  max-height: 0;
-  margin-top: 0;
+/* Default: ALL chapters start collapsed to prevent flash */
+.sidebar-chapter .sidebar-article-list {
+  display: none;
 }
 
+/* Only expanded chapters show their articles */
 .sidebar-chapter-expanded .sidebar-article-list {
-  max-height: 5000px; /* Large enough for all articles */
-  margin-top: 0.25rem; /* Small margin when expanded */
+  display: block;
+  margin-top: 0.25rem;
 }
 
 .sidebar-article-item {
@@ -263,6 +267,7 @@
   opacity: 0.5;
   line-height: 1;
   pointer-events: none;
+  margin-top: -0.05rem; /* Fine-tune: slight upward adjustment for perfect centering */
 }
 
 /* Active article bullet - accent color */
@@ -279,7 +284,7 @@
   color: var(--text-secondary);
   text-decoration: none;
   padding: 0.0625rem 0; /* Reduced from 0.125rem */
-  transition: color 0.2s ease;
+  transition: none; /* Instant, no delay */
   /* Allow wrapping to 2 lines */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -290,8 +295,8 @@
 }
 
 .sidebar-article-link:hover {
-  color: var(--text-primary);
-  opacity: 0.9;
+  color: var(--accent);
+  opacity: 0.8;
 }
 
 .sidebar-article-link.active {

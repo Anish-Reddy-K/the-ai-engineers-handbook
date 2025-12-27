@@ -68,31 +68,6 @@
       <div class="sidebar-content" id="sidebar-content">
         {{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
       </div>
-      <script>
-        // Restore scroll position immediately to prevent flash/jitter
-        (function() {
-          try {
-            const savedScroll = localStorage.getItem('arkr-sidebar-scroll');
-            if (savedScroll !== null && savedScroll !== '0') {
-              const sidebarContent = document.getElementById('sidebar-content');
-              if (sidebarContent) {
-                // Restore immediately - use multiple attempts to ensure it sticks
-                const scrollValue = parseInt(savedScroll, 10);
-                sidebarContent.scrollTop = scrollValue;
-                
-                // Also set in next frame to ensure it's applied
-                requestAnimationFrame(function() {
-                  if (sidebarContent.scrollTop === 0) {
-                    sidebarContent.scrollTop = scrollValue;
-                  }
-                });
-              }
-            }
-          } catch (e) {
-            // Ignore errors
-          }
-        })();
-      </script>
     </aside>
     
     <!-- Main Content -->

@@ -875,3 +875,96 @@ body.light-mode .code-copy-button.copied {
   }
 }
 
+/* ==========================================================================
+   Social Links Section
+   ========================================================================== */
+
+.content-area article ul.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.content-area article ul.social-links li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.content-area article ul.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--wireframe);
+  background-color: var(--bg-primary);
+  transition: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.content-area article ul.social-links a .material-symbols-outlined {
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.content-area article ul.social-links a:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.content-area article ul.social-links a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Mobile adjustments for social links */
+@media (max-width: 767px) {
+  .content-area article ul.social-links {
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  
+  .content-area article ul.social-links li {
+    flex: 0 1 auto;
+  }
+  
+  .content-area article ul.social-links a {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .content-area article ul.social-links a .material-symbols-outlined {
+    font-size: 1rem;
+  }
+}
+
+/* Very small mobile - allow buttons to wrap to multiple rows */
+@media (max-width: 480px) {
+  .content-area article ul.social-links {
+    gap: 0.5rem;
+  }
+  
+  .content-area article ul.social-links a {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.625rem;
+  }
+}
+

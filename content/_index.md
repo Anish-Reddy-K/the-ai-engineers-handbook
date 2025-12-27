@@ -58,3 +58,14 @@ You will have understood the fundamentals that make up the software we use every
 - **[HUGO](https://gohugo.io/):** to support my pipeline of obsidian(markdown) to the web(HTML).
 - **[Github](https://github.com/Anish-Reddy-K/the-arkr-manual.git):** where I store all my articles, and to webhook the obsidian to the web pipeline on blog updates.
 - **[makingsoftware.com](https://www.makingsoftware.com/):** design inspiration.
+
+## Connect
+I'm **Anish Reddy**, the author and builder of this manual. You can find me on:
+
+<ul class="social-links">
+  <li><a href="https://github.com/Anish-Reddy-K" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">code</span>GitHub</a> </li>
+  <li><a href="https://linkedin.com/in/anish-reddy-k" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">work</span>LinkedIn</a></li>
+  <li><a href="https://arkr.ca" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">language</span>Portfolio</a></li>
+  <li><a href="mailto:anish@arkr.ca"><span class="material-symbols-outlined">mail</span>Email</a></li>
+  <li><a href="https://instagram.com/anishreddyk" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">photo_camera</span>Instagram</a></li>
+</ul>

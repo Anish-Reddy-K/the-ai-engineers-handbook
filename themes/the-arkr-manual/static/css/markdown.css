@@ -242,6 +242,19 @@ body.light-mode .content-area article .chroma code {
   color: #FFF4DF !important;
 }
 
+/* Copy button in light mode matches dark mode styling */
+body.light-mode .code-copy-button {
+  background-color: #0D1117 !important;
+  color: #FFF4DF !important;
+}
+
+body.light-mode .code-copy-button:hover,
+body.light-mode .code-copy-button.copied {
+  background-color: #DD885C !important;
+  color: #03060A !important;
+  border-color: #DD885C !important;
+}
+
 .content-area article pre code {
   background: transparent !important;
   border: none;

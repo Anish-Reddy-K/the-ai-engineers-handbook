@@ -103,9 +103,7 @@ Here are various link formats:
 
 Here are image examples:
 
-![Alt text for image](https://via.placeholder.com/400x300 "Image title")
-
-![Local image](./image.png)
+![Local image](/images/test2.png)
 
 ## Code Blocks
 

@@ -1,6 +1,6 @@
 ---
 title: "Low-Level Languages"
-slug: "why-c-rust-are-fast"
+slug: "low-level-languages"
 weight: 3
 draft: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Switch"
-slug: "Switch"
+slug: "switch"
 weight: 3
 draft: true
 ---

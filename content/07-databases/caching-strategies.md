@@ -1,7 +1,7 @@
 ---
 title: "Caching Strategies"
 slug: "caching-strategies"
-weight: 13
+weight: 14
 draft: true
 ---
 

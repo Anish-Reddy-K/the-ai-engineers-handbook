@@ -1,7 +1,7 @@
 ---
 title: "NoSQL Databases"
 slug: "nosql-databases"
-weight: 9
+weight: 10
 draft: true
 ---
 

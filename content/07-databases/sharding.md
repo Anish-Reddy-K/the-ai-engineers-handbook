@@ -1,7 +1,7 @@
 ---
 title: "Sharding"
 slug: "sharding"
-weight: 11
+weight: 12
 draft: true
 ---
 

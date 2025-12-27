@@ -141,7 +141,7 @@
   background-color: var(--bg-secondary);
   border-bottom: 2px solid var(--wireframe);
   display: flex;
-  justify-content: flex-end; /* Align to right on mobile (breadcrumb hidden) */
+  justify-content: space-between; /* Space between breadcrumb and actions, or full width on mobile */
   align-items: center;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
@@ -244,6 +244,20 @@
 .action-cluster {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
+}
+
+/* Mobile: Make action-cluster full width to space feedback link and buttons */
+@media (max-width: 767px) {
+  .action-cluster {
+    width: 100%;
+    justify-content: flex-start; /* Start with feedback link */
+  }
+  
+  /* Push buttons to the right by adding margin-left: auto to first button */
+  .action-cluster .menu-toggle {
+    margin-left: auto;
+  }
 }
 
 .action-button {
@@ -294,6 +308,27 @@ body.light-mode .action-button.active {
   font-size: 1.25rem;
 }
 
+/* Feedback Link */
+.feedback-link {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0;
+  transition: none;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.feedback-link:hover {
+  opacity: 0.8;
+  color: var(--accent);
+}
+
 /* Content Area */
 .content-area {
   width: 100%;
@@ -321,6 +356,12 @@ body.light-mode .action-button.active {
   .header-zone-b {
     padding: 0.75rem 1.5rem;
     justify-content: space-between; /* Breadcrumb visible, space between breadcrumb and actions */
+  }
+
+  /* Tablet: Feedback link positioned to left of menu button */
+  .feedback-link {
+    margin-right: 0.75rem; /* Space between link and menu button */
+    margin-left: 0; /* Reset mobile left margin */
   }
 
   /* Title Size increase */
@@ -390,6 +431,12 @@ body.light-mode .action-button.active {
   
   .header-zone-b {
     padding: 0.75rem 2rem;
+  }
+
+  /* Desktop: Feedback link positioned to left of menu button */
+  .feedback-link {
+    margin-right: 0.75rem; /* Space between link and menu button */
+    margin-left: 0; /* Reset mobile left margin */
   }
 
   /* Show chapter title and separator on desktop only */

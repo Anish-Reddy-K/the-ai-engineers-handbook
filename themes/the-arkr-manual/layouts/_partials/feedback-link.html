@@ -1,0 +1,54 @@
+{{- /*
+  Feedback Link Partial
+  Generates a "Report issue" link that opens GitHub issue creation page
+  with prefilled article information. Only shows on article pages.
+*/ -}}
+
+{{- if .IsPage -}}
+  {{- /* Get all articles across all sections to calculate article number */ -}}
+  {{- $allArticles := slice -}}
+  {{- range site.Sections.ByWeight -}}
+    {{- $pages := .RegularPages -}}
+    {{- range $pages.ByWeight -}}
+      {{- $allArticles = $allArticles | append . -}}
+    {{- end -}}
+  {{- end -}}
+  
+  {{- /* Find current article index */ -}}
+  {{- $articleNumber := 0 -}}
+  {{- range $index, $page := $allArticles -}}
+    {{- if eq $page.RelPermalink $.RelPermalink -}}
+      {{- $articleNumber = add $index 1 -}}
+    {{- end -}}
+  {{- end -}}
+  
+  {{- /* Format article number with leading zeros */ -}}
+  {{- $formattedNumber := printf "%03d" $articleNumber -}}
+  
+  {{- /* Get article metadata */ -}}
+  {{- $articleTitle := .Title -}}
+  {{- $articleURL := .Permalink | absURL -}}
+  {{- $chapterName := "" -}}
+  {{- if .Parent -}}
+    {{- if ne .Parent.Kind "home" -}}
+      {{- $chapterName = .Parent.Title -}}
+    {{- end -}}
+  {{- end -}}
+  
+  {{- /* Build issue body template - plain and simple */ -}}
+  {{- $issueBody := printf "Article: %s\nURL: %s\nChapter: %s\nArticle Number: %s\n\nIssue Type (put X in square brackets):\n[ ] Mistake/Correction\n[ ] Missing Concept\n[ ] Other\n\nDescription:\n" $articleTitle $articleURL $chapterName $formattedNumber -}}
+  
+  {{- /* Build GitHub issue URL */ -}}
+  {{- $repoOwner := "Anish-Reddy-K" -}}
+  {{- $repoName := "the-arkr-manual" -}}
+  {{- $baseURL := printf "https://github.com/%s/%s/issues/new" $repoOwner $repoName -}}
+  
+  {{- /* URL encode body parameter */ -}}
+  {{- $encodedBody := $issueBody | urlquery -}}
+  
+  {{- /* Construct final URL - no title parameter */ -}}
+  {{- $issueURL := printf "%s?body=%s" $baseURL $encodedBody -}}
+  
+  <a href="{{ $issueURL }}" target="_blank" rel="noopener noreferrer" class="feedback-link">Feedback/issue?</a>
+{{- end -}}
+

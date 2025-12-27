@@ -226,6 +226,22 @@
   background-color: var(--bg-primary) !important;
 }
 
+/* Code blocks in light mode use dark mode background color */
+body.light-mode .content-area article pre,
+body.light-mode .content-area article pre.chroma,
+body.light-mode .content-area article .chroma,
+body.light-mode .content-area article pre.highlight,
+body.light-mode .content-area article .highlight {
+  background-color: #03060A !important;
+}
+
+/* Code block text in light mode needs to be light colored for readability */
+body.light-mode .content-area article pre code,
+body.light-mode .content-area article pre.chroma code,
+body.light-mode .content-area article .chroma code {
+  color: #FFF4DF !important;
+}
+
 .content-area article pre code {
   background: transparent !important;
   border: none;

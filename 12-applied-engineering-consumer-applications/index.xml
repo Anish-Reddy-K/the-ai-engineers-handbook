@@ -2,59 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>12. Applied Engineering: Consumer Applications on The Arkr Manual</title>
-    <link>http://localhost:57096/12-applied-engineering-consumer-applications/index.html</link>
+    <link>https://manual.arkr.ca/12-applied-engineering-consumer-applications/index.html</link>
     <description>Recent content in 12. Applied Engineering: Consumer Applications on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:57096/12-applied-engineering-consumer-applications/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Blog</title>
-      <link>http://localhost:57096/the-blog.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-blog.html</guid>
-      <description>&lt;p&gt;Rich text rendering, canonical URLs, SEO optimization, caching static content, recommendation tagging.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The E-Commerce Store</title>
-      <link>http://localhost:57096/the-e-commerce-store.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-e-commerce-store.html</guid>
-      <description>&lt;p&gt;Product catalog schemas, inventory locking (pessimistic vs. optimistic), shopping cart persistence, checkout race conditions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Booking System</title>
-      <link>http://localhost:57096/the-booking-system.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-booking-system.html</guid>
-      <description>&lt;p&gt;Handling concurrency (double-booking prevention), state machines for reservations, eventual consistency in search vs. booking.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Forum</title>
-      <link>http://localhost:57096/the-forum.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-forum.html</guid>
-      <description>&lt;p&gt;Nested comments (trees in SQL), ranking algorithms (Wilson Score Interval), hot/new sorting, caching heavy read threads.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Social Graph</title>
-      <link>http://localhost:57096/the-social-graph.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-social-graph.html</guid>
-      <description>&lt;p&gt;Graph databases (Neo4j), bidirectional relationships, finding &amp;ldquo;friends of friends,&amp;rdquo; privacy controls.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Collaborator</title>
-      <link>http://localhost:57096/the-collaborator.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-collaborator.html</guid>
-      <description>&lt;p&gt;Operational Transformation (OT) vs. CRDTs, conflict resolution, WebSocket presence, saving snapshots.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Map</title>
-      <link>http://localhost:57096/the-map.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-map.html</guid>
-      <description>&lt;p&gt;Tiles and rendering, Quadtrees for geospatial indexing, A* routing at scale, geocoding.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="https://manual.arkr.ca/12-applied-engineering-consumer-applications/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

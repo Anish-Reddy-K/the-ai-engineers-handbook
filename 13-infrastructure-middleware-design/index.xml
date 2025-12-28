@@ -2,80 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>13. Infrastructure &amp; Middleware Design on The Arkr Manual</title>
-    <link>http://localhost:57096/13-infrastructure-middleware-design/index.html</link>
+    <link>https://manual.arkr.ca/13-infrastructure-middleware-design/index.html</link>
     <description>Recent content in 13. Infrastructure &amp; Middleware Design on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:57096/13-infrastructure-middleware-design/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Distributed Cache</title>
-      <link>http://localhost:57096/the-distributed-cache.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-distributed-cache.html</guid>
-      <description>&lt;p&gt;Eviction policies (LRU/LFU), consistent hashing for partitioning, gossip protocols for cluster state.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Message Broker</title>
-      <link>http://localhost:57096/the-message-broker.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-message-broker.html</guid>
-      <description>&lt;p&gt;Log-structured storage, partitions, consumer groups, offset management, sequential I/O performance.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Load Balancer</title>
-      <link>http://localhost:57096/the-load-balancer.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-load-balancer.html</guid>
-      <description>&lt;p&gt;L4 vs L7 routing, health checks, round-robin vs. least-connections, handling TLS termination.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Key-Value Store</title>
-      <link>http://localhost:57096/the-key-value-store.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-key-value-store.html</guid>
-      <description>&lt;p&gt;Tunable consistency (W+R &amp;gt; N), vector clocks, hinted handoff, ring topology.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Blob Store</title>
-      <link>http://localhost:57096/the-blob-store.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-blob-store.html</guid>
-      <description>&lt;p&gt;File chunking, erasure coding (Reed-Solomon), metadata separation, multipart uploads.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The API Gateway</title>
-      <link>http://localhost:57096/the-api-gateway.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-api-gateway.html</guid>
-      <description>&lt;p&gt;Rate limiting, authentication offloading, circuit breaking, request aggregation, protocol translation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Analytics Engine</title>
-      <link>http://localhost:57096/the-analytics-engine.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-analytics-engine.html</guid>
-      <description>&lt;p&gt;Columnar storage benefits, data ingestion pipelines, OLAP vs. OLTP, pre-aggregation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Metrics System</title>
-      <link>http://localhost:57096/the-metrics-system.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-metrics-system.html</guid>
-      <description>&lt;p&gt;Time-series databases, pull vs. push models, downsampling data, alert evaluation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Search Engine</title>
-      <link>http://localhost:57096/the-search-engine.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-search-engine.html</guid>
-      <description>&lt;p&gt;Inverted indices, tokenization, tf-idf and BM25 ranking, fuzzy search, sharding.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Auth System</title>
-      <link>http://localhost:57096/the-auth-system.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57096/the-auth-system.html</guid>
-      <description>&lt;p&gt;Designing an Identity Provider, handling token rotation, signing keys (JWK), security perimeters.&lt;/p&gt;</description>
-    </item>
+    <atom:link href="https://manual.arkr.ca/13-infrastructure-middleware-design/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,0 +1,930 @@
+.content-area article {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* article structure */
+.article-content {
+  width: 100%;
+}
+
+.article-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.article-header .article-number,
+.article-number {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin: 0 0 0rem 0 !important;
+  padding: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.article-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2rem 0 !important;
+  padding: 0;
+  padding-bottom: 0;
+  line-height: 1.2;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-bottom: none !important;
+}
+
+.article-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.article-reading-time {
+  color: var(--text-secondary);
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.article-meta-separator {
+  color: var(--accent);
+  margin: 0 0.5rem;
+  display: inline;
+}
+
+.article-author {
+  color: var(--text-secondary);
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.article-body {
+  width: 100%;
+}
+
+/* ensure markdown content inside article-body is styled */
+.article-body > * {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* apply existing article styles to article-body content */
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.article-body h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--wireframe);
+  line-height: 1.2;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1.25rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--wireframe);
+  line-height: 1.2;
+}
+
+.article-body h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem 0;
+  line-height: 1.3;
+}
+
+.article-body h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.article-body h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.25rem 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.article-body h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 1rem 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.article-body p {
+  margin: 0 0 1.5rem 0;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.article-body li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.article-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: none;
+}
+
+.article-body a:hover {
+  opacity: 0.8;
+}
+
+.article-body code {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--wireframe);
+  padding: 0.125rem 0.375rem;
+  border-radius: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  color: var(--accent);
+}
+
+.article-body pre {
+  position: relative;
+  background-color: var(--bg-primary) !important;
+  border: 2px solid var(--wireframe);
+  border-radius: 0;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.article-body pre code {
+  background: transparent !important;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border: 2px solid var(--wireframe);
+  border-radius: 0;
+}
+
+.article-body blockquote {
+  border-left: 4px solid var(--accent);
+  background-color: var(--bg-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.article-body blockquote p {
+  margin: 0.5rem 0;
+}
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 2px solid var(--wireframe);
+}
+
+.article-body table th {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--wireframe);
+  padding: 0.75rem;
+  text-align: left;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.article-body table td {
+  border: 1px solid var(--wireframe);
+  padding: 0.75rem;
+  color: var(--text-primary);
+}
+
+.article-body table tr:nth-child(even) {
+  background-color: var(--bg-primary);
+}
+
+/* draft placeholder */
+.draft-placeholder {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.draft-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.draft-message {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1rem 0;
+}
+
+.draft-description {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+}
+
+/* mobile adjustments for article structure */
+@media (max-width: 767px) {
+  .article-title {
+    font-size: 2.5rem;
+  }
+  
+  .article-number {
+    font-size: 0.75rem;
+  }
+  
+  .article-meta {
+    font-size: 0.75rem;
+  }
+  
+  .draft-title {
+    font-size: 2rem;
+  }
+  
+  .draft-message {
+    font-size: 1.25rem;
+  }
+}
+
+/* paragraphs - proper spacing */
+.content-area article p {
+  margin: 0 0 1.5rem 0;
+}
+
+/* empty paragraphs (from blank lines in markdown) */
+.content-area article p:empty {
+  margin: 0 0 1rem 0;
+  min-height: 1rem;
+}
+
+/* headings */
+
+.content-area article h1:not(.article-title) {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--wireframe);
+  line-height: 1.2;
+}
+
+.content-area article h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1.25rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--wireframe);
+  line-height: 1.2;
+}
+
+.content-area article h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 1rem 0;
+  line-height: 1.3;
+}
+
+.content-area article h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.content-area article h5 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.25rem 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.content-area article h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 1rem 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+/* first heading should have less top margin */
+.content-area article > h1:first-child,
+.content-area article > h2:first-child,
+.content-area article > h3:first-child {
+  margin-top: 0;
+}
+
+/* horizontal rules */
+
+.content-area article hr {
+  border: none;
+  border-top: 2px solid var(--wireframe);
+  margin: 2rem 0;
+  height: 0;
+}
+
+/* links */
+
+.content-area article a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: none;
+}
+
+.content-area article a:hover {
+  opacity: 0.8;
+}
+
+.content-area article a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* lists */
+
+.content-area article ul,
+.content-area article ol {
+  margin: 0 0 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.content-area article li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* nested lists - proper indentation */
+.content-area article ul ul,
+.content-area article ol ol,
+.content-area article ul ol,
+.content-area article ol ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+/* list items with nested content */
+.content-area article li > p {
+  margin: 0.5rem 0 0 0;
+}
+
+.content-area article li > p + p {
+  margin-top: 0.5rem;
+}
+
+/* task lists */
+.content-area article input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+/* blockquotes */
+
+.content-area article blockquote {
+  border-left: 4px solid var(--accent);
+  background-color: var(--bg-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.content-area article blockquote p {
+  margin: 0.5rem 0;
+}
+
+.content-area article blockquote p:first-child {
+  margin-top: 0;
+}
+
+.content-area article blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.content-area article blockquote > blockquote {
+  margin-left: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* blockquote with lists */
+.content-area article blockquote ul,
+.content-area article blockquote ol {
+  margin: 0.75rem 0;
+}
+
+/* code blocks */
+
+.content-area article pre {
+  position: relative;
+  background-color: var(--bg-primary) !important;
+  border: 2px solid var(--wireframe);
+  border-radius: 0;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* override hugo syntax highlighting backgrounds */
+.content-area article pre.chroma,
+.content-area article .chroma,
+.content-area article pre.highlight,
+.content-area article .highlight {
+  background-color: var(--bg-primary) !important;
+}
+
+/* code blocks in light mode use dark mode background color */
+body.light-mode .content-area article pre,
+body.light-mode .content-area article pre.chroma,
+body.light-mode .content-area article .chroma,
+body.light-mode .content-area article pre.highlight,
+body.light-mode .content-area article .highlight {
+  background-color: #03060A !important;
+}
+
+/* code block text in light mode needs to be light colored for readability */
+body.light-mode .content-area article pre code,
+body.light-mode .content-area article pre.chroma code,
+body.light-mode .content-area article .chroma code {
+  color: #FFF4DF !important;
+}
+
+/* copy button in light mode matches dark mode styling */
+body.light-mode .code-copy-button {
+  background-color: #0D1117 !important;
+  color: #FFF4DF !important;
+}
+
+body.light-mode .code-copy-button:hover,
+body.light-mode .code-copy-button.copied {
+  background-color: #DD885C !important;
+  color: #03060A !important;
+  border-color: #DD885C !important;
+}
+
+.content-area article pre code {
+  background: transparent !important;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* override syntax highlighting code element backgrounds */
+.content-area article pre code,
+.content-area article pre.chroma code,
+.content-area article .chroma code {
+  background: transparent !important;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* code block wrapper for copy button */
+.code-block-wrapper {
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+}
+
+/* copy button */
+.code-copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--wireframe);
+  color: var(--text-primary);
+  padding: 0.5rem 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.code-copy-button:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
+.code-copy-button.copied {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+}
+
+.code-copy-button .copy-icon {
+  font-size: 1rem;
+}
+
+/* inline code */
+
+.content-area article code {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--wireframe);
+  padding: 0.125rem 0.375rem;
+  border-radius: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  color: var(--accent);
+}
+
+.content-area article pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--text-primary);
+}
+
+/* images */
+
+.content-area article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border: 2px solid var(--wireframe);
+  border-radius: 0;
+}
+
+.content-area article p img {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+/* image wrapper for better control */
+.content-area article figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.content-area article figure img {
+  margin: 0 auto;
+}
+
+.content-area article figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+/* image caption wrapper (created by JavaScript) */
+.content-area article figure.image-caption-wrapper {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-area article figure.image-caption-wrapper img {
+  margin: 0;
+}
+
+.content-area article figure.image-caption-wrapper figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+}
+
+/* tables */
+
+.content-area article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 2px solid var(--wireframe);
+}
+
+.content-area article table th {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--wireframe);
+  padding: 0.75rem;
+  text-align: left;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.content-area article table td {
+  border: 1px solid var(--wireframe);
+  padding: 0.75rem;
+  color: var(--text-primary);
+}
+
+.content-area article table tr:nth-child(even) {
+  background-color: var(--bg-primary);
+}
+
+.content-area article table tr:hover {
+  background-color: var(--bg-primary);
+}
+
+/* table alignment */
+.content-area article table th[align="center"],
+.content-area article table td[align="center"] {
+  text-align: center;
+}
+
+.content-area article table th[align="right"],
+.content-area article table td[align="right"] {
+  text-align: right;
+}
+
+/* definition lists */
+
+.content-area article dl {
+  margin: 1.5rem 0;
+}
+
+.content-area article dt {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 1rem;
+}
+
+.content-area article dt:first-child {
+  margin-top: 0;
+}
+
+.content-area article dd {
+  margin: 0.5rem 0 0 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* html elements */
+
+.content-area article details {
+  margin: 1.5rem 0;
+  border: 2px solid var(--wireframe);
+  padding: 1rem;
+  background-color: var(--bg-primary);
+}
+
+.content-area article details summary {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--accent);
+  user-select: none;
+}
+
+.content-area article details summary:hover {
+  opacity: 0.8;
+}
+
+.content-area article details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.content-area article details > *:not(summary) {
+  margin-left: 1rem;
+}
+
+/* math (if enabled) */
+
+.content-area article .math {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.content-area article .math-inline {
+  display: inline;
+}
+
+/* responsive adjustments */
+
+@media (max-width: 767px) {
+  .content-area article {
+    font-size: 1rem;
+  }
+  
+  .content-area article h1:not(.article-title) {
+    font-size: 1.5rem;
+  }
+  
+  .content-area article h2 {
+    font-size: 1.375rem;
+  }
+  
+  .content-area article h3 {
+    font-size: 1.125rem;
+  }
+  
+  .content-area article pre {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+  
+  .code-copy-button {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .content-area article table {
+    font-size: 0.9rem;
+  }
+  
+  .content-area article table th,
+  .content-area article table td {
+    padding: 0.5rem;
+  }
+}
+
+/* social links section */
+
+.content-area article ul.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.content-area article ul.social-links li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.content-area article ul.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--wireframe);
+  background-color: var(--bg-primary);
+  transition: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.content-area article ul.social-links a .material-symbols-outlined {
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.content-area article ul.social-links a:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.content-area article ul.social-links a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* mobile adjustments for social links */
+@media (max-width: 767px) {
+  .content-area article ul.social-links {
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  
+  .content-area article ul.social-links li {
+    flex: 0 1 auto;
+  }
+  
+  .content-area article ul.social-links a {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .content-area article ul.social-links a .material-symbols-outlined {
+    font-size: 1rem;
+  }
+}
+
+/* very small mobile - allow buttons to wrap to multiple rows */
+@media (max-width: 480px) {
+  .content-area article ul.social-links {
+    gap: 0.5rem;
+  }
+  
+  .content-area article ul.social-links a {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.625rem;
+  }
+}
+

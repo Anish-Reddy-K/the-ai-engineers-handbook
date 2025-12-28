@@ -1,0 +1,56 @@
+/* color theme variables */
+:root {
+  /* dark theme colors */
+  --dark-primary: #03060A;
+  --dark-secondary: #0D1117;
+  
+  /* light theme colors */
+  --light-primary: #FFF4DF;
+  --light-secondary: #FFFCEC;
+  
+  /* accent & wireframe */
+  --accent: #DD885C;
+  --wireframe: #7D8486;
+  
+  /* layout variables */
+  --sidebar-width: 250px;
+  --container-max-width: 1200px;
+  --content-max-width: 800px;
+  --spacing-desktop: 48px;
+  --spacing-mobile: 16px;
+  --breakpoint-mobile: 768px;
+  --breakpoint-overlap: 1480px;
+  --button-spacing: 80px;
+  --zone-a-height: auto;
+  --zone-b-height: 3.5rem;
+  --transition-speed: 0.3s;
+  --transition-easing: ease;
+  
+  /* z-index layers */
+  --z-background: -1;
+  --z-content: 1;
+  --z-header: 10;
+  --z-sidebar: 100;
+  --z-overlay: 200;
+  --z-controls: 1000;
+}
+
+/* dark mode color variables */
+body.dark-mode {
+  --bg-primary: var(--dark-primary);
+  --bg-secondary: var(--dark-secondary);
+  --text-primary: var(--light-primary);
+  --text-secondary: var(--light-secondary);
+  --grid-color: var(--wireframe);
+}
+
+/* light mode color variables */
+body.light-mode {
+  --bg-primary: var(--light-primary);
+  --bg-secondary: var(--light-secondary);
+  --text-primary: var(--dark-primary);
+  --text-secondary: var(--dark-secondary);
+  --grid-color: var(--wireframe);
+}
+
+

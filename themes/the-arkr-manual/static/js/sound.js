@@ -7,36 +7,36 @@
     let soundIcon = null;
     let clickSound = null;
 
-    // Initialize click sound audio element
+    // initialize click sound audio element
     function initClickSound() {
         if (!clickSound) {
-            clickSound = new Audio('/arkr-click.mp3');
-            clickSound.volume = 0.8; // Set volume to 30% for subtlety
+            clickSound = new Audio('/click.mp3');
+            clickSound.volume = 0.8;
             clickSound.preload = 'auto';
         }
     }
 
-    // Play click sound only if sound is enabled
+    // play click sound only if sound is enabled
     function playClickSound() {
         if (!soundEnabled) {
-            return; // Don't play if sound is disabled
+            return; // don't play if sound is disabled
         }
         
         if (!clickSound) {
             initClickSound();
         }
         
-        // Reset audio to start and play
+        // reset audio to start and play
         if (clickSound) {
             clickSound.currentTime = 0;
             clickSound.play().catch(function(error) {
-                // Silently fail if audio can't play (e.g., user hasn't interacted with page)
+                // silently fail if audio can't play (e.g., user hasn't interacted with page)
                 console.debug('Click sound playback prevented:', error);
             });
         }
     }
 
-    // Export playClickSound function globally so other scripts can use it
+    // export playClickSound function globally so other scripts can use it
     window.playClickSound = playClickSound;
 
     function updateSoundState() {
@@ -63,8 +63,8 @@
         updateSoundState();
         saveSoundState();
         
-        // Don't play sound on the toggle button itself to avoid feedback loop
-        // The state change is visual (icon changes), which is sufficient feedback
+        // don't play sound on the toggle button itself to avoid feedback loop
+        // the state change is visual (icon changes), which is sufficient feedback
     }
 
     function saveSoundState() {
@@ -89,19 +89,19 @@
         } catch (e) {
             console.warn('Could not load sound state from localStorage:', e);
         }
-        // Default to enabled if no saved state
+        // default to enabled if no saved state
         soundEnabled = true;
         return false;
     }
     
     function init() {
-        // Initialize click sound
+        // initialize click sound
         initClickSound();
         
-        // Load saved state
+        // load saved state
         loadSoundState();
         
-        // Set initial active state
+        // set initial active state
         updateSoundState();
         
         soundToggle = document.getElementById('sound-toggle');
@@ -110,12 +110,11 @@
         }
     }
 
-    // Initialize when DOM is ready
+    // initialize when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {
         init();
     }
 })();
-
 

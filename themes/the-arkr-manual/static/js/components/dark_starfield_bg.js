@@ -286,12 +286,10 @@
         requestAnimationFrame(animate);
     }
 
-    // Export init function for external use
     window.darkStarfieldBg = {
         init: init
     };
 
-    // Auto-initialize if canvas already exists
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
             const existingCanvas = document.getElementById('starfield-canvas');

@@ -20,7 +20,7 @@
 (function() {
   'use strict';
   
-  // Find the form within this component (closest email-signup-component)
+  // find the form within this component (closest email-signup-component)
   const components = document.querySelectorAll('.email-signup-component');
   
   components.forEach(function(component) {
@@ -28,14 +28,14 @@
     
     if (!form) return;
     
-    // Skip if already initialized
+    // skip if already initialized
     if (form.dataset.initialized === 'true') return;
     form.dataset.initialized = 'true';
     
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Play click sound
+      // play click sound
       if (window.playClickSound) {
         window.playClickSound();
       }
@@ -45,7 +45,7 @@
       const buttonText = submitButton.querySelector('.button-text');
       const originalButtonText = buttonText.textContent;
       
-      // Show loading state
+      // show loading state
       submitButton.disabled = true;
       submitButton.classList.remove('email-submit-button-success', 'email-submit-button-error');
       buttonText.textContent = 'Saving...';
@@ -55,7 +55,7 @@
         body: formData
       })
       .then(async response => {
-        // Try to parse response as JSON, even if status is not ok
+        // try to parse response as JSON, even if status is not ok
         let data;
         const contentType = response.headers.get('content-type');
         
@@ -66,12 +66,12 @@
             throw new Error('Invalid JSON response from server');
           }
         } else {
-          // If not JSON, read as text to see what we got
+          // if not JSON, read as text to see what we got
           const text = await response.text();
           throw new Error('Server returned non-JSON response: ' + text.substring(0, 100));
         }
         
-        // If response was not ok, use the error message from the server if available
+        // if response was not ok, use the error message from the server if available
         if (!response.ok) {
           throw new Error(data.message || 'Server error: ' + response.status);
         }
@@ -80,23 +80,23 @@
       })
       .then(data => {
         if (data.success) {
-          // Show success message in button
+          // show success message in button
           submitButton.classList.add('email-submit-button-success');
           submitButton.classList.remove('email-submit-button-error');
           buttonText.textContent = data.message || 'Submitted!';
-          submitButton.disabled = true; // Keep disabled on success
-          // Hide the input field
+          submitButton.disabled = true; // keep disabled on success
+          // hide the input field
           const emailInput = form.querySelector('.email-input');
           if (emailInput) {
             emailInput.style.display = 'none';
           }
         } else {
-          // Show error message in button and re-enable
+          // show error message in button and re-enable
           submitButton.classList.add('email-submit-button-error');
           submitButton.classList.remove('email-submit-button-success');
           buttonText.textContent = data.message || 'An error occurred. Please try again.';
           submitButton.disabled = false;
-          // Reset after 3 seconds
+          // reset after 3 seconds
           setTimeout(function() {
             buttonText.textContent = originalButtonText;
             submitButton.classList.remove('email-submit-button-error');
@@ -104,17 +104,17 @@
         }
       })
       .catch(error => {
-        // Show error in button and re-enable
+        // show error in button and re-enable
         console.error('Email signup error:', error);
         submitButton.classList.add('email-submit-button-error');
         submitButton.classList.remove('email-submit-button-success');
-        // Use the error message if it's informative, otherwise show generic message
+        // use the error message if it's informative, otherwise show generic message
         const errorMessage = error.message && error.message.includes('Server') 
           ? error.message 
           : 'Network error. Please try again.';
         buttonText.textContent = errorMessage;
         submitButton.disabled = false;
-        // Reset after 3 seconds
+        // reset after 3 seconds
         setTimeout(function() {
           buttonText.textContent = originalButtonText;
           submitButton.classList.remove('email-submit-button-error');

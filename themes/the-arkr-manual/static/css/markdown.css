@@ -1,9 +1,3 @@
-/* Markdown Content Styling */
-
-/* ==========================================================================
-   Base Typography & Spacing
-   ========================================================================== */
-
 .content-area article {
   font-family: 'IBM Plex Serif', serif;
   font-size: 1.1rem;
@@ -11,10 +5,7 @@
   color: var(--text-primary);
 }
 
-/* ==========================================================================
-   Article Structure
-   ========================================================================== */
-
+/* article structure */
 .article-content {
   width: 100%;
 }
@@ -49,7 +40,7 @@
   text-align: center;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  border-bottom: none !important; /* Remove border from article title */
+  border-bottom: none !important;
 }
 
 .article-meta {
@@ -86,7 +77,7 @@
   width: 100%;
 }
 
-/* Ensure markdown content inside article-body is styled */
+/* ensure markdown content inside article-body is styled */
 .article-body > * {
   font-family: 'IBM Plex Serif', serif;
   font-size: 1.1rem;
@@ -94,7 +85,7 @@
   color: var(--text-primary);
 }
 
-/* Apply existing article styles to article-body content */
+/* apply existing article styles to article-body content */
 .article-body h1,
 .article-body h2,
 .article-body h3,
@@ -175,7 +166,7 @@
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 2px;
-  transition: none; /* Instant, no delay */
+  transition: none;
 }
 
 .article-body a:hover {
@@ -269,10 +260,7 @@
   background-color: var(--bg-primary);
 }
 
-/* ==========================================================================
-   Draft Placeholder
-   ========================================================================== */
-
+/* draft placeholder */
 .draft-placeholder {
   text-align: center;
   padding: 3rem 1rem;
@@ -306,10 +294,10 @@
   line-height: 1.6;
 }
 
-/* Mobile adjustments for article structure */
+/* mobile adjustments for article structure */
 @media (max-width: 767px) {
   .article-title {
-    font-size: 2.5rem; /* Smaller on mobile but still bigger than H1 in article body */
+    font-size: 2.5rem;
   }
   
   .article-number {
@@ -329,20 +317,18 @@
   }
 }
 
-/* Paragraphs - proper spacing */
+/* paragraphs - proper spacing */
 .content-area article p {
   margin: 0 0 1.5rem 0;
 }
 
-/* Empty paragraphs (from blank lines in markdown) */
+/* empty paragraphs (from blank lines in markdown) */
 .content-area article p:empty {
   margin: 0 0 1rem 0;
   min-height: 1rem;
 }
 
-/* ==========================================================================
-   Headings
-   ========================================================================== */
+/* headings */
 
 .content-area article h1:not(.article-title) {
   font-family: 'Space Grotesk', sans-serif;
@@ -402,16 +388,14 @@
   line-height: 1.4;
 }
 
-/* First heading should have less top margin */
+/* first heading should have less top margin */
 .content-area article > h1:first-child,
 .content-area article > h2:first-child,
 .content-area article > h3:first-child {
   margin-top: 0;
 }
 
-/* ==========================================================================
-   Horizontal Rules
-   ========================================================================== */
+/* horizontal rules */
 
 .content-area article hr {
   border: none;
@@ -420,15 +404,13 @@
   height: 0;
 }
 
-/* ==========================================================================
-   Links
-   ========================================================================== */
+/* links */
 
 .content-area article a {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 2px;
-  transition: none; /* Instant, no delay */
+  transition: none;
 }
 
 .content-area article a:hover {
@@ -441,9 +423,7 @@
   border-radius: 2px;
 }
 
-/* ==========================================================================
-   Lists
-   ========================================================================== */
+/* lists */
 
 .content-area article ul,
 .content-area article ol {
@@ -456,7 +436,7 @@
   line-height: 1.6;
 }
 
-/* Nested lists - proper indentation */
+/* nested lists - proper indentation */
 .content-area article ul ul,
 .content-area article ol ol,
 .content-area article ul ol,
@@ -465,7 +445,7 @@
   padding-left: 1.5rem;
 }
 
-/* List items with nested content */
+/* list items with nested content */
 .content-area article li > p {
   margin: 0.5rem 0 0 0;
 }
@@ -474,16 +454,14 @@
   margin-top: 0.5rem;
 }
 
-/* Task lists */
+/* task lists */
 .content-area article input[type="checkbox"] {
   margin-right: 0.5rem;
   cursor: pointer;
   accent-color: var(--accent);
 }
 
-/* ==========================================================================
-   Blockquotes
-   ========================================================================== */
+/* blockquotes */
 
 .content-area article blockquote {
   border-left: 4px solid var(--accent);
@@ -513,15 +491,13 @@
   margin-bottom: 0.75rem;
 }
 
-/* Blockquote with lists */
+/* blockquote with lists */
 .content-area article blockquote ul,
 .content-area article blockquote ol {
   margin: 0.75rem 0;
 }
 
-/* ==========================================================================
-   Code Blocks
-   ========================================================================== */
+/* code blocks */
 
 .content-area article pre {
   position: relative;
@@ -539,7 +515,7 @@
   line-height: 1.5;
 }
 
-/* Override Hugo syntax highlighting backgrounds */
+/* override hugo syntax highlighting backgrounds */
 .content-area article pre.chroma,
 .content-area article .chroma,
 .content-area article pre.highlight,
@@ -547,7 +523,7 @@
   background-color: var(--bg-primary) !important;
 }
 
-/* Code blocks in light mode use dark mode background color */
+/* code blocks in light mode use dark mode background color */
 body.light-mode .content-area article pre,
 body.light-mode .content-area article pre.chroma,
 body.light-mode .content-area article .chroma,
@@ -556,14 +532,14 @@ body.light-mode .content-area article .highlight {
   background-color: #03060A !important;
 }
 
-/* Code block text in light mode needs to be light colored for readability */
+/* code block text in light mode needs to be light colored for readability */
 body.light-mode .content-area article pre code,
 body.light-mode .content-area article pre.chroma code,
 body.light-mode .content-area article .chroma code {
   color: #FFF4DF !important;
 }
 
-/* Copy button in light mode matches dark mode styling */
+/* copy button in light mode matches dark mode styling */
 body.light-mode .code-copy-button {
   background-color: #0D1117 !important;
   color: #FFF4DF !important;
@@ -587,7 +563,7 @@ body.light-mode .code-copy-button.copied {
   overflow-wrap: break-word;
 }
 
-/* Override syntax highlighting code element backgrounds */
+/* override syntax highlighting code element backgrounds */
 .content-area article pre code,
 .content-area article pre.chroma code,
 .content-area article .chroma code {
@@ -597,7 +573,7 @@ body.light-mode .code-copy-button.copied {
   overflow-wrap: break-word;
 }
 
-/* Code block wrapper for copy button */
+/* code block wrapper for copy button */
 .code-block-wrapper {
   position: relative;
   margin: 1.5rem 0;
@@ -607,7 +583,7 @@ body.light-mode .code-copy-button.copied {
   margin: 0;
 }
 
-/* Copy button */
+/* copy button */
 .code-copy-button {
   position: absolute;
   top: 0.5rem;
@@ -619,7 +595,7 @@ body.light-mode .code-copy-button.copied {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   cursor: pointer;
-  transition: none; /* Instant, no delay */
+  transition: none;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -642,9 +618,7 @@ body.light-mode .code-copy-button.copied {
   font-size: 1rem;
 }
 
-/* ==========================================================================
-   Inline Code
-   ========================================================================== */
+/* inline code */
 
 .content-area article code {
   background-color: var(--bg-primary);
@@ -663,9 +637,7 @@ body.light-mode .code-copy-button.copied {
   color: var(--text-primary);
 }
 
-/* ==========================================================================
-   Images
-   ========================================================================== */
+/* images */
 
 .content-area article img {
   max-width: 100%;
@@ -682,7 +654,7 @@ body.light-mode .code-copy-button.copied {
   vertical-align: middle;
 }
 
-/* Image wrapper for better control */
+/* image wrapper for better control */
 .content-area article figure {
   margin: 1.5rem 0;
   text-align: center;
@@ -700,7 +672,7 @@ body.light-mode .code-copy-button.copied {
   font-family: 'IBM Plex Serif', serif;
 }
 
-/* Image caption wrapper (created by JavaScript) */
+/* image caption wrapper (created by JavaScript) */
 .content-area article figure.image-caption-wrapper {
   margin: 1.5rem 0;
   display: flex;
@@ -720,9 +692,7 @@ body.light-mode .code-copy-button.copied {
   text-align: center;
 }
 
-/* ==========================================================================
-   Tables
-   ========================================================================== */
+/* tables */
 
 .content-area article table {
   width: 100%;
@@ -755,7 +725,7 @@ body.light-mode .code-copy-button.copied {
   background-color: var(--bg-primary);
 }
 
-/* Table alignment */
+/* table alignment */
 .content-area article table th[align="center"],
 .content-area article table td[align="center"] {
   text-align: center;
@@ -766,9 +736,7 @@ body.light-mode .code-copy-button.copied {
   text-align: right;
 }
 
-/* ==========================================================================
-   Definition Lists
-   ========================================================================== */
+/* definition lists */
 
 .content-area article dl {
   margin: 1.5rem 0;
@@ -790,9 +758,7 @@ body.light-mode .code-copy-button.copied {
   color: var(--text-secondary);
 }
 
-/* ==========================================================================
-   HTML Elements
-   ========================================================================== */
+/* html elements */
 
 .content-area article details {
   margin: 1.5rem 0;
@@ -821,9 +787,7 @@ body.light-mode .code-copy-button.copied {
   margin-left: 1rem;
 }
 
-/* ==========================================================================
-   Math (if enabled)
-   ========================================================================== */
+/* math (if enabled) */
 
 .content-area article .math {
   overflow-x: auto;
@@ -834,9 +798,7 @@ body.light-mode .code-copy-button.copied {
   display: inline;
 }
 
-/* ==========================================================================
-   Responsive Adjustments
-   ========================================================================== */
+/* responsive adjustments */
 
 @media (max-width: 767px) {
   .content-area article {
@@ -872,6 +834,97 @@ body.light-mode .code-copy-button.copied {
   .content-area article table th,
   .content-area article table td {
     padding: 0.5rem;
+  }
+}
+
+/* social links section */
+
+.content-area article ul.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.content-area article ul.social-links li {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.content-area article ul.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--wireframe);
+  background-color: var(--bg-primary);
+  transition: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.content-area article ul.social-links a .material-symbols-outlined {
+  font-size: 1.125rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.content-area article ul.social-links a:hover {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.content-area article ul.social-links a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* mobile adjustments for social links */
+@media (max-width: 767px) {
+  .content-area article ul.social-links {
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  
+  .content-area article ul.social-links li {
+    flex: 0 1 auto;
+  }
+  
+  .content-area article ul.social-links a {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .content-area article ul.social-links a .material-symbols-outlined {
+    font-size: 1rem;
+  }
+}
+
+/* very small mobile - allow buttons to wrap to multiple rows */
+@media (max-width: 480px) {
+  .content-area article ul.social-links {
+    gap: 0.5rem;
+  }
+  
+  .content-area article ul.social-links a {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.625rem;
   }
 }
 

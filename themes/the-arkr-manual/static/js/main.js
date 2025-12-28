@@ -14,27 +14,27 @@
             toggleIcon = themeToggle ? themeToggle.querySelector('.toggle-icon') : null;
         }
         
-        // Button is always inactive - it shows what you'll switch TO, not current theme
+        // button is always inactive - it shows what you'll switch TO, not current theme
         if (themeToggle) {
             themeToggle.classList.remove('active');
         }
         
-        // Icon shows what theme you'll switch TO when clicked
-        // Dark mode → show sun (to switch to light)
-        // Light mode → show moon (to switch to dark)
+        // icon shows what theme you'll switch TO when clicked
+        // dark mode → show sun (to switch to light)
+        // light mode → show moon (to switch to dark)
         if (toggleIcon) {
             toggleIcon.textContent = currentTheme === 'dark' ? 'light_mode' : 'dark_mode';
         }
     }
 
     function loadDarkStarfield() {
-        // Switch body class immediately (no transition)
+        // switch body class immediately (no transition)
         if (document.body) {
             document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
         }
 
-        // Get or create canvas for starfield
+        // get or create canvas for starfield
         if (!starfieldCanvas) {
             starfieldCanvas = document.getElementById('starfield-canvas');
             if (!starfieldCanvas) {
@@ -48,19 +48,19 @@
             }
         }
 
-        // Show canvas, hide grid
+        // show canvas, hide grid
         if (starfieldCanvas) {
             starfieldCanvas.style.display = 'block';
         }
 
-        // Initialize starfield immediately (wait for script to be available)
+        // initialize starfield immediately (wait for script to be available)
         if (starfieldCanvas) {
-            // Wait for darkStarfieldBg to be available
+            // wait for darkStarfieldBg to be available
             const initStarfield = () => {
                 if (window.darkStarfieldBg && window.darkStarfieldBg.init) {
                     window.darkStarfieldBg.init('starfield-canvas');
                 } else {
-                    // Retry after a short delay if not ready yet
+                    // retry after a short delay if not ready yet
                     setTimeout(initStarfield, 50);
                 }
             };
@@ -69,17 +69,17 @@
     }
 
     function loadLightGrid() {
-        // Switch body class immediately (no transition)
+        // switch body class immediately (no transition)
         if (document.body) {
             document.body.classList.remove('dark-mode');
             document.body.classList.add('light-mode');
         }
 
-        // Hide starfield canvas immediately
+        // hide starfield canvas immediately
         if (starfieldCanvas) {
             starfieldCanvas.style.display = 'none';
         } else {
-            // Try to get canvas if it exists
+            // try to get canvas if it exists
             starfieldCanvas = document.getElementById('starfield-canvas');
             if (starfieldCanvas) {
                 starfieldCanvas.style.display = 'none';
@@ -88,7 +88,7 @@
     }
 
     function switchTheme() {
-        // Play click sound
+        // play click sound
         if (window.playClickSound) {
             window.playClickSound();
         }
@@ -126,13 +126,13 @@
         } catch (e) {
             console.warn('Could not load theme state from localStorage:', e);
         }
-        // Default to dark if no saved state
+        // default to dark if no saved state
         currentTheme = 'dark';
         return false;
     }
 
     function applyTheme() {
-        // Apply theme immediately (before DOMContentLoaded if possible)
+        // apply theme immediately (before DOMContentLoaded if possible)
         if (document.body) {
             if (currentTheme === 'dark') {
                 loadDarkStarfield();
@@ -143,27 +143,27 @@
     }
 
     function init() {
-        // Update button state after DOM is ready
+        // update button state after DOM is ready
         updateThemeState();
         
-        // Set up theme toggle button
+        // set up theme toggle button
         themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
             themeToggle.addEventListener('click', switchTheme);
         }
     }
 
-    // Load theme state - check inline script first, then localStorage
+    // load theme state - check inline script first, then localStorage
     if (window.__savedTheme) {
         currentTheme = window.__savedTheme;
     } else {
         loadThemeState();
     }
     
-    // Apply theme immediately - this runs synchronously when script loads
+    // apply theme immediately - this runs synchronously when script loads
     function applyThemeImmediately() {
         if (document.body) {
-            // Force apply theme by directly manipulating classes
+            // force apply theme by directly manipulating classes
             if (currentTheme === 'dark') {
                 document.body.classList.remove('light-mode');
                 document.body.classList.add('dark-mode');
@@ -171,16 +171,16 @@
                 document.body.classList.remove('dark-mode');
                 document.body.classList.add('light-mode');
             }
-            // Also call the full function for canvas handling
+            // also call the full function for canvas handling
             applyTheme();
             return true;
         }
         return false;
     }
     
-    // Try to apply immediately (script is at bottom of body, so body should exist)
+    // try to apply immediately (script is at bottom of body, so body should exist)
     if (!applyThemeImmediately()) {
-        // If body doesn't exist, wait for it (shouldn't happen, but safety check)
+        // if body doesn't exist, wait for it (shouldn't happen, but safety check)
         const checkBody = setInterval(function() {
             if (applyThemeImmediately()) {
                 clearInterval(checkBody);
@@ -188,14 +188,14 @@
         }, 10);
     }
     
-    // Also apply on DOMContentLoaded as backup
+    // also apply on DOMContentLoaded as backup
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function() {
             applyTheme();
         });
     }
 
-    // Initialize when DOM is ready
+    // initialize when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {

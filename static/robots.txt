@@ -1,0 +1,11 @@
+# robots.txt for The ARKR Manual
+# https://manual.arkr.ca
+
+User-agent: *
+Allow: /
+
+# Disallow draft pages (they shouldn't be indexed anyway, but just in case)
+Disallow: /*?draft=true
+
+# Sitemap location
+Sitemap: https://manual.arkr.ca/sitemap.xml

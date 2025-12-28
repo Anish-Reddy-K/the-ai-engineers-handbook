@@ -1,14 +1,15 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://manual.arkr.ca/'
 languageCode = 'en-us'
 title = 'The Arkr Manual'
 theme = 'the-arkr-manual'
 uglyURLs = true
+disableLiveReload = true
 
 [permalinks]
-  # Flat URL structure: /slug.html (with uglyURLs) - no chapter name in URL
-  # This ensures all pages use only their slug from front matter
+  # flat URL structure: /slug.html (with uglyURLs) - no chapter name in URL
+  # this ensures all pages use only their slug from front matter
   default = "/:slug/"
-  # Explicitly override section permalinks to remove section name from URL
+  # explicitly override section permalinks to remove section name from URL
   "01-digital-fundamentals" = "/:slug/"
   "02-hardware-architecture" = "/:slug/"
   "03-programming-fundamentals" = "/:slug/"
@@ -25,8 +26,8 @@ uglyURLs = true
   "14-internet-scale-architectures" = "/:slug/"
 
 [params]
-  # Environment-based draft handling
-  # Set HUGO_ENV=dev or HUGO_ENV=prod when running hugo server
+  # environment-based draft handling
+  # set HUGO_ENV=dev or HUGO_ENV=prod when running hugo server
 
 [markup]
   [markup.goldmark]
@@ -36,3 +37,16 @@ uglyURLs = true
       taskLists = true
       typographer = true
       linkify = true
+
+# sitemap configuration for SEO
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# Ignore Obsidian-specific folders (not content for Hugo)
+ignoreFiles = [
+  "^content/attachments/",
+  "^content/excalidraw/",
+  "^content/templates/"
+]

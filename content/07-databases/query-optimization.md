@@ -7,3 +7,4 @@ draft: true
 
 EXPLAIN/ANALYZE, query planners, index selection, join strategies, common performance pitfalls.
 
+

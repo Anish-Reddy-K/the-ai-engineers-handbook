@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Typography */
+/* typography */
 body {
     min-height: 100vh;
     position: relative;
@@ -33,21 +33,21 @@ code, pre {
     z-index: -1;
 }
 
-/* Hide background on mobile and tablet - solid color matching content */
-/* Only desktop (>= 1200px) shows starfield/grid backgrounds */
+/* hide background on mobile and tablet - solid color matching content */
+/* only desktop (>= 1200px) shows starfield/grid backgrounds */
 @media (max-width: 1199px) {
     #background-container {
         display: none;
     }
     
-    /* Set page background to secondary colors on mobile/tablet */
-    /* Dark mode: #0D1117 */
+    /* set page background to secondary colors on mobile/tablet */
+    /* dark mode: #0D1117 */
     html.prefer-dark-mode,
     body.dark-mode {
         background-color: #0D1117;
     }
     
-    /* Light mode: #FFFCEC */
+    /* light mode: #FFFCEC */
     html.prefer-light-mode,
     body.light-mode {
         background-color: #FFFCEC;
@@ -58,4 +58,3 @@ code, pre {
     }
 }
 
-/* Legacy theme toggle styles removed - now in Zone B action cluster */

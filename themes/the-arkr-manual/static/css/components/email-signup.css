@@ -1,4 +1,4 @@
-/* Email Signup Component */
+/* email signup component */
 
 .email-signup-component {
   margin: 2rem 0;
@@ -43,7 +43,7 @@ body.light-mode .email-signup-component {
   border: 2px solid var(--wireframe);
   border-radius: 0;
   outline: none;
-  transition: none; /* Instant, no delay */
+  transition: none;
   box-sizing: border-box;
 }
 
@@ -73,7 +73,7 @@ body.light-mode .email-signup-component {
 }
 
 .email-submit-button:hover:not(:disabled) {
-  background-color: #C97A4F; /* Slightly darker shade of accent */
+  background-color: #C97A4F;
   border-color: #C97A4F;
 }
 
@@ -86,15 +86,15 @@ body.light-mode .email-signup-component {
   display: inline-block;
 }
 
-/* Success state - button shows success message */
+/* success state - button shows success message */
 .email-submit-button-success {
   background-color: var(--accent);
   border-color: var(--accent);
 }
 
-/* Error state - button shows error message */
+/* error state - button shows error message */
 .email-submit-button-error {
-  background-color: #C97A4F; /* Slightly darker for error state */
+  background-color: #C97A4F;
   border-color: #C97A4F;
 }
 

@@ -1,6 +1,4 @@
-/* Layout System */
-
-/* Main Container */
+/* main container */
 .main-container {
   position: relative;
   min-height: 100vh;
@@ -8,7 +6,7 @@
   z-index: var(--z-content);
 }
 
-/* Sidebar - Positioned independently */
+/* sidebar - positioned independently */
 .sidebar {
   width: var(--sidebar-width);
   position: fixed;
@@ -53,11 +51,10 @@
   overflow-y: auto;
   padding: 16px;
   min-height: 0;
-  /* Prevent flash by ensuring content is ready before showing */
   will-change: scroll-position;
 }
 
-/* Main Content Area - Always centered, fixed position */
+/* main content area - always centered, fixed position */
 .main-content {
   position: relative;
   width: 100%;
@@ -80,40 +77,40 @@
   flex-direction: column;
 }
 
-/* Legacy button styles removed - buttons now in Zone B */
+/* legacy button styles removed - buttons now in zone b */
 
-/* Sidebar Hidden State - Desktop (above overlap breakpoint) */
+/* sidebar hidden state - desktop (above overlap breakpoint) */
 @media (min-width: 1480px) {
   .sidebar-hidden .sidebar {
     display: none;
   }
   
-  /* Content wrapper always stays in the exact same centered position */
+  /* content wrapper always stays in the exact same centered position */
   .content-wrapper {
-    /* Position is fixed - always centered regardless of sidebar */
+    /* position is fixed - always centered regardless of sidebar */
   }
 }
 
-/* Overlap Breakpoint - Sidebar auto-hides and becomes overlay when opened */
+/* overlap breakpoint - sidebar auto-hides and becomes overlay when opened */
 @media (min-width: 768px) and (max-width: 1479px) {
-  /* Auto-hide sidebar by default at this breakpoint */
+  /* auto-hide sidebar by default at this breakpoint */
   .sidebar {
     display: none;
-    z-index: calc(var(--z-sidebar) + 1); /* Higher z-index for overlay */
+    z-index: calc(var(--z-sidebar) + 1);
   }
   
-  /* Show sidebar when manually opened */
+  /* show sidebar when manually opened */
   .sidebar-open .sidebar {
-    display: flex; /* Maintain flex layout for scrolling to work */
+    display: flex;
   }
   
-  /* Ensure sidebar doesn't affect content layout */
+  /* ensure sidebar doesn't affect content layout */
   .content-wrapper {
-    /* Keep the max-width consistent with the design spec */
+    /* keep the max-width consistent with the design spec */
   }
 }
 
-/* Mobile Styles */
+/* mobile styles */
 @media (max-width: 767px) {
   .sidebar {
     display: none;
@@ -138,7 +135,7 @@
   }
   
   .sidebar-open .sidebar {
-    display: flex; /* Maintain flex layout for scrolling to work */
+    display: flex;
   }
   
   .main-content {
@@ -151,10 +148,10 @@
     border-right: none;
   }
   
-  /* Buttons now in Zone B, no need for fixed positioning */
+  /* buttons now in zone b, no need for fixed positioning */
 }
 
-/* Mobile and tablet - ensure all containers match background */
+/* mobile and tablet - ensure all containers match background */
 @media (max-width: 1199px) {
   .main-container,
   .main-content,
@@ -164,7 +161,7 @@
 }
 
 /* ==========================================================================
-   Sidebar Navigation (Table of Contents)
+   sidebar navigation (table of contents)
    ========================================================================== */
 
 .sidebar-nav {
@@ -172,7 +169,7 @@
 }
 
 .sidebar-chapter {
-  margin-bottom: 0.5rem; /* Reduced from 1rem */
+  margin-bottom: 0.5rem;
 }
 
 .sidebar-chapter:last-child {
@@ -186,23 +183,23 @@
   justify-content: space-between;
   background: transparent;
   border: none;
-  padding: 0.375rem 0; /* Reduced padding */
-  margin: 0 0 0.25rem 0; /* Reduced margin */
+  padding: 0.375rem 0;
+  margin: 0 0 0.25rem 0;
   cursor: pointer;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 0.8125rem; /* Slightly increased from 0.75rem */
+  font-size: 0.8125rem;
   font-weight: 700;
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: none; /* Instant, no delay */
+  transition: none;
 }
 
 .sidebar-chapter-toggle:hover {
   color: var(--accent);
 }
 
-/* Highlight current chapter title */
+/* highlight current chapter title */
 .sidebar-chapter-expanded .sidebar-chapter-toggle {
   color: var(--accent);
 }
@@ -218,7 +215,7 @@
   font-size: 1rem;
   flex-shrink: 0;
   margin-left: 0.5rem;
-  transition: none; /* Instant, no animation */
+  transition: none;
 }
 
 .sidebar-chapter-collapsed .sidebar-chapter-icon {
@@ -233,29 +230,29 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 0.75rem; /* Increased to accommodate bullets */
+  padding-left: 0.75rem;
   overflow: hidden;
-  transition: none; /* Instant, no animation */
+  transition: none;
 }
 
-/* Default: ALL chapters start collapsed to prevent flash */
+/* default: all chapters start collapsed to prevent flash */
 .sidebar-chapter .sidebar-article-list {
   display: none;
 }
 
-/* Only expanded chapters show their articles */
+/* only expanded chapters show their articles */
 .sidebar-chapter-expanded .sidebar-article-list {
   display: block;
   margin-top: 0.25rem;
 }
 
 .sidebar-article-item {
-  margin: 0.125rem 0; /* Reduced from 0.25rem */
+  margin: 0.125rem 0;
   position: relative;
-  padding-left: 0.75rem; /* Space for bullet */
+  padding-left: 0.75rem;
 }
 
-/* Bullet point for all articles */
+/* bullet point for all articles */
 .sidebar-article-item::before {
   content: "•";
   position: absolute;
@@ -267,10 +264,10 @@
   opacity: 0.5;
   line-height: 1;
   pointer-events: none;
-  margin-top: -0.05rem; /* Fine-tune: slight upward adjustment for perfect centering */
+  margin-top: -0.05rem;
 }
 
-/* Active article bullet - accent color */
+/* active article bullet - accent color */
 .sidebar-article-item.active-item::before {
   color: var(--accent);
   opacity: 1;
@@ -279,18 +276,17 @@
 
 .sidebar-article-link {
   font-family: 'IBM Plex Serif', serif;
-  font-size: 0.9rem; /* Slightly increased from 0.75rem */
+  font-size: 0.9rem;
   font-weight: 400;
   color: var(--text-secondary);
   text-decoration: none;
-  padding: 0.0625rem 0; /* Reduced from 0.125rem */
-  transition: none; /* Instant, no delay */
-  /* Allow wrapping to 2 lines */
+  padding: 0.0625rem 0;
+  transition: none;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  line-height: 1.3; /* Reduced from 1.4 */
+  line-height: 1.3;
   word-wrap: break-word;
 }
 
@@ -304,17 +300,17 @@
   font-weight: 600;
 }
 
-/* Mobile adjustments for sidebar navigation */
+/* mobile adjustments for sidebar navigation */
 @media (max-width: 767px) {
   .sidebar-title {
-    font-size: 1.125rem; /* Larger title on mobile */
+    font-size: 1.125rem;
   }
   
   .sidebar-chapter-toggle {
-    font-size: 0.9375rem; /* Slightly increased from 0.875rem */
-    padding: 0.625rem 0.5rem; /* Reduced padding but still maintains touch target */
-    margin: 0.125rem 0; /* Reduced spacing between items */
-    min-height: 24px; /* Minimum touch target size */
+    font-size: 0.9375rem;
+    padding: 0.625rem 0.5rem;
+    margin: 0.125rem 0;
+    min-height: 24px;
     display: flex;
     align-items: center;
   }
@@ -337,63 +333,61 @@
   }
   
   .sidebar-chapter {
-    margin-bottom: 0.5rem; /* Reduced spacing between chapters */
+    margin-bottom: 0.5rem;
   }
   
   .sidebar-content {
-    padding: 0.75rem; /* Reduced padding on mobile */
+    padding: 0.75rem;
   }
   
   .sidebar-header {
-    padding: 0.75rem; /* Reduced padding on mobile */
+    padding: 0.75rem;
   }
 }
 
-/* Tablet/iPad adjustments for sidebar navigation (768px - 1024px) */
+/* tablet/ipad adjustments for sidebar navigation (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .sidebar-title {
     font-size: 1rem;
   }
   
   .sidebar-chapter-toggle {
-    font-size: 0.9375rem; /* Slightly increased from 0.875rem */
-    padding: 0.75rem 0.5rem; /* More padding for better touch targets */
+    font-size: 0.9375rem;
+    padding: 0.75rem 0.5rem;
     margin: 0.25rem 0;
-    min-height: 48px; /* Larger touch target for tablet */
+    min-height: 48px;
     display: flex;
     align-items: center;
   }
   
   .sidebar-article-link {
-    font-size: 0.9375rem; /* Slightly increased from 0.875rem */
-    padding: 0.4rem 0.5rem; /* More padding for better touch targets */
+    font-size: 0.9375rem;
+    padding: 0.4rem 0.5rem;
     line-height: 1.5;
-    -webkit-line-clamp: 3; /* Allow 3 lines for longer titles */
-    min-height: 24px; /* Larger touch target for tablet */
+    -webkit-line-clamp: 3;
+    min-height: 24px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
   }
   
   .sidebar-article-item {
-    margin: 0.03125rem 0; /* Minimal spacing between items */
+    margin: 0.03125rem 0;
     padding-left: 0.5rem;
-    min-height: 24px;/* Larger touch target for tablet */
+    min-height: 24px;
     display: flex;
     align-items: center;
   }
   
   .sidebar-chapter {
-    margin-bottom: 0.5rem; /* More spacing between chapters */
+    margin-bottom: 0.5rem;
   }
   
   .sidebar-content {
-    padding: 1rem; /* More padding on tablet */
+    padding: 1rem;
   }
   
   .sidebar-header {
-    padding: 1rem; /* More padding on tablet */
+    padding: 1rem;
   }
 }
-
-
 

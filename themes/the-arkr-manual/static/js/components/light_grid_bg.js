@@ -7,7 +7,6 @@
         body.classList.add(theme === 'light' ? 'light-mode' : 'dark-mode');
     }
 
-    // Export functions for external use
     window.lightGridBg = {
         setTheme: setTheme
     };

@@ -1,7 +1,7 @@
-// Zone A scrolls naturally with the page content
-// Zone B is sticky and stays at the top
+// zone A scrolls naturally with the page content
+// zone B is sticky and stays at the top
 
-// Typewriter Effect Implementation
+// typewriter effect implementation
 (function() {
   'use strict';
 
@@ -15,7 +15,7 @@
   const typewriterElement = document.getElementById('typewriter-text');
   
   if (!typewriterElement) {
-    return; // Exit if element doesn't exist
+    return; // exit if element doesn't exist
   }
 
   let currentWordIndex = 0;
@@ -29,26 +29,26 @@
     const currentWord = words[currentWordIndex];
     
     if (isDeleting) {
-      // Delete characters
+      // delete characters
       typewriterElement.textContent = currentWord.substring(0, currentCharIndex - 1);
       currentCharIndex--;
       
       if (currentCharIndex === 0) {
-        // Finished deleting, switch to next word
+        // finished deleting, switch to next word
         isDeleting = false;
         currentWordIndex = (currentWordIndex + 1) % words.length;
-        setTimeout(typeWriter, 500); // Brief pause before typing next word
+        setTimeout(typeWriter, 500); // brief pause before typing next word
         return;
       }
       
       setTimeout(typeWriter, deletingSpeed);
     } else {
-      // Type characters
+      // type characters
       typewriterElement.textContent = currentWord.substring(0, currentCharIndex + 1);
       currentCharIndex++;
       
       if (currentCharIndex === currentWord.length) {
-        // Finished typing word, pause then start deleting
+        // finished typing word, pause then start deleting
         isDeleting = true;
         setTimeout(typeWriter, pauseDuration);
         return;
@@ -58,7 +58,7 @@
     }
   }
 
-  // Start the typewriter effect
+  // start the typewriter effect
   typeWriter();
 })();
 

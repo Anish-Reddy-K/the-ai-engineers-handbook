@@ -1,5 +1,5 @@
-/context
 /public
 .env
-.env.local
-.env.*.local
+.DS_Store
+sync.sh
+upload.sh

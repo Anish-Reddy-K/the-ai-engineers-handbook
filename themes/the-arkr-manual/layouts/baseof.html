@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }}</title>
   
-  <!-- Google Fonts -->
+  <!-- google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <!-- Material Symbols -->
+  <!-- material symbols -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
   
-  <!-- Theme CSS -->
+  <!-- theme CSS -->
   <link rel="stylesheet" href="{{ "css/variables.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/layout.css" | relURL }}">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="{{ "css/components/light_grid_bg.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/components/email-signup.css" | relURL }}">
   
-  <!-- Apply theme immediately before body renders -->
+  <!-- apply theme immediately before body renders -->
   <script>
     (function() {
       try {
@@ -31,9 +31,9 @@
         if (saved) {
           const state = JSON.parse(saved);
           const theme = state.theme;
-          // Store theme preference for main.js to read
+          // store theme preference for main.js to read
           window.__savedTheme = theme;
-          // Apply theme class to html element
+          // apply theme class to html element
           if (theme === 'light') {
             document.documentElement.classList.add('prefer-light-mode');
             document.documentElement.classList.remove('prefer-dark-mode');
@@ -53,14 +53,14 @@
   </script>
 </head>
 <body class="dark-mode">
-  <!-- Background Container -->
+  <!-- background container -->
   <div id="background-container">
     <canvas id="starfield-canvas" class="starfield-background"></canvas>
   </div>
   
-  <!-- Main Layout Container -->
+  <!-- main layout container -->
   <div class="main-container">
-    <!-- Sidebar -->
+    <!-- sidebar -->
     <aside class="sidebar" role="complementary" aria-label="Sidebar navigation">
       <div class="sidebar-header">
         <h2 class="sidebar-title">Table of Contents</h2>
@@ -70,10 +70,10 @@
       </div>
     </aside>
     
-    <!-- Main Content -->
+    <!-- main content -->
     <main class="main-content" role="main">
       <div class="content-wrapper">
-        <!-- Zone A: Title and Description -->
+        <!-- zone A: title and description -->
         <header class="header-zone-a">
           <div class="zone-a-left">
             <p class="site-description">
@@ -90,7 +90,7 @@
           </div>
         </header>
         
-        <!-- Zone B: Breadcrumb and Actions (Sticky) -->
+        <!-- zone B: breadcrumb and actions (sticky) -->
         <header class="header-zone-b">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             {{ block "breadcrumb" . }}
@@ -111,7 +111,7 @@
           </div>
         </header>
         
-        <!-- Main Content Area -->
+        <!-- main content area -->
         <div class="content-area">
           {{ block "main" . }}{{ end }}
         </div>

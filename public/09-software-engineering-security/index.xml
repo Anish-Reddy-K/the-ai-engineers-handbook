@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>09. Software Engineering &amp; Security on The Arkr Manual</title>
-    <link>http://localhost:58159/09-software-engineering-security/index.html</link>
+    <link>http://localhost:57096/09-software-engineering-security/index.html</link>
     <description>Recent content in 09. Software Engineering &amp; Security on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:58159/09-software-engineering-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57096/09-software-engineering-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Version Control</title>
-      <link>http://localhost:58159/version-control.html</link>
+      <link>http://localhost:57096/version-control.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/version-control.html</guid>
+      <guid>http://localhost:57096/version-control.html</guid>
       <description>&lt;p&gt;Git internals, Blobs/Trees/Commits, Merging, Branching strategies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SDLC</title>
-      <link>http://localhost:58159/sdlc.html</link>
+      <link>http://localhost:57096/sdlc.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/sdlc.html</guid>
+      <guid>http://localhost:57096/sdlc.html</guid>
       <description>&lt;p&gt;Agile, Waterfall, Scrum, JIRA, the lifecycle of a feature.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing</title>
-      <link>http://localhost:58159/testing.html</link>
+      <link>http://localhost:57096/testing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/testing.html</guid>
+      <guid>http://localhost:57096/testing.html</guid>
       <description>&lt;p&gt;Unit tests, Integration tests, End-to-End (E2E) tests, TDD, Mocks/Stubs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CI/CD</title>
-      <link>http://localhost:58159/ci-cd.html</link>
+      <link>http://localhost:57096/ci-cd.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/ci-cd.html</guid>
+      <guid>http://localhost:57096/ci-cd.html</guid>
       <description>&lt;p&gt;Continuous Integration pipelines, Continuous Deployment, Artifacts, Linters.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deployment Strategies</title>
-      <link>http://localhost:58159/deployment-strategies.html</link>
+      <link>http://localhost:57096/deployment-strategies.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/deployment-strategies.html</guid>
+      <guid>http://localhost:57096/deployment-strategies.html</guid>
       <description>&lt;p&gt;Blue-green deployments, canary releases, rolling deployments, feature flags, A/B testing infrastructure, rollback strategies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Infrastructure as Code</title>
-      <link>http://localhost:58159/infrastructure-as-code.html</link>
+      <link>http://localhost:57096/infrastructure-as-code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/infrastructure-as-code.html</guid>
+      <guid>http://localhost:57096/infrastructure-as-code.html</guid>
       <description>&lt;p&gt;Terraform, Ansible, declarative infrastructure, &amp;ldquo;Pet vs Cattle&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Authentication (AuthN)</title>
-      <link>http://localhost:58159/authentication-authn.html</link>
+      <link>http://localhost:57096/authentication-authn.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/authentication-authn.html</guid>
+      <guid>http://localhost:57096/authentication-authn.html</guid>
       <description>&lt;p&gt;&amp;ldquo;Who are you?&amp;rdquo;, Passwords, MFA, SSO.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Authorization (AuthZ)</title>
-      <link>http://localhost:58159/authorization-authz.html</link>
+      <link>http://localhost:57096/authorization-authz.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/authorization-authz.html</guid>
+      <guid>http://localhost:57096/authorization-authz.html</guid>
       <description>&lt;p&gt;&amp;ldquo;What can you do?&amp;rdquo;, RBAC (Role Based), ABAC (Attribute Based).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Auth Protocols</title>
-      <link>http://localhost:58159/auth-protocols.html</link>
+      <link>http://localhost:57096/auth-protocols.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/auth-protocols.html</guid>
+      <guid>http://localhost:57096/auth-protocols.html</guid>
       <description>&lt;p&gt;OAuth 2.0 flows, OpenID Connect (OIDC), SAML.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Session Management</title>
-      <link>http://localhost:58159/session-management.html</link>
+      <link>http://localhost:57096/session-management.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/session-management.html</guid>
+      <guid>http://localhost:57096/session-management.html</guid>
       <description>&lt;p&gt;Cookies (Secure/HttpOnly), JSON Web Tokens (JWT), Refresh tokens.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>http://localhost:58159/cryptography.html</link>
+      <link>http://localhost:57096/cryptography.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/cryptography.html</guid>
+      <guid>http://localhost:57096/cryptography.html</guid>
       <description>&lt;p&gt;Hashing (SHA-256), Salting, Peppering, Symmetric (AES), Asymmetric (RSA).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Web Attacks</title>
-      <link>http://localhost:58159/web-attacks.html</link>
+      <link>http://localhost:57096/web-attacks.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/web-attacks.html</guid>
+      <guid>http://localhost:57096/web-attacks.html</guid>
       <description>&lt;p&gt;SQL Injection, XSS (Cross-Site Scripting), CSRF, Man-in-the-Middle.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network Attacks</title>
-      <link>http://localhost:58159/network-attacks.html</link>
+      <link>http://localhost:57096/network-attacks.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/network-attacks.html</guid>
+      <guid>http://localhost:57096/network-attacks.html</guid>
       <description>&lt;p&gt;DDOS (Volumetric vs. Protocol), Syn floods, amplification attacks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Security Best Practices</title>
-      <link>http://localhost:58159/security-best-practices.html</link>
+      <link>http://localhost:57096/security-best-practices.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/security-best-practices.html</guid>
+      <guid>http://localhost:57096/security-best-practices.html</guid>
       <description>&lt;p&gt;Principle of Least Privilege, Zero Trust, Secrets management.&lt;/p&gt;</description>
     </item>
   </channel>

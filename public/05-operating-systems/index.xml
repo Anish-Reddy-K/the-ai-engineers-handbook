@@ -2,128 +2,128 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>05. Operating Systems on The Arkr Manual</title>
-    <link>http://localhost:58159/05-operating-systems/index.html</link>
+    <link>http://localhost:57096/05-operating-systems/index.html</link>
     <description>Recent content in 05. Operating Systems on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:58159/05-operating-systems/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57096/05-operating-systems/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kernel</title>
-      <link>http://localhost:58159/kernel.html</link>
+      <link>http://localhost:57096/kernel.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/kernel.html</guid>
+      <guid>http://localhost:57096/kernel.html</guid>
       <description>&lt;p&gt;Kernel space vs. User space, Protection Rings, the role of the OS.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Boot Process</title>
-      <link>http://localhost:58159/boot-process.html</link>
+      <link>http://localhost:57096/boot-process.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/boot-process.html</guid>
+      <guid>http://localhost:57096/boot-process.html</guid>
       <description>&lt;p&gt;BIOS/UEFI, Bootloaders (GRUB), Kernel initialization, Init systems (systemd).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Processes</title>
-      <link>http://localhost:58159/processes.html</link>
+      <link>http://localhost:57096/processes.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/processes.html</guid>
+      <guid>http://localhost:57096/processes.html</guid>
       <description>&lt;p&gt;The Process Control Block (PCB), PID, process states (Ready, Running, Blocked).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Threads</title>
-      <link>http://localhost:58159/threads.html</link>
+      <link>http://localhost:57096/threads.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/threads.html</guid>
+      <guid>http://localhost:57096/threads.html</guid>
       <description>&lt;p&gt;Light-weight processes, shared memory, User threads vs. Kernel threads.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Scheduling</title>
-      <link>http://localhost:58159/scheduling.html</link>
+      <link>http://localhost:57096/scheduling.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/scheduling.html</guid>
+      <guid>http://localhost:57096/scheduling.html</guid>
       <description>&lt;p&gt;Context switching, Preemptive multitasking, Round Robin, FIFO, Priority queues.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>http://localhost:58159/concurrency.html</link>
+      <link>http://localhost:57096/concurrency.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/concurrency.html</guid>
+      <guid>http://localhost:57096/concurrency.html</guid>
       <description>&lt;p&gt;Race conditions, Critical sections, atomicity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Synchronization</title>
-      <link>http://localhost:58159/synchronization.html</link>
+      <link>http://localhost:57096/synchronization.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/synchronization.html</guid>
+      <guid>http://localhost:57096/synchronization.html</guid>
       <description>&lt;p&gt;Mutexes, Semaphores, Locks, Monitors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deadlocks</title>
-      <link>http://localhost:58159/deadlocks.html</link>
+      <link>http://localhost:57096/deadlocks.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/deadlocks.html</guid>
+      <guid>http://localhost:57096/deadlocks.html</guid>
       <description>&lt;p&gt;The 4 conditions for deadlock, prevention vs. avoidance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memory Management</title>
-      <link>http://localhost:58159/memory-management.html</link>
+      <link>http://localhost:57096/memory-management.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/memory-management.html</guid>
+      <guid>http://localhost:57096/memory-management.html</guid>
       <description>&lt;p&gt;Virtual Memory, Paging, Page Tables, MMU (Memory Management Unit).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Swapping</title>
-      <link>http://localhost:58159/swapping.html</link>
+      <link>http://localhost:57096/swapping.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/swapping.html</guid>
+      <guid>http://localhost:57096/swapping.html</guid>
       <description>&lt;p&gt;Page faults, Thrashing, Swap space on disk.&lt;/p&gt;</description>
     </item>
     <item>
       <title>File Systems</title>
-      <link>http://localhost:58159/file-systems.html</link>
+      <link>http://localhost:57096/file-systems.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/file-systems.html</guid>
+      <guid>http://localhost:57096/file-systems.html</guid>
       <description>&lt;p&gt;Inodes, File descriptors, Journals, NTFS vs. EXT4 vs. FAT.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Permissions</title>
-      <link>http://localhost:58159/permissions.html</link>
+      <link>http://localhost:57096/permissions.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/permissions.html</guid>
+      <guid>http://localhost:57096/permissions.html</guid>
       <description>&lt;p&gt;Users, Groups, rwx bits, Chmod/Chown, Root privileges.&lt;/p&gt;</description>
     </item>
     <item>
       <title>System Calls</title>
-      <link>http://localhost:58159/system-calls.html</link>
+      <link>http://localhost:57096/system-calls.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/system-calls.html</guid>
+      <guid>http://localhost:57096/system-calls.html</guid>
       <description>&lt;p&gt;The API to the kernel (open, read, write, fork, exec).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Task Automation</title>
-      <link>http://localhost:58159/task-automation.html</link>
+      <link>http://localhost:57096/task-automation.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/task-automation.html</guid>
+      <guid>http://localhost:57096/task-automation.html</guid>
       <description>&lt;p&gt;Cron jobs, daemons, background services, scripting tasks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virtualization</title>
-      <link>http://localhost:58159/virtualization.html</link>
+      <link>http://localhost:57096/virtualization.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/virtualization.html</guid>
+      <guid>http://localhost:57096/virtualization.html</guid>
       <description>&lt;p&gt;Hypervisors (Type 1 vs. Type 2), Virtual Machines, emulation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Containers</title>
-      <link>http://localhost:58159/containers.html</link>
+      <link>http://localhost:57096/containers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/containers.html</guid>
+      <guid>http://localhost:57096/containers.html</guid>
       <description>&lt;p&gt;Docker, Namespaces (isolation), Cgroups (resource limits), Images vs. Containers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Container Orchestration</title>
-      <link>http://localhost:58159/container-orchestration.html</link>
+      <link>http://localhost:57096/container-orchestration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/container-orchestration.html</guid>
+      <guid>http://localhost:57096/container-orchestration.html</guid>
       <description>&lt;p&gt;Kubernetes architecture, pods, services, deployments, scaling, Helm charts, container networking.&lt;/p&gt;</description>
     </item>
   </channel>

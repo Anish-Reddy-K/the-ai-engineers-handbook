@@ -2,135 +2,135 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>04. Algorithms &amp; Data Structures on The Arkr Manual</title>
-    <link>http://localhost:58159/04-algorithms-data-structures/index.html</link>
+    <link>http://localhost:57096/04-algorithms-data-structures/index.html</link>
     <description>Recent content in 04. Algorithms &amp; Data Structures on The Arkr Manual</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:58159/04-algorithms-data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57096/04-algorithms-data-structures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big-O Notation</title>
-      <link>http://localhost:58159/big-o-notation.html</link>
+      <link>http://localhost:57096/big-o-notation.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/big-o-notation.html</guid>
+      <guid>http://localhost:57096/big-o-notation.html</guid>
       <description>&lt;p&gt;Time complexity, space complexity, best/worst/average case, O(1) vs O(n) vs O(n^2).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Arrays</title>
-      <link>http://localhost:58159/arrays.html</link>
+      <link>http://localhost:57096/arrays.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/arrays.html</guid>
+      <guid>http://localhost:57096/arrays.html</guid>
       <description>&lt;p&gt;Contiguous memory, cache locality, O(1) access, fixed size limitations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linked Lists</title>
-      <link>http://localhost:58159/linked-lists.html</link>
+      <link>http://localhost:57096/linked-lists.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/linked-lists.html</guid>
+      <guid>http://localhost:57096/linked-lists.html</guid>
       <description>&lt;p&gt;Pointers, nodes, singly vs. doubly linked, O(1) insertions/deletions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Stacks &amp; Queues</title>
-      <link>http://localhost:58159/stacks-queues.html</link>
+      <link>http://localhost:57096/stacks-queues.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/stacks-queues.html</guid>
+      <guid>http://localhost:57096/stacks-queues.html</guid>
       <description>&lt;p&gt;LIFO vs. FIFO, push/pop operations, circular buffers.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hash Tables</title>
-      <link>http://localhost:58159/hash-tables.html</link>
+      <link>http://localhost:57096/hash-tables.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/hash-tables.html</guid>
+      <guid>http://localhost:57096/hash-tables.html</guid>
       <description>&lt;p&gt;Hashing functions, buckets, key-value mapping, O(1) average lookup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hash Collisions</title>
-      <link>http://localhost:58159/hash-collisions.html</link>
+      <link>http://localhost:57096/hash-collisions.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/hash-collisions.html</guid>
+      <guid>http://localhost:57096/hash-collisions.html</guid>
       <description>&lt;p&gt;Chaining (linked lists), Open Addressing (probing), load factors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trees</title>
-      <link>http://localhost:58159/trees.html</link>
+      <link>http://localhost:57096/trees.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/trees.html</guid>
+      <guid>http://localhost:57096/trees.html</guid>
       <description>&lt;p&gt;Root, nodes, leaves, height, depth, n-ary trees.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Binary Search Trees</title>
-      <link>http://localhost:58159/binary-search-trees.html</link>
+      <link>http://localhost:57096/binary-search-trees.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/binary-search-trees.html</guid>
+      <guid>http://localhost:57096/binary-search-trees.html</guid>
       <description>&lt;p&gt;BST properties, O(log n) lookup, balancing issues.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heaps</title>
-      <link>http://localhost:58159/heaps.html</link>
+      <link>http://localhost:57096/heaps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/heaps.html</guid>
+      <guid>http://localhost:57096/heaps.html</guid>
       <description>&lt;p&gt;Min-heap vs. Max-heap, binary heap implementation, priority queues.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Graphs</title>
-      <link>http://localhost:58159/graphs.html</link>
+      <link>http://localhost:57096/graphs.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/graphs.html</guid>
+      <guid>http://localhost:57096/graphs.html</guid>
       <description>&lt;p&gt;Nodes (vertices), Edges, directed vs. undirected, weighted graphs, adjacency matrices vs. lists.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tries</title>
-      <link>http://localhost:58159/tries.html</link>
+      <link>http://localhost:57096/tries.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/tries.html</guid>
+      <guid>http://localhost:57096/tries.html</guid>
       <description>&lt;p&gt;Prefix trees, autocomplete implementation, dictionary storage.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bloom Filters</title>
-      <link>http://localhost:58159/bloom-filters.html</link>
+      <link>http://localhost:57096/bloom-filters.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/bloom-filters.html</guid>
+      <guid>http://localhost:57096/bloom-filters.html</guid>
       <description>&lt;p&gt;Probabilistic structures, false positives, membership testing, space efficiency.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sorting: Simple</title>
-      <link>http://localhost:58159/sorting-simple.html</link>
+      <link>http://localhost:57096/sorting-simple.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/sorting-simple.html</guid>
+      <guid>http://localhost:57096/sorting-simple.html</guid>
       <description>&lt;p&gt;Bubble sort, Selection sort, Insertion sort (O(n^2)).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sorting: Efficient</title>
-      <link>http://localhost:58159/sorting-efficient.html</link>
+      <link>http://localhost:57096/sorting-efficient.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/sorting-efficient.html</guid>
+      <guid>http://localhost:57096/sorting-efficient.html</guid>
       <description>&lt;p&gt;Merge Sort (Divide &amp;amp; Conquer), Quick Sort (Partitioning), stability.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Search Algorithms</title>
-      <link>http://localhost:58159/search-algorithms.html</link>
+      <link>http://localhost:57096/search-algorithms.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/search-algorithms.html</guid>
+      <guid>http://localhost:57096/search-algorithms.html</guid>
       <description>&lt;p&gt;Linear search, Binary search (requires sorted data).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Graph Traversal</title>
-      <link>http://localhost:58159/graph-traversal.html</link>
+      <link>http://localhost:57096/graph-traversal.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/graph-traversal.html</guid>
+      <guid>http://localhost:57096/graph-traversal.html</guid>
       <description>&lt;p&gt;Breadth-First Search (BFS), Depth-First Search (DFS), use cases for each.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pathfinding</title>
-      <link>http://localhost:58159/pathfinding.html</link>
+      <link>http://localhost:57096/pathfinding.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/pathfinding.html</guid>
+      <guid>http://localhost:57096/pathfinding.html</guid>
       <description>&lt;p&gt;Dijkstra’s Algorithm, A* Search, shortest path problems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dynamic Programming</title>
-      <link>http://localhost:58159/dynamic-programming.html</link>
+      <link>http://localhost:57096/dynamic-programming.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58159/dynamic-programming.html</guid>
+      <guid>http://localhost:57096/dynamic-programming.html</guid>
       <description>&lt;p&gt;Memoization, Tabulation, breaking down overlapping sub-problems (e.g., Fibonacci).&lt;/p&gt;</description>
     </item>
   </channel>

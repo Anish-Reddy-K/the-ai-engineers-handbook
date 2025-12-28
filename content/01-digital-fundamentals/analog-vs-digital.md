@@ -1,6 +1,6 @@
 ---
-title: "Analog vs. Digital"
-slug: "analog-vs-digital"
+title: Analog vs. Digital
+slug: analog-vs-digital
 weight: 2
 draft: true
 ---

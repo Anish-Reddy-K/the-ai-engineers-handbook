@@ -54,6 +54,6 @@ for root, _, files in os.walk(hugo_posts_dir):
                 f.write(new_content)
 
 # summary
-print(f"Images copied: {len(os.listdir(static_images_dir)) if os.path.exists(static_images_dir) else 0}")
+print(f"images copied: {len(os.listdir(static_images_dir)) if os.path.exists(static_images_dir) else 0}")
 if missing:
-    print("Missing in attachments (not copied):", ", ".join(sorted(set(missing))))
+    print("missing in attachments (not copied):", ", ".join(sorted(set(missing))))

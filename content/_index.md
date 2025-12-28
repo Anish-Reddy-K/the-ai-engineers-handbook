@@ -1,5 +1,5 @@
 ---
-title: "The Manual"
+title: "Home - The ARKR Manual"
 ---
 The open-source blueprint for Computer Science, Software Engineering, Digital Systems and System Design. A free, illustrated curriculum taking you from raw binary to complex system architecture.
 
@@ -43,7 +43,7 @@ I'm an engineer and a builder. I research these topics obsessively until I under
 <details>
 <summary>Where should I start?</summary>
 
-Chapter 1. We start at the very basics (Bits & Information) and build our way up to the cloud (AI & Distributed Systems).
+[Article 1](https://manual.arkr.ca/bit.html). We start at the very basics (Bits & Information) and build our way up to the cloud (AI & Distributed Systems).
 </details>
 
 <details>
@@ -56,7 +56,7 @@ You will have understood the fundamentals that make up the software we use every
 - **[Obsidian](https://obsidian.md/):** where I organize my thoughts and write the articles.
 - **[Excalidraw](https://github.com/excalidraw/excalidraw):** for creating the visual diagrams.
 - **[HUGO](https://gohugo.io/):** to support my pipeline of obsidian(markdown) to the web(HTML).
-- **[Github](https://github.com/Anish-Reddy-K/the-arkr-manual.git):** where I store all my articles, and to webhook the obsidian to the web pipeline on blog updates.
+- **[Github](https://github.com/Anish-Reddy-K/the-arkr-manual.git):** where I store all my articles, and to webhook the obsidian to web pipeline on blog updates.
 - **[makingsoftware.com](https://www.makingsoftware.com/):** design inspiration.
 
 ## Connect

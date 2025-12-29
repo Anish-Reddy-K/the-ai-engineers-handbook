@@ -7,5 +7,54 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://manual.arkr.ca/11-applied-engineering-utilities-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Link Shortener</title>
+      <link>https://manual.arkr.ca/the-link-shortener.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-link-shortener.html</guid>
+      <description>&lt;p&gt;Base62 encoding, hash collisions, separate ID generation, read-heavy caching strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Pastebin</title>
+      <link>https://manual.arkr.ca/the-pastebin.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-pastebin.html</guid>
+      <description>&lt;p&gt;Data expiration policies, object storage vs. block storage, generating unique readable keys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Notification System</title>
+      <link>https://manual.arkr.ca/the-notification-system.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-notification-system.html</guid>
+      <description>&lt;p&gt;Fan-out patterns, message queues (RabbitMQ), push notifications (APNS/FCM), retry logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Job Scheduler</title>
+      <link>https://manual.arkr.ca/the-job-scheduler.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-job-scheduler.html</guid>
+      <description>&lt;p&gt;Distributed task queues, delayed execution, handling worker failures, &amp;ldquo;at least once&amp;rdquo; delivery.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Rate Limiter</title>
+      <link>https://manual.arkr.ca/the-rate-limiter.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-rate-limiter.html</guid>
+      <description>&lt;p&gt;Token Bucket vs. Leaky Bucket algorithms, distributed throttling with Redis/Lua, API quotas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Web Crawler</title>
+      <link>https://manual.arkr.ca/the-web-crawler.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-web-crawler.html</guid>
+      <description>&lt;p&gt;URL frontiers, politeness policies, robots.txt parsing, dealing with cyclic graphs, DNS resolution at scale.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The ID Generator</title>
+      <link>https://manual.arkr.ca/the-id-generator.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-id-generator.html</guid>
+      <description>&lt;p&gt;Twitter’s Snowflake algorithm, sequence numbers, clock synchronization, collision avoidance in distributed systems.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

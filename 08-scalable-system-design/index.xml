@@ -7,5 +7,124 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://manual.arkr.ca/08-scalable-system-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scaling</title>
+      <link>https://manual.arkr.ca/scaling.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/scaling.html</guid>
+      <description>&lt;p&gt;Vertical (hardware upgrade) vs. Horizontal (add more nodes).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Load Balancing</title>
+      <link>https://manual.arkr.ca/load-balancing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/load-balancing.html</guid>
+      <description>&lt;p&gt;L4 (Transport) vs. L7 (Application) balancing, Round Robin, Least Connections.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stateless vs. Stateful</title>
+      <link>https://manual.arkr.ca/stateless-vs-stateful.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/stateless-vs-stateful.html</guid>
+      <description>&lt;p&gt;Handling sessions, sticky sessions vs. external stores (Redis).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Message Queues</title>
+      <link>https://manual.arkr.ca/message-queues.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/message-queues.html</guid>
+      <description>&lt;p&gt;Producers, Consumers, Brokers (RabbitMQ), decoupling services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pub/Sub Systems</title>
+      <link>https://manual.arkr.ca/pubsub-systems.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/pubsub-systems.html</guid>
+      <description>&lt;p&gt;Kafka, Topics, Partitions, Consumer Groups, event streaming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Event Sourcing &amp; CQRS</title>
+      <link>https://manual.arkr.ca/event-sourcing-cqrs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/event-sourcing-cqrs.html</guid>
+      <description>&lt;p&gt;Event stores, storing events instead of state, projections, read/write model separation, event replay, temporal queries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CDNs</title>
+      <link>https://manual.arkr.ca/cdns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/cdns.html</guid>
+      <description>&lt;p&gt;Edge locations, caching static assets, reducing latency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributed Consensus</title>
+      <link>https://manual.arkr.ca/distributed-consensus.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/distributed-consensus.html</guid>
+      <description>&lt;p&gt;The Generals Problem, Paxos, Raft, Quorums.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributed Transactions</title>
+      <link>https://manual.arkr.ca/distributed-transactions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/distributed-transactions.html</guid>
+      <description>&lt;p&gt;Two-Phase Commit (2PC), Sagas pattern.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Idempotency</title>
+      <link>https://manual.arkr.ca/idempotency.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/idempotency.html</guid>
+      <description>&lt;p&gt;Making retries safe, unique request IDs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fault Tolerance</title>
+      <link>https://manual.arkr.ca/fault-tolerance.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/fault-tolerance.html</guid>
+      <description>&lt;p&gt;Circuit Breakers, Bulkheads, Retries with Exponential Backoff.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Consistent Hashing</title>
+      <link>https://manual.arkr.ca/consistent-hashing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/consistent-hashing.html</guid>
+      <description>&lt;p&gt;Distributed hash tables, adding/removing nodes without downtime.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unique IDs</title>
+      <link>https://manual.arkr.ca/unique-ids.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/unique-ids.html</guid>
+      <description>&lt;p&gt;UUIDs, Snowflake IDs (Twitter), solving distributed ordering.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://manual.arkr.ca/microservices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/microservices.html</guid>
+      <description>&lt;p&gt;Monolith decomposition, Service Discovery, API Gateways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Service Mesh</title>
+      <link>https://manual.arkr.ca/service-mesh.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/service-mesh.html</guid>
+      <description>&lt;p&gt;Sidecar proxy pattern, Istio, Envoy, Linkerd, mTLS between services, traffic management, mesh-level observability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://manual.arkr.ca/observability.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/observability.html</guid>
+      <description>&lt;p&gt;Structured Logging, Metrics (Prometheus), Distributed Tracing (OpenTelemetry).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>https://manual.arkr.ca/serverless.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/serverless.html</guid>
+      <description>&lt;p&gt;Function-as-a-Service (Lambda), Cold starts, Event triggers.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

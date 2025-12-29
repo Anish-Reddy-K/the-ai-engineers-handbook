@@ -7,5 +7,110 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://manual.arkr.ca/07-databases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://manual.arkr.ca/database.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/database.html</guid>
+      <description>&lt;p&gt;Flat files vs. DBMS, integrity, structured storage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Relational Databases (SQL)</title>
+      <link>https://manual.arkr.ca/relational-databases-sql.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/relational-databases-sql.html</guid>
+      <description>&lt;p&gt;Tables, Rows, Columns, Schemas, Primary Keys, Foreign Keys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQL Language</title>
+      <link>https://manual.arkr.ca/sql-language.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sql-language.html</guid>
+      <description>&lt;p&gt;SELECT, INSERT, UPDATE, DELETE, WHERE, JOINs (Inner, Left, Right).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Normalization</title>
+      <link>https://manual.arkr.ca/normalization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/normalization.html</guid>
+      <description>&lt;p&gt;1NF, 2NF, 3NF, reducing redundancy, data integrity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ACID Properties</title>
+      <link>https://manual.arkr.ca/acid-properties.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/acid-properties.html</guid>
+      <description>&lt;p&gt;Atomicity, Consistency, Isolation, Durability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Indexing</title>
+      <link>https://manual.arkr.ca/indexing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/indexing.html</guid>
+      <description>&lt;p&gt;B-Trees, how indexes speed up reads but slow down writes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Query Optimization</title>
+      <link>https://manual.arkr.ca/query-optimization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/query-optimization.html</guid>
+      <description>&lt;p&gt;EXPLAIN/ANALYZE, query planners, index selection, join strategies, common performance pitfalls.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transactions</title>
+      <link>https://manual.arkr.ca/transactions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/transactions.html</guid>
+      <description>&lt;p&gt;Commit, Rollback, Savepoints, Concurrency control.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database Migrations</title>
+      <link>https://manual.arkr.ca/database-migrations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/database-migrations.html</guid>
+      <description>&lt;p&gt;Schema evolution, migration tools (Flyway, Liquibase, Alembic), backward-compatible changes, zero-downtime migrations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NoSQL Databases</title>
+      <link>https://manual.arkr.ca/nosql-databases.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/nosql-databases.html</guid>
+      <description>&lt;p&gt;Non-relational, Document stores (MongoDB), Key-Value (Redis), Columnar (Cassandra), Graph (Neo4j).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Replication</title>
+      <link>https://manual.arkr.ca/replication.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/replication.html</guid>
+      <description>&lt;p&gt;Master-Slave, Master-Master, Read replicas, replication lag.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sharding</title>
+      <link>https://manual.arkr.ca/sharding.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sharding.html</guid>
+      <description>&lt;p&gt;Horizontal partitioning, shard keys, re-balancing data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CAP Theorem</title>
+      <link>https://manual.arkr.ca/cap-theorem.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/cap-theorem.html</guid>
+      <description>&lt;p&gt;Consistency vs. Availability vs. Partition Tolerance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Caching Strategies</title>
+      <link>https://manual.arkr.ca/caching-strategies.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/caching-strategies.html</guid>
+      <description>&lt;p&gt;Write-through, Write-back, Look-aside, Eviction policies (LRU).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Engineering</title>
+      <link>https://manual.arkr.ca/data-engineering.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/data-engineering.html</guid>
+      <description>&lt;p&gt;Data Warehouses (OLAP) vs. Databases (OLTP), ETL pipelines, Data Lakes.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

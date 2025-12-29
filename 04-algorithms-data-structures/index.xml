@@ -7,5 +7,131 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://manual.arkr.ca/04-algorithms-data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big-O Notation</title>
+      <link>https://manual.arkr.ca/big-o-notation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/big-o-notation.html</guid>
+      <description>&lt;p&gt;Time complexity, space complexity, best/worst/average case, O(1) vs O(n) vs O(n^2).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arrays</title>
+      <link>https://manual.arkr.ca/arrays.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/arrays.html</guid>
+      <description>&lt;p&gt;Contiguous memory, cache locality, O(1) access, fixed size limitations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linked Lists</title>
+      <link>https://manual.arkr.ca/linked-lists.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/linked-lists.html</guid>
+      <description>&lt;p&gt;Pointers, nodes, singly vs. doubly linked, O(1) insertions/deletions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stacks &amp; Queues</title>
+      <link>https://manual.arkr.ca/stacks-queues.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/stacks-queues.html</guid>
+      <description>&lt;p&gt;LIFO vs. FIFO, push/pop operations, circular buffers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hash Tables</title>
+      <link>https://manual.arkr.ca/hash-tables.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/hash-tables.html</guid>
+      <description>&lt;p&gt;Hashing functions, buckets, key-value mapping, O(1) average lookup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hash Collisions</title>
+      <link>https://manual.arkr.ca/hash-collisions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/hash-collisions.html</guid>
+      <description>&lt;p&gt;Chaining (linked lists), Open Addressing (probing), load factors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trees</title>
+      <link>https://manual.arkr.ca/trees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/trees.html</guid>
+      <description>&lt;p&gt;Root, nodes, leaves, height, depth, n-ary trees.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Binary Search Trees</title>
+      <link>https://manual.arkr.ca/binary-search-trees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/binary-search-trees.html</guid>
+      <description>&lt;p&gt;BST properties, O(log n) lookup, balancing issues.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Heaps</title>
+      <link>https://manual.arkr.ca/heaps.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/heaps.html</guid>
+      <description>&lt;p&gt;Min-heap vs. Max-heap, binary heap implementation, priority queues.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Graphs</title>
+      <link>https://manual.arkr.ca/graphs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/graphs.html</guid>
+      <description>&lt;p&gt;Nodes (vertices), Edges, directed vs. undirected, weighted graphs, adjacency matrices vs. lists.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tries</title>
+      <link>https://manual.arkr.ca/tries.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/tries.html</guid>
+      <description>&lt;p&gt;Prefix trees, autocomplete implementation, dictionary storage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bloom Filters</title>
+      <link>https://manual.arkr.ca/bloom-filters.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/bloom-filters.html</guid>
+      <description>&lt;p&gt;Probabilistic structures, false positives, membership testing, space efficiency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sorting: Simple</title>
+      <link>https://manual.arkr.ca/sorting-simple.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sorting-simple.html</guid>
+      <description>&lt;p&gt;Bubble sort, Selection sort, Insertion sort (O(n^2)).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sorting: Efficient</title>
+      <link>https://manual.arkr.ca/sorting-efficient.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sorting-efficient.html</guid>
+      <description>&lt;p&gt;Merge Sort (Divide &amp;amp; Conquer), Quick Sort (Partitioning), stability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Search Algorithms</title>
+      <link>https://manual.arkr.ca/search-algorithms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/search-algorithms.html</guid>
+      <description>&lt;p&gt;Linear search, Binary search (requires sorted data).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Graph Traversal</title>
+      <link>https://manual.arkr.ca/graph-traversal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/graph-traversal.html</guid>
+      <description>&lt;p&gt;Breadth-First Search (BFS), Depth-First Search (DFS), use cases for each.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pathfinding</title>
+      <link>https://manual.arkr.ca/pathfinding.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/pathfinding.html</guid>
+      <description>&lt;p&gt;Dijkstra’s Algorithm, A* Search, shortest path problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dynamic Programming</title>
+      <link>https://manual.arkr.ca/dynamic-programming.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/dynamic-programming.html</guid>
+      <description>&lt;p&gt;Memoization, Tabulation, breaking down overlapping sub-problems (e.g., Fibonacci).&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

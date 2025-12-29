@@ -8,11 +8,1551 @@
     <language>en-us</language>
     <atom:link href="https://manual.arkr.ca/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI vs. ML vs. DL</title>
+      <link>https://manual.arkr.ca/ai-vs-ml-vs-dl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ai-vs-ml-vs-dl.html</guid>
+      <description>&lt;p&gt;Definitions, the history of &amp;ldquo;Good Old Fashioned AI&amp;rdquo; (GOFAI) vs. connectionism, and the hierarchy of intelligence.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Big-O Notation</title>
+      <link>https://manual.arkr.ca/big-o-notation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/big-o-notation.html</guid>
+      <description>&lt;p&gt;Time complexity, space complexity, best/worst/average case, O(1) vs O(n) vs O(n^2).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bit</title>
+      <link>https://manual.arkr.ca/bit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/bit.html</guid>
+      <description>&lt;p&gt;Shannon’s information theory, entropy, resolution of uncertainty, the binary choice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clock</title>
+      <link>https://manual.arkr.ca/clock.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/clock.html</guid>
+      <description>&lt;p&gt;Oscillators, quartz crystals, frequency (Hz), clock cycles, overclocking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database</title>
+      <link>https://manual.arkr.ca/database.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/database.html</guid>
+      <description>&lt;p&gt;Flat files vs. DBMS, integrity, structured storage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kernel</title>
+      <link>https://manual.arkr.ca/kernel.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/kernel.html</guid>
+      <description>&lt;p&gt;Kernel space vs. User space, Protection Rings, the role of the OS.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Machine Code</title>
+      <link>https://manual.arkr.ca/machine-code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/machine-code.html</guid>
+      <description>&lt;p&gt;Opcodes, operands, raw binary instructions, hex dumps.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Stack</title>
+      <link>https://manual.arkr.ca/network-stack.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/network-stack.html</guid>
+      <description>&lt;p&gt;The OSI 7-Layer Model, The TCP/IP Model, encapsulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scaling</title>
+      <link>https://manual.arkr.ca/scaling.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/scaling.html</guid>
+      <description>&lt;p&gt;Vertical (hardware upgrade) vs. Horizontal (add more nodes).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Blog</title>
+      <link>https://manual.arkr.ca/the-blog.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-blog.html</guid>
+      <description>&lt;p&gt;Rich text rendering, canonical URLs, SEO optimization, caching static content, recommendation tagging.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Distributed Cache</title>
+      <link>https://manual.arkr.ca/the-distributed-cache.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-distributed-cache.html</guid>
+      <description>&lt;p&gt;Eviction policies (LRU/LFU), consistent hashing for partitioning, gossip protocols for cluster state.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Feed</title>
+      <link>https://manual.arkr.ca/the-feed.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-feed.html</guid>
+      <description>&lt;p&gt;Fan-out-on-write vs. Fan-out-on-load, hybrid approaches for celebrities, timeline merging, redis clusters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Link Shortener</title>
+      <link>https://manual.arkr.ca/the-link-shortener.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-link-shortener.html</guid>
+      <description>&lt;p&gt;Base62 encoding, hash collisions, separate ID generation, read-heavy caching strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Version Control</title>
+      <link>https://manual.arkr.ca/version-control.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/version-control.html</guid>
+      <description>&lt;p&gt;Git internals, Blobs/Trees/Commits, Merging, Branching strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Analog vs. Digital</title>
       <link>https://manual.arkr.ca/analog-vs-digital.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://manual.arkr.ca/analog-vs-digital.html</guid>
       <description>&lt;p&gt;Continuous vs. discrete signals, sampling, quantization error, why digital wins for storage.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://manual.arkr.ca/images/Screenshot%202025-12-28%20at%206.54.04%20PM.png&#34; alt=&#34;Screenshot 2025-12-28 at 6.54.04 PM&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;heading-level-1&#34;&gt;Heading Level 1&lt;/h1&gt;&#xA;&lt;p&gt;This is a test page to demonstrate all markdown formatting elements for The ARKR Manual theme.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading-level-2&#34;&gt;Heading Level 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading-level-3&#34;&gt;Heading Level 3&lt;/h3&gt;&#xA;&lt;h4 id=&#34;heading-level-4&#34;&gt;Heading Level 4&lt;/h4&gt;&#xA;&lt;h5 id=&#34;heading-level-5&#34;&gt;Heading Level 5&lt;/h5&gt;&#xA;&lt;h6 id=&#34;heading-level-6&#34;&gt;Heading Level 6&lt;/h6&gt;&#xA;&lt;h2 id=&#34;text-formatting&#34;&gt;Text Formatting&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;bold text&lt;/strong&gt;&#xA;&lt;em&gt;italic text&lt;/em&gt;&#xA;&lt;em&gt;&lt;strong&gt;bold and italic together&lt;/strong&gt;&lt;/em&gt;&#xA;&lt;del&gt;strikethrough text&lt;/del&gt;&#xA;&lt;code&gt;code&lt;/code&gt; for technical terms&#xA;&lt;mark&gt;Highlighted text&lt;/mark&gt;&#xA;&lt;sub&gt;Subscript&lt;/sub&gt; and &lt;sup&gt;Superscript&lt;/sup&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arrays</title>
+      <link>https://manual.arkr.ca/arrays.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/arrays.html</guid>
+      <description>&lt;p&gt;Contiguous memory, cache locality, O(1) access, fixed size limitations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assembly Language</title>
+      <link>https://manual.arkr.ca/assembly-language.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/assembly-language.html</guid>
+      <description>&lt;p&gt;Mnemonics, moving data to registers, basic jumps, 1:1 mapping to hardware.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Boot Process</title>
+      <link>https://manual.arkr.ca/boot-process.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/boot-process.html</guid>
+      <description>&lt;p&gt;BIOS/UEFI, Bootloaders (GRUB), Kernel initialization, Init systems (systemd).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Link Layer</title>
+      <link>https://manual.arkr.ca/link-layer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/link-layer.html</guid>
+      <description>&lt;p&gt;MAC Addresses, Ethernet frames, Collision domains, ARP.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Load Balancing</title>
+      <link>https://manual.arkr.ca/load-balancing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/load-balancing.html</guid>
+      <description>&lt;p&gt;L4 (Transport) vs. L7 (Application) balancing, Round Robin, Least Connections.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memory Elements</title>
+      <link>https://manual.arkr.ca/memory-elements.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/memory-elements.html</guid>
+      <description>&lt;p&gt;Feedback loops, SR Latch, D Flip-Flop, storing a bit of state.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Relational Databases (SQL)</title>
+      <link>https://manual.arkr.ca/relational-databases-sql.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/relational-databases-sql.html</guid>
+      <description>&lt;p&gt;Tables, Rows, Columns, Schemas, Primary Keys, Foreign Keys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SDLC</title>
+      <link>https://manual.arkr.ca/sdlc.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sdlc.html</guid>
+      <description>&lt;p&gt;Agile, Waterfall, Scrum, JIRA, the lifecycle of a feature.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Statistics for ML</title>
+      <link>https://manual.arkr.ca/statistics-for-ml.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/statistics-for-ml.html</guid>
+      <description>&lt;p&gt;Probability, Bayes&amp;rsquo; Theorem, Standard Deviation, and the Normal Distribution.&lt;/p&gt;&#xA;&lt;p&gt;Probability, Bayes&amp;rsquo; Theorem, Standard Deviation, Distributions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Chat App</title>
+      <link>https://manual.arkr.ca/the-chat-app.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-chat-app.html</guid>
+      <description>&lt;p&gt;XMPP vs. custom protocols, maintaining millions of WebSocket connections (Erlang/Elixir models), end-to-end encryption (Signal protocol).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The E-Commerce Store</title>
+      <link>https://manual.arkr.ca/the-e-commerce-store.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-e-commerce-store.html</guid>
+      <description>&lt;p&gt;Product catalog schemas, inventory locking (pessimistic vs. optimistic), shopping cart persistence, checkout race conditions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Message Broker</title>
+      <link>https://manual.arkr.ca/the-message-broker.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-message-broker.html</guid>
+      <description>&lt;p&gt;Log-structured storage, partitions, consumer groups, offset management, sequential I/O performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Pastebin</title>
+      <link>https://manual.arkr.ca/the-pastebin.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-pastebin.html</guid>
+      <description>&lt;p&gt;Data expiration policies, object storage vs. block storage, generating unique readable keys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feature Engineering</title>
+      <link>https://manual.arkr.ca/feature-engineering.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/feature-engineering.html</guid>
+      <description>&lt;p&gt;Cleaning data, normalization, one-hot encoding, and converting raw data into vectors.&lt;/p&gt;&#xA;&lt;p&gt;Cleaning data, normalization, one-hot encoding, vectors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linked Lists</title>
+      <link>https://manual.arkr.ca/linked-lists.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/linked-lists.html</guid>
+      <description>&lt;p&gt;Pointers, nodes, singly vs. doubly linked, O(1) insertions/deletions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Low-Level Languages</title>
+      <link>https://manual.arkr.ca/low-level-languages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/low-level-languages.html</guid>
+      <description>&lt;p&gt;Why C &amp;amp; Rust are Fast, Memory layout, zero-cost abstractions, manual memory management vs. Garbage Collection.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Layer</title>
+      <link>https://manual.arkr.ca/network-layer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/network-layer.html</guid>
+      <description>&lt;p&gt;IP Addresses (IPv4 vs IPv6), Packets, Time To Live (TTL).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Processes</title>
+      <link>https://manual.arkr.ca/processes.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/processes.html</guid>
+      <description>&lt;p&gt;The Process Control Block (PCB), PID, process states (Ready, Running, Blocked).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Registers</title>
+      <link>https://manual.arkr.ca/registers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/registers.html</guid>
+      <description>&lt;p&gt;Accumulators, Program Counter (PC), Instruction Register (IR), Stack Pointer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQL Language</title>
+      <link>https://manual.arkr.ca/sql-language.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sql-language.html</guid>
+      <description>&lt;p&gt;SELECT, INSERT, UPDATE, DELETE, WHERE, JOINs (Inner, Left, Right).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stateless vs. Stateful</title>
+      <link>https://manual.arkr.ca/stateless-vs-stateful.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/stateless-vs-stateful.html</guid>
+      <description>&lt;p&gt;Handling sessions, sticky sessions vs. external stores (Redis).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Switch</title>
+      <link>https://manual.arkr.ca/switch.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/switch.html</guid>
+      <description>&lt;p&gt;Voltage levels, ground, conductors vs. insulators, using electricity to represent state.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://manual.arkr.ca/testing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/testing.html</guid>
+      <description>&lt;p&gt;Unit tests, Integration tests, End-to-End (E2E) tests, TDD, Mocks/Stubs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Booking System</title>
+      <link>https://manual.arkr.ca/the-booking-system.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-booking-system.html</guid>
+      <description>&lt;p&gt;Handling concurrency (double-booking prevention), state machines for reservations, eventual consistency in search vs. booking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Load Balancer</title>
+      <link>https://manual.arkr.ca/the-load-balancer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-load-balancer.html</guid>
+      <description>&lt;p&gt;L4 vs L7 routing, health checks, round-robin vs. least-connections, handling TLS termination.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Notification System</title>
+      <link>https://manual.arkr.ca/the-notification-system.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-notification-system.html</guid>
+      <description>&lt;p&gt;Fan-out patterns, message queues (RabbitMQ), push notifications (APNS/FCM), retry logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Video Stream</title>
+      <link>https://manual.arkr.ca/the-video-stream.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-video-stream.html</guid>
+      <description>&lt;p&gt;Adaptive Bitrate Streaming (DASH/HLS), CDN edge placement, encoding ladders, DRM.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CI/CD</title>
+      <link>https://manual.arkr.ca/ci-cd.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ci-cd.html</guid>
+      <description>&lt;p&gt;Continuous Integration pipelines, Continuous Deployment, Artifacts, Linters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CPU</title>
+      <link>https://manual.arkr.ca/cpu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/cpu.html</guid>
+      <description>&lt;p&gt;The Von Neumann architecture, Control Unit (CU), ALU, data paths.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Garbage Collection</title>
+      <link>https://manual.arkr.ca/garbage-collection.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/garbage-collection.html</guid>
+      <description>&lt;p&gt;Reference counting, mark-and-sweep, generational GC, stop-the-world pauses, memory leaks in GC&amp;rsquo;d languages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Message Queues</title>
+      <link>https://manual.arkr.ca/message-queues.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/message-queues.html</guid>
+      <description>&lt;p&gt;Producers, Consumers, Brokers (RabbitMQ), decoupling services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Normalization</title>
+      <link>https://manual.arkr.ca/normalization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/normalization.html</guid>
+      <description>&lt;p&gt;1NF, 2NF, 3NF, reducing redundancy, data integrity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stacks &amp; Queues</title>
+      <link>https://manual.arkr.ca/stacks-queues.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/stacks-queues.html</guid>
+      <description>&lt;p&gt;LIFO vs. FIFO, push/pop operations, circular buffers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Subnetting</title>
+      <link>https://manual.arkr.ca/subnetting.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/subnetting.html</guid>
+      <description>&lt;p&gt;CIDR notation, Subnet masks, Private vs. Public IPs, NAT.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supervised Learning</title>
+      <link>https://manual.arkr.ca/supervised-learning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/supervised-learning.html</guid>
+      <description>&lt;p&gt;Regression (Linear/Logistic) and Classification; the process of training on labeled data.&lt;/p&gt;&#xA;&lt;p&gt;Regression (Linear/Logistic), Classification, Labeling data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Forum</title>
+      <link>https://manual.arkr.ca/the-forum.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-forum.html</guid>
+      <description>&lt;p&gt;Nested comments (trees in SQL), ranking algorithms (Wilson Score Interval), hot/new sorting, caching heavy read threads.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Job Scheduler</title>
+      <link>https://manual.arkr.ca/the-job-scheduler.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-job-scheduler.html</guid>
+      <description>&lt;p&gt;Distributed task queues, delayed execution, handling worker failures, &amp;ldquo;at least once&amp;rdquo; delivery.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Key-Value Store</title>
+      <link>https://manual.arkr.ca/the-key-value-store.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-key-value-store.html</guid>
+      <description>&lt;p&gt;Tunable consistency (W+R &amp;gt; N), vector clocks, hinted handoff, ring topology.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Live Stream</title>
+      <link>https://manual.arkr.ca/the-live-stream.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-live-stream.html</guid>
+      <description>&lt;p&gt;RTMP ingestion, transcoding, low-latency HLS, chat scalability (IRC), handling massive spikes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Threads</title>
+      <link>https://manual.arkr.ca/threads.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/threads.html</guid>
+      <description>&lt;p&gt;Light-weight processes, shared memory, User threads vs. Kernel threads.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transistor</title>
+      <link>https://manual.arkr.ca/transistor.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/transistor.html</guid>
+      <description>&lt;p&gt;Semiconductors, N-type vs. P-type silicon, the MOSFET, how a transistor acts as a switch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ACID Properties</title>
+      <link>https://manual.arkr.ca/acid-properties.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/acid-properties.html</guid>
+      <description>&lt;p&gt;Atomicity, Consistency, Isolation, Durability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Boolean Logic</title>
+      <link>https://manual.arkr.ca/boolean-logic.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/boolean-logic.html</guid>
+      <description>&lt;p&gt;True/False, Boolean algebra, logical operators, truth tables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deployment Strategies</title>
+      <link>https://manual.arkr.ca/deployment-strategies.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/deployment-strategies.html</guid>
+      <description>&lt;p&gt;Blue-green deployments, canary releases, rolling deployments, feature flags, A/B testing infrastructure, rollback strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hash Tables</title>
+      <link>https://manual.arkr.ca/hash-tables.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/hash-tables.html</guid>
+      <description>&lt;p&gt;Hashing functions, buckets, key-value mapping, O(1) average lookup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>High-Level Languages</title>
+      <link>https://manual.arkr.ca/high-level-languages.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/high-level-languages.html</guid>
+      <description>&lt;p&gt;Abstraction layers, &amp;ldquo;The C Language&amp;rdquo; as the baseline, compiled vs. interpreted vs. JIT.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Instruction Cycle</title>
+      <link>https://manual.arkr.ca/instruction-cycle.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/instruction-cycle.html</guid>
+      <description>&lt;p&gt;Fetch, Decode, Execute, Store, the role of the clock.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pub/Sub Systems</title>
+      <link>https://manual.arkr.ca/pubsub-systems.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/pubsub-systems.html</guid>
+      <description>&lt;p&gt;Kafka, Topics, Partitions, Consumer Groups, event streaming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Routing</title>
+      <link>https://manual.arkr.ca/routing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/routing.html</guid>
+      <description>&lt;p&gt;Routers, Hops, BGP (Border Gateway Protocol), Routing tables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scheduling</title>
+      <link>https://manual.arkr.ca/scheduling.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/scheduling.html</guid>
+      <description>&lt;p&gt;Context switching, Preemptive multitasking, Round Robin, FIFO, Priority queues.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Blob Store</title>
+      <link>https://manual.arkr.ca/the-blob-store.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-blob-store.html</guid>
+      <description>&lt;p&gt;File chunking, erasure coding (Reed-Solomon), metadata separation, multipart uploads.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Rate Limiter</title>
+      <link>https://manual.arkr.ca/the-rate-limiter.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-rate-limiter.html</guid>
+      <description>&lt;p&gt;Token Bucket vs. Leaky Bucket algorithms, distributed throttling with Redis/Lua, API quotas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Ride Hailing App</title>
+      <link>https://manual.arkr.ca/the-ride-hailing-app.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-ride-hailing-app.html</guid>
+      <description>&lt;p&gt;Real-time location tracking, hexagonal spatial indexing (H3), driver-rider matching algorithms, dynamic pricing engines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Social Graph</title>
+      <link>https://manual.arkr.ca/the-social-graph.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-social-graph.html</guid>
+      <description>&lt;p&gt;Graph databases (Neo4j), bidirectional relationships, finding &amp;ldquo;friends of friends,&amp;rdquo; privacy controls.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unsupervised Learning</title>
+      <link>https://manual.arkr.ca/unsupervised-learning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/unsupervised-learning.html</guid>
+      <description>&lt;p&gt;Finding patterns in unlabeled data; Clustering (K-Means) and Dimensionality Reduction (PCA).&lt;/p&gt;&#xA;&lt;p&gt;Clustering (K-Means), Dimensionality reduction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concurrency</title>
+      <link>https://manual.arkr.ca/concurrency.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/concurrency.html</guid>
+      <description>&lt;p&gt;Race conditions, Critical sections, atomicity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Event Sourcing &amp; CQRS</title>
+      <link>https://manual.arkr.ca/event-sourcing-cqrs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/event-sourcing-cqrs.html</guid>
+      <description>&lt;p&gt;Event stores, storing events instead of state, projections, read/write model separation, event replay, temporal queries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hash Collisions</title>
+      <link>https://manual.arkr.ca/hash-collisions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/hash-collisions.html</guid>
+      <description>&lt;p&gt;Chaining (linked lists), Open Addressing (probing), load factors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Indexing</title>
+      <link>https://manual.arkr.ca/indexing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/indexing.html</guid>
+      <description>&lt;p&gt;B-Trees, how indexes speed up reads but slow down writes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>https://manual.arkr.ca/infrastructure-as-code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/infrastructure-as-code.html</guid>
+      <description>&lt;p&gt;Terraform, Ansible, declarative infrastructure, &amp;ldquo;Pet vs Cattle&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logic Gates</title>
+      <link>https://manual.arkr.ca/logic-gates.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/logic-gates.html</guid>
+      <description>&lt;p&gt;AND, OR, NOT, XOR, NAND, NOR, building gates from transistors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAM</title>
+      <link>https://manual.arkr.ca/ram.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ram.html</guid>
+      <description>&lt;p&gt;Static RAM (SRAM) vs. Dynamic RAM (DRAM), capacitors, refresh cycles, volatility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>https://manual.arkr.ca/reinforcement-learning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/reinforcement-learning.html</guid>
+      <description>&lt;p&gt;Agents and environments, rewards and policies, Q-learning, policy gradients, the connection to RLHF in LLMs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The API Gateway</title>
+      <link>https://manual.arkr.ca/the-api-gateway.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-api-gateway.html</guid>
+      <description>&lt;p&gt;Rate limiting, authentication offloading, circuit breaking, request aggregation, protocol translation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Collaborator</title>
+      <link>https://manual.arkr.ca/the-collaborator.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-collaborator.html</guid>
+      <description>&lt;p&gt;Operational Transformation (OT) vs. CRDTs, conflict resolution, WebSocket presence, saving snapshots.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Payment Gateway</title>
+      <link>https://manual.arkr.ca/the-payment-gateway.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-payment-gateway.html</guid>
+      <description>&lt;p&gt;Idempotency keys, double-entry bookkeeping, distributed transactions (2PC/Sagas), PCI compliance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Web Crawler</title>
+      <link>https://manual.arkr.ca/the-web-crawler.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-web-crawler.html</guid>
+      <description>&lt;p&gt;URL frontiers, politeness policies, robots.txt parsing, dealing with cyclic graphs, DNS resolution at scale.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Toolchain</title>
+      <link>https://manual.arkr.ca/toolchain.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/toolchain.html</guid>
+      <description>&lt;p&gt;IDEs, linters, linkers, build systems, what happens when you press &amp;ldquo;Run&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transport Layer: TCP</title>
+      <link>https://manual.arkr.ca/transport-layer-tcp.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/transport-layer-tcp.html</guid>
+      <description>&lt;p&gt;Segments, The 3-Way Handshake, reliability, flow control, windowing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Authentication (AuthN)</title>
+      <link>https://manual.arkr.ca/authentication-authn.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/authentication-authn.html</guid>
+      <description>&lt;p&gt;&amp;ldquo;Who are you?&amp;rdquo;, Passwords, MFA, SSO.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CDNs</title>
+      <link>https://manual.arkr.ca/cdns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/cdns.html</guid>
+      <description>&lt;p&gt;Edge locations, caching static assets, reducing latency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Combinational Circuits</title>
+      <link>https://manual.arkr.ca/combinational-circuits.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/combinational-circuits.html</guid>
+      <description>&lt;p&gt;Half-adders, full-adders, multiplexers, decoders, the Arithmetic Logic Unit (ALU).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compilers &amp; Interpreters</title>
+      <link>https://manual.arkr.ca/compilers-interpreters.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/compilers-interpreters.html</guid>
+      <description>&lt;p&gt;Lexical analysis, parsing, Abstract Syntax Trees (AST), code generation, JIT compilation, bytecode and virtual machines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memory Hierarchy</title>
+      <link>https://manual.arkr.ca/memory-hierarchy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/memory-hierarchy.html</guid>
+      <description>&lt;p&gt;Registers vs. L1/L2/L3 Cache vs. RAM vs. Disk, latency numbers everyone should know.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neural Networks</title>
+      <link>https://manual.arkr.ca/neural-networks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/neural-networks.html</guid>
+      <description>&lt;p&gt;Perceptrons, weights, biases, and activation functions (ReLU, Sigmoid, Softmax).&lt;/p&gt;&#xA;&lt;p&gt;Perceptrons, Weights, Biases, Activation Functions (ReLU, Sigmoid).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Query Optimization</title>
+      <link>https://manual.arkr.ca/query-optimization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/query-optimization.html</guid>
+      <description>&lt;p&gt;EXPLAIN/ANALYZE, query planners, index selection, join strategies, common performance pitfalls.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Synchronization</title>
+      <link>https://manual.arkr.ca/synchronization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/synchronization.html</guid>
+      <description>&lt;p&gt;Mutexes, Semaphores, Locks, Monitors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Analytics Engine</title>
+      <link>https://manual.arkr.ca/the-analytics-engine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-analytics-engine.html</guid>
+      <description>&lt;p&gt;Columnar storage benefits, data ingestion pipelines, OLAP vs. OLTP, pre-aggregation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Cloud Drive</title>
+      <link>https://manual.arkr.ca/the-cloud-drive.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-cloud-drive.html</guid>
+      <description>&lt;p&gt;File synchronization logic, differential sync (rsync algorithms), block-level deduplication, version history.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The ID Generator</title>
+      <link>https://manual.arkr.ca/the-id-generator.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-id-generator.html</guid>
+      <description>&lt;p&gt;Twitter’s Snowflake algorithm, sequence numbers, clock synchronization, collision avoidance in distributed systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Map</title>
+      <link>https://manual.arkr.ca/the-map.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-map.html</guid>
+      <description>&lt;p&gt;Tiles and rendering, Quadtrees for geospatial indexing, A* routing at scale, geocoding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transport Layer: UDP</title>
+      <link>https://manual.arkr.ca/transport-layer-udp.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/transport-layer-udp.html</guid>
+      <description>&lt;p&gt;Datagrams, fire-and-forget, use cases (gaming, streaming).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trees</title>
+      <link>https://manual.arkr.ca/trees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/trees.html</guid>
+      <description>&lt;p&gt;Root, nodes, leaves, height, depth, n-ary trees.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Authorization (AuthZ)</title>
+      <link>https://manual.arkr.ca/authorization-authz.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/authorization-authz.html</guid>
+      <description>&lt;p&gt;&amp;ldquo;What can you do?&amp;rdquo;, RBAC (Role Based), ABAC (Attribute Based).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Binary Counting</title>
+      <link>https://manual.arkr.ca/binary-counting.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/binary-counting.html</guid>
+      <description>&lt;p&gt;Base-2 vs. Base-10, place value, counting to 10 in binary.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Binary Search Trees</title>
+      <link>https://manual.arkr.ca/binary-search-trees.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/binary-search-trees.html</guid>
+      <description>&lt;p&gt;BST properties, O(log n) lookup, balancing issues.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bus</title>
+      <link>https://manual.arkr.ca/bus.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/bus.html</guid>
+      <description>&lt;p&gt;Address bus, Data bus, Control bus, bus width (32-bit vs 64-bit), bandwidth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Deadlocks</title>
+      <link>https://manual.arkr.ca/deadlocks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/deadlocks.html</guid>
+      <description>&lt;p&gt;The 4 conditions for deadlock, prevention vs. avoidance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributed Consensus</title>
+      <link>https://manual.arkr.ca/distributed-consensus.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/distributed-consensus.html</guid>
+      <description>&lt;p&gt;The Generals Problem, Paxos, Raft, Quorums.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learning Process</title>
+      <link>https://manual.arkr.ca/learning-process.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/learning-process.html</guid>
+      <description>&lt;p&gt;Loss functions, Gradient Descent, Backpropagation, and the concept of Epochs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ports &amp; Sockets</title>
+      <link>https://manual.arkr.ca/ports-sockets.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ports-sockets.html</guid>
+      <description>&lt;p&gt;Ephemeral ports, reserved ports (80, 443), listening vs. connected sockets.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Ad Engine</title>
+      <link>https://manual.arkr.ca/the-ad-engine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-ad-engine.html</guid>
+      <description>&lt;p&gt;Real-time bidding (RTB), latency constraints (&amp;lt;100ms), user targeting profiles, budget pacing (pacing algorithms).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Metrics System</title>
+      <link>https://manual.arkr.ca/the-metrics-system.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-metrics-system.html</guid>
+      <description>&lt;p&gt;Time-series databases, pull vs. push models, downsampling data, alert evaluation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transactions</title>
+      <link>https://manual.arkr.ca/transactions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/transactions.html</guid>
+      <description>&lt;p&gt;Commit, Rollback, Savepoints, Concurrency control.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Variables &amp; Scope</title>
+      <link>https://manual.arkr.ca/variables-scope.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/variables-scope.html</guid>
+      <description>&lt;p&gt;Stack vs. Heap memory, block scope, global scope, variable lifetime, stack overflow.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Auth Protocols</title>
+      <link>https://manual.arkr.ca/auth-protocols.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/auth-protocols.html</guid>
+      <description>&lt;p&gt;OAuth 2.0 flows, OpenID Connect (OIDC), SAML.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer Vision</title>
+      <link>https://manual.arkr.ca/computer-vision.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/computer-vision.html</guid>
+      <description>&lt;p&gt;Convolutional Neural Networks (CNNs), kernels, pooling, and spatial hierarchy.&lt;/p&gt;&#xA;&lt;p&gt;Convolutional Neural Networks (CNNs), kernels, pooling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Types</title>
+      <link>https://manual.arkr.ca/data-types.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/data-types.html</guid>
+      <description>&lt;p&gt;Primitives (int, bool, float) vs. Reference types (objects, pointers), null/nil safety.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database Migrations</title>
+      <link>https://manual.arkr.ca/database-migrations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/database-migrations.html</guid>
+      <description>&lt;p&gt;Schema evolution, migration tools (Flyway, Liquibase, Alembic), backward-compatible changes, zero-downtime migrations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Distributed Transactions</title>
+      <link>https://manual.arkr.ca/distributed-transactions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/distributed-transactions.html</guid>
+      <description>&lt;p&gt;Two-Phase Commit (2PC), Sagas pattern.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNS</title>
+      <link>https://manual.arkr.ca/dns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/dns.html</guid>
+      <description>&lt;p&gt;Domain names, A records, CNAME, MX, Recursive resolvers, propagation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HDD Storage</title>
+      <link>https://manual.arkr.ca/hdd-storage.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/hdd-storage.html</guid>
+      <description>&lt;p&gt;Magnetic platters, seek time, rotational latency, fragmentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Heaps</title>
+      <link>https://manual.arkr.ca/heaps.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/heaps.html</guid>
+      <description>&lt;p&gt;Min-heap vs. Max-heap, binary heap implementation, priority queues.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hexadecimal</title>
+      <link>https://manual.arkr.ca/hexadecimal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/hexadecimal.html</guid>
+      <description>&lt;p&gt;Base-16, conversion between Bin/Dec/Hex, RGB color codes, memory addresses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memory Management</title>
+      <link>https://manual.arkr.ca/memory-management.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/memory-management.html</guid>
+      <description>&lt;p&gt;Virtual Memory, Paging, Page Tables, MMU (Memory Management Unit).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Blockchain</title>
+      <link>https://manual.arkr.ca/the-blockchain.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-blockchain.html</guid>
+      <description>&lt;p&gt;The Merkle Tree, Proof of Work/Stake, distributed consensus, the &amp;ldquo;Double Spend&amp;rdquo; problem, peer-to-peer propagation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Search Engine</title>
+      <link>https://manual.arkr.ca/the-search-engine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-search-engine.html</guid>
+      <description>&lt;p&gt;Inverted indices, tokenization, tf-idf and BM25 ranking, fuzzy search, sharding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Binary Arithmetic</title>
+      <link>https://manual.arkr.ca/binary-arithmetic.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/binary-arithmetic.html</guid>
+      <description>&lt;p&gt;Binary addition, carry bits, subtraction, overflow errors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Common Terminology</title>
+      <link>https://manual.arkr.ca/common-terminology.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/common-terminology.html</guid>
+      <description>&lt;p&gt;Understanding Tokens, Context Windows, Model Weights/Parameters, and the difference between AI and AGI.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Graphs</title>
+      <link>https://manual.arkr.ca/graphs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/graphs.html</guid>
+      <description>&lt;p&gt;Nodes (vertices), Edges, directed vs. undirected, weighted graphs, adjacency matrices vs. lists.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTTP</title>
+      <link>https://manual.arkr.ca/http.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/http.html</guid>
+      <description>&lt;p&gt;Request/Response cycle, Verbs (GET, POST, PUT, DELETE), Status Codes (200, 404, 500).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Idempotency</title>
+      <link>https://manual.arkr.ca/idempotency.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/idempotency.html</guid>
+      <description>&lt;p&gt;Making retries safe, unique request IDs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NoSQL Databases</title>
+      <link>https://manual.arkr.ca/nosql-databases.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/nosql-databases.html</guid>
+      <description>&lt;p&gt;Non-relational, Document stores (MongoDB), Key-Value (Redis), Columnar (Cassandra), Graph (Neo4j).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Session Management</title>
+      <link>https://manual.arkr.ca/session-management.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/session-management.html</guid>
+      <description>&lt;p&gt;Cookies (Secure/HttpOnly), JSON Web Tokens (JWT), Refresh tokens.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSD Storage</title>
+      <link>https://manual.arkr.ca/ssd-storage.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ssd-storage.html</guid>
+      <description>&lt;p&gt;NAND flash, floating gate transistors, wear leveling, NVMe vs. SATA.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Static vs. Dynamic Typing</title>
+      <link>https://manual.arkr.ca/static-vs-dynamic-typing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/static-vs-dynamic-typing.html</guid>
+      <description>&lt;p&gt;Type systems, compile-time vs. runtime errors, type inference, &amp;ldquo;strongly&amp;rdquo; typed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Swapping</title>
+      <link>https://manual.arkr.ca/swapping.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/swapping.html</guid>
+      <description>&lt;p&gt;Page faults, Thrashing, Swap space on disk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Auth System</title>
+      <link>https://manual.arkr.ca/the-auth-system.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-auth-system.html</guid>
+      <description>&lt;p&gt;Designing an Identity Provider, handling token rotation, signing keys (JWK), security perimeters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Global Search</title>
+      <link>https://manual.arkr.ca/the-global-search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/the-global-search.html</guid>
+      <description>&lt;p&gt;The entire pipeline—Crawling (Frontier), Indexing (Barrel), Ranking (PageRank/ML), and Serving results.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Control Flow</title>
+      <link>https://manual.arkr.ca/control-flow.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/control-flow.html</guid>
+      <description>&lt;p&gt;If/Else branching, switch statements, loops (for, while), jump tables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>https://manual.arkr.ca/cryptography.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/cryptography.html</guid>
+      <description>&lt;p&gt;Hashing (SHA-256), Salting, Peppering, Symmetric (AES), Asymmetric (RSA).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fault Tolerance</title>
+      <link>https://manual.arkr.ca/fault-tolerance.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/fault-tolerance.html</guid>
+      <description>&lt;p&gt;Circuit Breakers, Bulkheads, Retries with Exponential Backoff.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>File Systems</title>
+      <link>https://manual.arkr.ca/file-systems.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/file-systems.html</guid>
+      <description>&lt;p&gt;Inodes, File descriptors, Journals, NTFS vs. EXT4 vs. FAT.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I/O Mechanisms</title>
+      <link>https://manual.arkr.ca/io-mechanisms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/io-mechanisms.html</guid>
+      <description>&lt;p&gt;Polling vs. Interrupts, Direct Memory Access (DMA), memory-mapped I/O.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inference vs. Training</title>
+      <link>https://manual.arkr.ca/inference-vs-training.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/inference-vs-training.html</guid>
+      <description>&lt;p&gt;The computational cost of &amp;ldquo;learning&amp;rdquo; vs. the execution of a pre-trained model.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Negative Numbers</title>
+      <link>https://manual.arkr.ca/negative-numbers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/negative-numbers.html</guid>
+      <description>&lt;p&gt;Signed magnitude, One’s Complement, Two’s Complement, the sign bit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Replication</title>
+      <link>https://manual.arkr.ca/replication.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/replication.html</guid>
+      <description>&lt;p&gt;Master-Slave, Master-Master, Read replicas, replication lag.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TLS/SSL</title>
+      <link>https://manual.arkr.ca/tls-ssl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/tls-ssl.html</guid>
+      <description>&lt;p&gt;Symmetric vs Asymmetric encryption, Public Key Infrastructure (PKI), Certificates, The Handshake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tries</title>
+      <link>https://manual.arkr.ca/tries.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/tries.html</guid>
+      <description>&lt;p&gt;Prefix trees, autocomplete implementation, dictionary storage.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bloom Filters</title>
+      <link>https://manual.arkr.ca/bloom-filters.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/bloom-filters.html</guid>
+      <description>&lt;p&gt;Probabilistic structures, false positives, membership testing, space efficiency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Browser</title>
+      <link>https://manual.arkr.ca/browser.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/browser.html</guid>
+      <description>&lt;p&gt;DOM tree, CSSOM, Render tree, Reflow vs. Repaint, JavaScript engine (V8).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Consistent Hashing</title>
+      <link>https://manual.arkr.ca/consistent-hashing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/consistent-hashing.html</guid>
+      <description>&lt;p&gt;Distributed hash tables, adding/removing nodes without downtime.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Floating-Point Numbers</title>
+      <link>https://manual.arkr.ca/floating-point.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/floating-point.html</guid>
+      <description>&lt;p&gt;IEEE 754 standard, sign/exponent/mantissa, precision issues (0.1 + 0.2 != 0.3).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Functions</title>
+      <link>https://manual.arkr.ca/functions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/functions.html</guid>
+      <description>&lt;p&gt;The Call Stack, stack frames, parameters, return values, pass-by-value vs. pass-by-reference.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GPU</title>
+      <link>https://manual.arkr.ca/gpu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/gpu.html</guid>
+      <description>&lt;p&gt;SIMD architecture, cores vs. threads, shaders, the graphics pipeline, CUDA cores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Permissions</title>
+      <link>https://manual.arkr.ca/permissions.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/permissions.html</guid>
+      <description>&lt;p&gt;Users, Groups, rwx bits, Chmod/Chown, Root privileges.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sharding</title>
+      <link>https://manual.arkr.ca/sharding.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sharding.html</guid>
+      <description>&lt;p&gt;Horizontal partitioning, shard keys, re-balancing data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transformers</title>
+      <link>https://manual.arkr.ca/transformers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/transformers.html</guid>
+      <description>&lt;p&gt;The Attention Mechanism, Self-Attention, and the Encoder-Decoder architecture.&lt;/p&gt;&#xA;&lt;p&gt;The Attention Mechanism, Self-Attention, Encoders/Decoders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web Attacks</title>
+      <link>https://manual.arkr.ca/web-attacks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/web-attacks.html</guid>
+      <description>&lt;p&gt;SQL Injection, XSS (Cross-Site Scripting), CSRF, Man-in-the-Middle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bitwise Operations</title>
+      <link>https://manual.arkr.ca/bitwise-operations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/bitwise-operations.html</guid>
+      <description>&lt;p&gt;AND/OR/XOR masking, left/right shifts, checking flags, bit manipulation hacks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CAP Theorem</title>
+      <link>https://manual.arkr.ca/cap-theorem.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/cap-theorem.html</guid>
+      <description>&lt;p&gt;Consistency vs. Availability vs. Partition Tolerance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How LLMs Work</title>
+      <link>https://manual.arkr.ca/how-llms-work.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/how-llms-work.html</guid>
+      <description>&lt;p&gt;Predict-next-token logic, probability distributions, and the massive scale of pre-training.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moore’s Law</title>
+      <link>https://manual.arkr.ca/moores-law.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/moores-law.html</guid>
+      <description>&lt;p&gt;Transistor density, Dennard scaling, thermal walls, the shift to multi-core.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Attacks</title>
+      <link>https://manual.arkr.ca/network-attacks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/network-attacks.html</guid>
+      <description>&lt;p&gt;DDOS (Volumetric vs. Protocol), Syn floods, amplification attacks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Recursion</title>
+      <link>https://manual.arkr.ca/recursion.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/recursion.html</guid>
+      <description>&lt;p&gt;Base cases, recursive steps, visualizing the stack, tail-call optimization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sorting: Simple</title>
+      <link>https://manual.arkr.ca/sorting-simple.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sorting-simple.html</guid>
+      <description>&lt;p&gt;Bubble sort, Selection sort, Insertion sort (O(n^2)).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>System Calls</title>
+      <link>https://manual.arkr.ca/system-calls.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/system-calls.html</guid>
+      <description>&lt;p&gt;The API to the kernel (open, read, write, fork, exec).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unique IDs</title>
+      <link>https://manual.arkr.ca/unique-ids.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/unique-ids.html</guid>
+      <description>&lt;p&gt;UUIDs, Snowflake IDs (Twitter), solving distributed ordering.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web Communication</title>
+      <link>https://manual.arkr.ca/web-communication.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/web-communication.html</guid>
+      <description>&lt;p&gt;WebSockets, Long-polling, Server-Sent Events (SSE).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>APIs</title>
+      <link>https://manual.arkr.ca/apis.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/apis.html</guid>
+      <description>&lt;p&gt;REST constraints, GraphQL (fetching graphs), gRPC (Protobufs).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Caching Strategies</title>
+      <link>https://manual.arkr.ca/caching-strategies.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/caching-strategies.html</guid>
+      <description>&lt;p&gt;Write-through, Write-back, Look-aside, Eviction policies (LRU).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Centers</title>
+      <link>https://manual.arkr.ca/data-centers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/data-centers.html</guid>
+      <description>&lt;p&gt;Rack architecture, cooling systems, power redundancy, the physical internet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microservices</title>
+      <link>https://manual.arkr.ca/microservices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/microservices.html</guid>
+      <description>&lt;p&gt;Monolith decomposition, Service Discovery, API Gateways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paradigm: Imperative</title>
+      <link>https://manual.arkr.ca/paradigm-imperative.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/paradigm-imperative.html</guid>
+      <description>&lt;p&gt;Procedural programming, changing state, spaghetti code risks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sampling Parameters</title>
+      <link>https://manual.arkr.ca/sampling-parameters.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sampling-parameters.html</guid>
+      <description>&lt;p&gt;Tuning creativity via &lt;strong&gt;Temperature&lt;/strong&gt;, &lt;strong&gt;Top-K&lt;/strong&gt;, and &lt;strong&gt;Top-P (Nucleus)&lt;/strong&gt; sampling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security Best Practices</title>
+      <link>https://manual.arkr.ca/security-best-practices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/security-best-practices.html</guid>
+      <description>&lt;p&gt;Principle of Least Privilege, Zero Trust, Secrets management.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sorting: Efficient</title>
+      <link>https://manual.arkr.ca/sorting-efficient.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sorting-efficient.html</guid>
+      <description>&lt;p&gt;Merge Sort (Divide &amp;amp; Conquer), Quick Sort (Partitioning), stability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Task Automation</title>
+      <link>https://manual.arkr.ca/task-automation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/task-automation.html</guid>
+      <description>&lt;p&gt;Cron jobs, daemons, background services, scripting tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Text Encoding</title>
+      <link>https://manual.arkr.ca/text-encoding.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/text-encoding.html</guid>
+      <description>&lt;p&gt;ASCII (7-bit), Extended ASCII, the need for Unicode, UTF-8 variable length encoding, Emojis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Engineering</title>
+      <link>https://manual.arkr.ca/data-engineering.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/data-engineering.html</guid>
+      <description>&lt;p&gt;Data Warehouses (OLAP) vs. Databases (OLTP), ETL pipelines, Data Lakes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Formats</title>
+      <link>https://manual.arkr.ca/data-formats.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/data-formats.html</guid>
+      <description>&lt;p&gt;JSON vs. XML vs. YAML vs. CSV, serialization/deserialization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Image Representation</title>
+      <link>https://manual.arkr.ca/image-representation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/image-representation.html</guid>
+      <description>&lt;p&gt;Pixels, resolution, color depth (8-bit vs 16-bit), RGB models, alpha channels, raster vs. vector.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Output Control</title>
+      <link>https://manual.arkr.ca/output-control.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/output-control.html</guid>
+      <description>&lt;p&gt;Managing &lt;strong&gt;Max Tokens&lt;/strong&gt;, &lt;strong&gt;Stop Sequences&lt;/strong&gt;, and &lt;strong&gt;Repetition Penalties&lt;/strong&gt; (Frequency/Presence penalty).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paradigm: OOP</title>
+      <link>https://manual.arkr.ca/paradigm-oop.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/paradigm-oop.html</guid>
+      <description>&lt;p&gt;Classes, Objects, Inheritance, Encapsulation, Polymorphism.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Computing</title>
+      <link>https://manual.arkr.ca/quantum-computing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/quantum-computing.html</guid>
+      <description>&lt;p&gt;Qubits, superposition, entanglement, quantum logic gates, potential vs. reality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Search Algorithms</title>
+      <link>https://manual.arkr.ca/search-algorithms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/search-algorithms.html</guid>
+      <description>&lt;p&gt;Linear search, Binary search (requires sorted data).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Service Mesh</title>
+      <link>https://manual.arkr.ca/service-mesh.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/service-mesh.html</guid>
+      <description>&lt;p&gt;Sidecar proxy pattern, Istio, Envoy, Linkerd, mTLS between services, traffic management, mesh-level observability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtualization</title>
+      <link>https://manual.arkr.ca/virtualization.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/virtualization.html</guid>
+      <description>&lt;p&gt;Hypervisors (Type 1 vs. Type 2), Virtual Machines, emulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>https://manual.arkr.ca/containers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/containers.html</guid>
+      <description>&lt;p&gt;Docker, Namespaces (isolation), Cgroups (resource limits), Images vs. Containers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Graph Traversal</title>
+      <link>https://manual.arkr.ca/graph-traversal.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/graph-traversal.html</guid>
+      <description>&lt;p&gt;Breadth-First Search (BFS), Depth-First Search (DFS), use cases for each.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Security</title>
+      <link>https://manual.arkr.ca/network-security.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/network-security.html</guid>
+      <description>&lt;p&gt;Firewalls, VPNs, Tunneling, Proxy vs. Reverse Proxy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Observability</title>
+      <link>https://manual.arkr.ca/observability.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/observability.html</guid>
+      <description>&lt;p&gt;Structured Logging, Metrics (Prometheus), Distributed Tracing (OpenTelemetry).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paradigm: Functional</title>
+      <link>https://manual.arkr.ca/paradigm-functional.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/paradigm-functional.html</guid>
+      <description>&lt;p&gt;Immutability, pure functions, higher-order functions, map/reduce/filter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Caching &amp; Optimization</title>
+      <link>https://manual.arkr.ca/prompt-caching.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/prompt-caching.html</guid>
+      <description>&lt;p&gt;KV cache mechanics, API-level prompt caching, token budgeting, context window management, chunking strategies, cost optimization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sound Representation</title>
+      <link>https://manual.arkr.ca/sound-representation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/sound-representation.html</guid>
+      <description>&lt;p&gt;Analog waves, sampling rate (Nyquist theorem), bit depth, PCM.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Container Orchestration</title>
+      <link>https://manual.arkr.ca/container-orchestration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/container-orchestration.html</guid>
+      <description>&lt;p&gt;Kubernetes architecture, pods, services, deployments, scaling, Helm charts, container networking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Design Patterns</title>
+      <link>https://manual.arkr.ca/design-patterns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/design-patterns.html</guid>
+      <description>&lt;p&gt;Singleton, Factory, Observer, Strategy, Decorator (The Gang of Four).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Landscape</title>
+      <link>https://manual.arkr.ca/model-landscape.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/model-landscape.html</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Proprietary Models&lt;/strong&gt;: OpenAI (GPT series), Google (Gemini), Anthropic (Claude), and xAI (Grok).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Open Source Models&lt;/strong&gt;: Meta (Llama), Mistral, and the Hugging Face ecosystem.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Pathfinding</title>
+      <link>https://manual.arkr.ca/pathfinding.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/pathfinding.html</guid>
+      <description>&lt;p&gt;Dijkstra’s Algorithm, A* Search, shortest path problems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>https://manual.arkr.ca/serverless.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/serverless.html</guid>
+      <description>&lt;p&gt;Function-as-a-Service (Lambda), Cold starts, Event triggers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Video Representation</title>
+      <link>https://manual.arkr.ca/video-representation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/video-representation.html</guid>
+      <description>&lt;p&gt;Frame rates, resolution, inter-frame compression, I-frames/P-frames/B-frames.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compression Algorithms</title>
+      <link>https://manual.arkr.ca/compression-algorithms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/compression-algorithms.html</guid>
+      <description>&lt;p&gt;Run-Length Encoding (RLE), Huffman coding, LZW, Lossless vs. Lossy trade-offs (JPEG/MP3).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dynamic Programming</title>
+      <link>https://manual.arkr.ca/dynamic-programming.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/dynamic-programming.html</guid>
+      <description>&lt;p&gt;Memoization, Tabulation, breaking down overlapping sub-problems (e.g., Fibonacci).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Error Handling</title>
+      <link>https://manual.arkr.ca/error-handling.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/error-handling.html</guid>
+      <description>&lt;p&gt;Return codes vs. Exceptions, Try/Catch blocks, stack traces, defensive programming.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fine-tuning vs. Prompting</title>
+      <link>https://manual.arkr.ca/fine-tuning-vs-prompting.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/fine-tuning-vs-prompting.html</guid>
+      <description>&lt;p&gt;When to update model weights vs. when to optimize the input context.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Error Detection</title>
+      <link>https://manual.arkr.ca/error-detection.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/error-detection.html</guid>
+      <description>&lt;p&gt;Parity bits, Checksums, Cyclic Redundancy Checks (CRC), Hamming codes (error correction).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Hosting &amp; Platforms</title>
+      <link>https://manual.arkr.ca/model-hosting-platforms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/model-hosting-platforms.html</guid>
+      <description>&lt;p&gt;Using Azure AI, AWS SageMaker, and local runners like &lt;strong&gt;Ollama&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Regular Expressions</title>
+      <link>https://manual.arkr.ca/regex.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/regex.html</guid>
+      <description>&lt;p&gt;Regular expressions syntax, pattern matching, capture groups, performance pitfalls.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Environment Variables</title>
+      <link>https://manual.arkr.ca/environment-variables.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/environment-variables.html</guid>
+      <description>&lt;p&gt;&lt;code&gt;.env&lt;/code&gt; files, secrets management, configuration separation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG Architecture</title>
+      <link>https://manual.arkr.ca/rag-architecture.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/rag-architecture.html</guid>
+      <description>&lt;p&gt;The &amp;ldquo;Open Book&amp;rdquo; approach, grounding AI in external, private data to prevent hallucinations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG Pipeline</title>
+      <link>https://manual.arkr.ca/rag-pipeline.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/rag-pipeline.html</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chunking&lt;/strong&gt;: Strategies for breaking long documents into digestible pieces.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Embedding&lt;/strong&gt;: Turning text into high-dimensional numerical vectors using models like Sentence Transformers.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Retrieval&lt;/strong&gt;: Finding relevant context using Similarity Search (Cosine Similarity).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Generation&lt;/strong&gt;: Passing retrieved context into the LLM prompt.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Vector Databases</title>
+      <link>https://manual.arkr.ca/vector-databases.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/vector-databases.html</guid>
+      <description>&lt;p&gt;Understanding the storage layer; comparing &lt;strong&gt;Chroma&lt;/strong&gt;, &lt;strong&gt;Pinecone&lt;/strong&gt;, &lt;strong&gt;Weaviate&lt;/strong&gt;, &lt;strong&gt;FAISS&lt;/strong&gt;, &lt;strong&gt;LanceDB&lt;/strong&gt;, &lt;strong&gt;Qdrant&lt;/strong&gt;, &lt;strong&gt;Supabase&lt;/strong&gt;, and &lt;strong&gt;MongoDB Atlas&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vector Search</title>
+      <link>https://manual.arkr.ca/vector-search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/vector-search.html</guid>
+      <description>&lt;p&gt;Indexing embeddings and performing efficient nearest-neighbor searches at scale.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG Orchestration</title>
+      <link>https://manual.arkr.ca/rag-orchestration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/rag-orchestration.html</guid>
+      <description>&lt;p&gt;Using frameworks like &lt;strong&gt;LangChain&lt;/strong&gt;, &lt;strong&gt;LlamaIndex&lt;/strong&gt;, &lt;strong&gt;Haystack&lt;/strong&gt;, and &lt;strong&gt;RAGFlow&lt;/strong&gt; to build pipelines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agents</title>
+      <link>https://manual.arkr.ca/ai-agents.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ai-agents.html</guid>
+      <description>&lt;p&gt;Defining autonomy, models that can use tools, reason through tasks, and pursue goals.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agentic Reasoning</title>
+      <link>https://manual.arkr.ca/agentic-reasoning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/agentic-reasoning.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ReAct Prompting&lt;/strong&gt; (Reason + Act), Chain of Thought (CoT), and Step-back prompting.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Agents</title>
+      <link>https://manual.arkr.ca/building-agents.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/building-agents.html</guid>
+      <description>&lt;p&gt;Manual implementations vs. using &lt;strong&gt;OpenAI Functions/Tools&lt;/strong&gt;, &lt;strong&gt;Vertex AI&lt;/strong&gt;, or the &lt;strong&gt;Google ADK&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Context Protocol (MCP)</title>
+      <link>https://manual.arkr.ca/model-context-protocol.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/model-context-protocol.html</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Core Components&lt;/strong&gt;: The relationship between the MCP Host, Client, Server, and the Transport Layer.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Development&lt;/strong&gt;: Building servers and clients to connect LLMs to local/remote data sources and tools.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Advanced Prompting</title>
+      <link>https://manual.arkr.ca/advanced-prompting.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/advanced-prompting.html</guid>
+      <description>&lt;p&gt;Zero-shot vs. Few-shot prompting, Self-Consistency, and Tree of Thoughts (ToT).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multimodal Tasks</title>
+      <link>https://manual.arkr.ca/multimodal-tasks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/multimodal-tasks.html</guid>
+      <description>&lt;p&gt;Handling more than text, Image Generation (DALL-E), Image Understanding (Vision APIs), Video, and Audio processing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speech &amp; Audio</title>
+      <link>https://manual.arkr.ca/speech-audio.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/speech-audio.html</guid>
+      <description>&lt;p&gt;Text-to-Speech (TTS), Speech-to-Text (STT), and the &lt;strong&gt;Whisper API&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multimodal Implementation</title>
+      <link>https://manual.arkr.ca/multimodal-implementation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/multimodal-implementation.html</guid>
+      <description>&lt;p&gt;Using LangChain and LlamaIndex for vision-integrated applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Safety &amp; Risks</title>
+      <link>https://manual.arkr.ca/ai-safety-risks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/ai-safety-risks.html</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Prompt Injection attacks and adversarial testing.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: Hallucinations, Prompt Debiasing, and LLM Self-Evaluation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ethics&lt;/strong&gt;: Addressing Bias and Fairness in training data.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Safety Best Practices</title>
+      <link>https://manual.arkr.ca/safety-best-practices.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/safety-best-practices.html</guid>
+      <description>&lt;p&gt;Implementing the &lt;strong&gt;OpenAI Moderation API&lt;/strong&gt;, adding end-user IDs in prompts, and constraining inputs/outputs to prevent jailbreaking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLM Evaluation &amp; Benchmarks</title>
+      <link>https://manual.arkr.ca/llm-evaluation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/llm-evaluation.html</guid>
+      <description>&lt;p&gt;Benchmark datasets (MMLU, HumanEval), custom eval frameworks, human evaluation, A/B testing for LLMs, red-teaming, RAG metrics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Use Cases for Embeddings</title>
+      <link>https://manual.arkr.ca/use-cases-for-embeddings.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://manual.arkr.ca/use-cases-for-embeddings.html</guid>
+      <description>&lt;p&gt;Moving beyond chat, Semantic Search, Data Classification, Recommendation Systems, and Anomaly Detection.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

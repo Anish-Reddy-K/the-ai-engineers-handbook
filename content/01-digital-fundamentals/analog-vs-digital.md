@@ -6,25 +6,3 @@ draft: false
 ---
 
 Continuous vs. discrete signals, sampling, quantization error, why digital wins for storage.
-
-![Screenshot 2025-12-28 at 6.54.04 PM](/images/Screenshot%202025-12-28%20at%206.54.04%20PM.png)
-
-# Heading Level 1
-This is a test page to demonstrate all markdown formatting elements for The ARKR Manual theme.
-
-## Heading Level 2
-### Heading Level 3
-#### Heading Level 4
-##### Heading Level 5
-###### Heading Level 6
-
-## Text Formatting
-**bold text** 
-*italic text*
-***bold and italic together***
-~~strikethrough text~~
-`code` for technical terms
-<mark>Highlighted text</mark>
-<sub>Subscript</sub> and <sup>Superscript</sup>
-
-This is a paragraph with `inline code` and some regular text.

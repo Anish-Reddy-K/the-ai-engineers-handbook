@@ -84,7 +84,7 @@
             </li><li class="sidebar-article-item active-item">
               <a 
                 href="/analog-vs-digital.html" 
-                class="sidebar-article-link active" aria-current="page"
+                class="sidebar-article-link active draft" aria-current="page"
               >
                 Analog vs. Digital
               </a>
@@ -1758,16 +1758,144 @@
         
         <div class="content-area">
           <article class="article-content">
-      <header class="article-header"><p class="article-number">No. 002</p>
-        <h1 class="article-title">Analog vs. Digital</h1>
-        <p class="article-meta"><span class="article-reading-time">1 min read</span><span class="article-meta-separator">|</span><span class="article-author">Anish Reddy</span>
-        </p>
-      </header>
-      <div class="article-body">
-        <p>Continuous vs. discrete signals, sampling, quantization error, why digital wins for storage.</p>
+  <header class="article-header"><p class="article-number">No. 002</p>
+    <h1 class="article-title">Analog vs. Digital</h1>
+    <p class="article-meta">
+      <span class="article-reading-time">XX min read</span><span class="article-meta-separator">|</span><span class="article-author">Anish Reddy</span>
+    </p>
+  </header>
+  <div class="article-body"><blockquote>
+<p>I&rsquo;m still working on this article and will publish it soon.</p>
+</blockquote>
+<div class="email-signup-component">
+  <p class="email-signup-text">I'll email you when a new article drops. No spam, no fluff, just the good stuff.</p>
+  <form class="email-signup-form" action="/submit.php" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="> enter your email" 
+      required 
+      class="email-input"
+      aria-label="Email address"
+      autocomplete="email"
+    >
+    <button type="submit" class="email-submit-button">
+      <span class="button-text">JOIN MAILING LIST</span>
+    </button>
+  </form>
+</div>
 
-      </div>
-    </article>
+<script>
+(function() {
+  'use strict';
+  
+  
+  const components = document.querySelectorAll('.email-signup-component');
+  
+  components.forEach(function(component) {
+    const form = component.querySelector('.email-signup-form');
+    
+    if (!form) return;
+    
+    
+    if (form.dataset.initialized === 'true') return;
+    form.dataset.initialized = 'true';
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      
+      if (window.playClickSound) {
+        window.playClickSound();
+      }
+      
+      const formData = new FormData(form);
+      const submitButton = form.querySelector('.email-submit-button');
+      const buttonText = submitButton.querySelector('.button-text');
+      const originalButtonText = buttonText.textContent;
+      
+      
+      submitButton.disabled = true;
+      submitButton.classList.remove('email-submit-button-success', 'email-submit-button-error');
+      buttonText.textContent = 'Saving...';
+      
+      fetch('/submit.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(async response => {
+        
+        let data;
+        const contentType = response.headers.get('content-type');
+        
+        if (contentType && contentType.includes('application/json')) {
+          try {
+            data = await response.json();
+          } catch (e) {
+            throw new Error('Invalid JSON response from server');
+          }
+        } else {
+          
+          const text = await response.text();
+          throw new Error('Server returned non-JSON response: ' + text.substring(0, 100));
+        }
+        
+        
+        if (!response.ok) {
+          throw new Error(data.message || 'Server error: ' + response.status);
+        }
+        
+        return data;
+      })
+      .then(data => {
+        if (data.success) {
+          
+          submitButton.classList.add('email-submit-button-success');
+          submitButton.classList.remove('email-submit-button-error');
+          buttonText.textContent = data.message || 'Submitted!';
+          submitButton.disabled = true; 
+          
+          const emailInput = form.querySelector('.email-input');
+          if (emailInput) {
+            emailInput.style.display = 'none';
+          }
+        } else {
+          
+          submitButton.classList.add('email-submit-button-error');
+          submitButton.classList.remove('email-submit-button-success');
+          buttonText.textContent = data.message || 'An error occurred. Please try again.';
+          submitButton.disabled = false;
+          
+          setTimeout(function() {
+            buttonText.textContent = originalButtonText;
+            submitButton.classList.remove('email-submit-button-error');
+          }, 3000);
+        }
+      })
+      .catch(error => {
+        
+        console.error('Email signup error:', error);
+        submitButton.classList.add('email-submit-button-error');
+        submitButton.classList.remove('email-submit-button-success');
+        
+        const errorMessage = error.message && error.message.includes('Server') 
+          ? error.message 
+          : 'Network error. Please try again.';
+        buttonText.textContent = errorMessage;
+        submitButton.disabled = false;
+        
+        setTimeout(function() {
+          buttonText.textContent = originalButtonText;
+          submitButton.classList.remove('email-submit-button-error');
+        }, 3000);
+      });
+    });
+  });
+})();
+</script></div>
+</article>
+
+
         </div>
       </div>
     </main>

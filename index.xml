@@ -26,7 +26,7 @@
       <link>https://manual.arkr.ca/bit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://manual.arkr.ca/bit.html</guid>
-      <description>&lt;p&gt;Shannon’s information theory, entropy, resolution of uncertainty, the binary choice.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Shannon’s information theory, entropy, resolution of uncertainty, the binary choice.&lt;/p&gt;&#xA;&lt;p&gt;References&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=s2aB13sOBi8&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.youtube.com/watch?v=s2aB13sOBi8&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=Xpk67YzOn5w&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.youtube.com/watch?v=Xpk67YzOn5w&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=X40ft1Lt1f0&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.youtube.com/watch?v=X40ft1Lt1f0&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=zDNaUi2cjv4&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.youtube.com/watch?v=zDNaUi2cjv4&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.youtube.com/watch?v=rmBFaNgg4wk&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.youtube.com/watch?v=rmBFaNgg4wk&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.quantamagazine.org/how-claude-shannons-information-theory-invented-the-future-20201222/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.quantamagazine.org/how-claude-shannons-information-theory-invented-the-future-20201222/&lt;/a&gt; (mention the name &amp;lsquo;claude&amp;rsquo; was chose because of this)&#xA;&lt;a href=&#34;https://web.stanford.edu/class/cs101/bits-bytes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://web.stanford.edu/class/cs101/bits-bytes.html&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.w3schools.com/programming/prog_bits_and_bytes.php&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.w3schools.com/programming/prog_bits_and_bytes.php&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Clock</title>
@@ -600,7 +600,7 @@
       <link>https://manual.arkr.ca/authentication-authn.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://manual.arkr.ca/authentication-authn.html</guid>
-      <description>&lt;p&gt;&amp;ldquo;Who are you?&amp;rdquo;, Passwords, MFA, SSO.&lt;/p&gt;</description>
+      <description>&lt;p&gt;scan id at door of office front vs server room analogy&#xA;&amp;ldquo;Who are you?&amp;rdquo;, Passwords, MFA, SSO.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CDNs</title>
@@ -698,7 +698,7 @@
       <link>https://manual.arkr.ca/authorization-authz.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://manual.arkr.ca/authorization-authz.html</guid>
-      <description>&lt;p&gt;&amp;ldquo;What can you do?&amp;rdquo;, RBAC (Role Based), ABAC (Attribute Based).&lt;/p&gt;</description>
+      <description>&lt;p&gt;scan id at door of office front vs server room analogy&#xA;&amp;ldquo;What can you do?&amp;rdquo;, RBAC (Role Based), ABAC (Attribute Based).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Binary Counting</title>
@@ -1506,25 +1506,18 @@
       <description>&lt;p&gt;Zero-shot vs. Few-shot prompting, Self-Consistency, and Tree of Thoughts (ToT).&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Multimodal Tasks</title>
-      <link>https://manual.arkr.ca/multimodal-tasks.html</link>
+      <title>Multimodal: Image &amp; Video</title>
+      <link>https://manual.arkr.ca/multimodal-image-video.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/multimodal-tasks.html</guid>
-      <description>&lt;p&gt;Handling more than text, Image Generation (DALL-E), Image Understanding (Vision APIs), Video, and Audio processing.&lt;/p&gt;</description>
+      <guid>https://manual.arkr.ca/multimodal-image-video.html</guid>
+      <description>&lt;p&gt;Handling more than text, Image Generation, Image Understanding (Vision APIs), Video&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Speech &amp; Audio</title>
-      <link>https://manual.arkr.ca/speech-audio.html</link>
+      <title>Multimodal: Speech &amp; Audio</title>
+      <link>https://manual.arkr.ca/multimodal-speech-audio.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/speech-audio.html</guid>
-      <description>&lt;p&gt;Text-to-Speech (TTS), Speech-to-Text (STT), and the &lt;strong&gt;Whisper API&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Multimodal Implementation</title>
-      <link>https://manual.arkr.ca/multimodal-implementation.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/multimodal-implementation.html</guid>
-      <description>&lt;p&gt;Using LangChain and LlamaIndex for vision-integrated applications.&lt;/p&gt;</description>
+      <guid>https://manual.arkr.ca/multimodal-speech-audio.html</guid>
+      <description>&lt;p&gt;Audio, Text-to-Speech (TTS), Speech-to-Text (STT), and the &lt;strong&gt;Whisper API&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Safety &amp; Risks</title>
@@ -1534,10 +1527,10 @@
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Prompt Injection attacks and adversarial testing.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: Hallucinations, Prompt Debiasing, and LLM Self-Evaluation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ethics&lt;/strong&gt;: Addressing Bias and Fairness in training data.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Safety Best Practices</title>
-      <link>https://manual.arkr.ca/safety-best-practices.html</link>
+      <title>AI Safety Best Practices</title>
+      <link>https://manual.arkr.ca/ai-safety-best-practices.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/safety-best-practices.html</guid>
+      <guid>https://manual.arkr.ca/ai-safety-best-practices.html</guid>
       <description>&lt;p&gt;Implementing the &lt;strong&gt;OpenAI Moderation API&lt;/strong&gt;, adding end-user IDs in prompts, and constraining inputs/outputs to prevent jailbreaking.&lt;/p&gt;</description>
     </item>
     <item>

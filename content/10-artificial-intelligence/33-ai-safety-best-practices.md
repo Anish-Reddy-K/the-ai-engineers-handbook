@@ -1,7 +1,7 @@
 ---
-title: "Safety Best Practices"
-slug: "safety-best-practices"
-weight: 34
+title: AI Safety Best Practices
+slug: ai-safety-best-practices
+weight: 33
 draft: true
 ---
 

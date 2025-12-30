@@ -1,7 +1,7 @@
 ---
-title: "AI Safety & Risks"
-slug: "ai-safety-risks"
-weight: 33
+title: AI Safety & Risks
+slug: ai-safety-risks
+weight: 32
 draft: true
 ---
 

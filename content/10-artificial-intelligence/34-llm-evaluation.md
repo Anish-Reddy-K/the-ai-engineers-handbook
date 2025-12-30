@@ -1,7 +1,7 @@
 ---
-title: "LLM Evaluation & Benchmarks"
-slug: "llm-evaluation"
-weight: 35
+title: LLM Evaluation & Benchmarks
+slug: llm-evaluation
+weight: 34
 draft: true
 ---
 

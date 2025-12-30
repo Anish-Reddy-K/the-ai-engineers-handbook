@@ -211,25 +211,18 @@
       <description>&lt;p&gt;Zero-shot vs. Few-shot prompting, Self-Consistency, and Tree of Thoughts (ToT).&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Multimodal Tasks</title>
-      <link>https://manual.arkr.ca/multimodal-tasks.html</link>
+      <title>Multimodal: Image &amp; Video</title>
+      <link>https://manual.arkr.ca/multimodal-image-video.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/multimodal-tasks.html</guid>
-      <description>&lt;p&gt;Handling more than text, Image Generation (DALL-E), Image Understanding (Vision APIs), Video, and Audio processing.&lt;/p&gt;</description>
+      <guid>https://manual.arkr.ca/multimodal-image-video.html</guid>
+      <description>&lt;p&gt;Handling more than text, Image Generation, Image Understanding (Vision APIs), Video&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Speech &amp; Audio</title>
-      <link>https://manual.arkr.ca/speech-audio.html</link>
+      <title>Multimodal: Speech &amp; Audio</title>
+      <link>https://manual.arkr.ca/multimodal-speech-audio.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/speech-audio.html</guid>
-      <description>&lt;p&gt;Text-to-Speech (TTS), Speech-to-Text (STT), and the &lt;strong&gt;Whisper API&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Multimodal Implementation</title>
-      <link>https://manual.arkr.ca/multimodal-implementation.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/multimodal-implementation.html</guid>
-      <description>&lt;p&gt;Using LangChain and LlamaIndex for vision-integrated applications.&lt;/p&gt;</description>
+      <guid>https://manual.arkr.ca/multimodal-speech-audio.html</guid>
+      <description>&lt;p&gt;Audio, Text-to-Speech (TTS), Speech-to-Text (STT), and the &lt;strong&gt;Whisper API&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI Safety &amp; Risks</title>
@@ -239,10 +232,10 @@
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Prompt Injection attacks and adversarial testing.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: Hallucinations, Prompt Debiasing, and LLM Self-Evaluation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ethics&lt;/strong&gt;: Addressing Bias and Fairness in training data.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Safety Best Practices</title>
-      <link>https://manual.arkr.ca/safety-best-practices.html</link>
+      <title>AI Safety Best Practices</title>
+      <link>https://manual.arkr.ca/ai-safety-best-practices.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://manual.arkr.ca/safety-best-practices.html</guid>
+      <guid>https://manual.arkr.ca/ai-safety-best-practices.html</guid>
       <description>&lt;p&gt;Implementing the &lt;strong&gt;OpenAI Moderation API&lt;/strong&gt;, adding end-user IDs in prompts, and constraining inputs/outputs to prevent jailbreaking.&lt;/p&gt;</description>
     </item>
     <item>

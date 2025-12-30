@@ -914,15 +914,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://manual.arkr.ca/multimodal-tasks.html</loc>
+    <loc>https://manual.arkr.ca/multimodal-image-video.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://manual.arkr.ca/speech-audio.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://manual.arkr.ca/multimodal-implementation.html</loc>
+    <loc>https://manual.arkr.ca/multimodal-speech-audio.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -930,7 +926,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://manual.arkr.ca/safety-best-practices.html</loc>
+    <loc>https://manual.arkr.ca/ai-safety-best-practices.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

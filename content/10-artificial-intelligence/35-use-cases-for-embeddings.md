@@ -1,7 +1,7 @@
 ---
-title: "Use Cases for Embeddings"
-slug: "use-cases-for-embeddings"
-weight: 36
+title: Use Cases for Embeddings
+slug: use-cases-for-embeddings
+weight: 35
 draft: true
 ---
 

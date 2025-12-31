@@ -74,7 +74,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // pocketbase api configuration from environment variables
-$apiUrl = getenv('POCKETBASE_API_URL') ?: 'https://api.arkr.ca/api/collections/arkr_manual_emails/records';
+$apiUrl = getenv('POCKETBASE_API_URL');
 $secretKey = getenv('POCKETBASE_SECRET_KEY');
 
 if (empty($secretKey)) {

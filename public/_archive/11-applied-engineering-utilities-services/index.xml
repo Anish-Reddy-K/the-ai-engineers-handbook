@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>11. Applied Engineering: Utilities &amp; Services on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/index.html</link>
+    <description>Recent content in 11. Applied Engineering: Utilities &amp; Services on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/_archive/11-applied-engineering-utilities-services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Link Shortener</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-link-shortener.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-link-shortener.html</guid>
+      <description>&lt;p&gt;Base62 encoding, hash collisions, separate ID generation, read-heavy caching strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Pastebin</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-pastebin.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-pastebin.html</guid>
+      <description>&lt;p&gt;Data expiration policies, object storage vs. block storage, generating unique readable keys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Notification System</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-notification-system.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-notification-system.html</guid>
+      <description>&lt;p&gt;Fan-out patterns, message queues (RabbitMQ), push notifications (APNS/FCM), retry logic.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Job Scheduler</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-job-scheduler.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-job-scheduler.html</guid>
+      <description>&lt;p&gt;Distributed task queues, delayed execution, handling worker failures, &amp;ldquo;at least once&amp;rdquo; delivery.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Rate Limiter</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-rate-limiter.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-rate-limiter.html</guid>
+      <description>&lt;p&gt;Token Bucket vs. Leaky Bucket algorithms, distributed throttling with Redis/Lua, API quotas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Web Crawler</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-web-crawler.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-web-crawler.html</guid>
+      <description>&lt;p&gt;URL frontiers, politeness policies, robots.txt parsing, dealing with cyclic graphs, DNS resolution at scale.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The ID Generator</title>
+      <link>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-id-generator.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/11-applied-engineering-utilities-services/the-id-generator.html</guid>
+      <description>&lt;p&gt;Twitter’s Snowflake algorithm, sequence numbers, clock synchronization, collision avoidance in distributed systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

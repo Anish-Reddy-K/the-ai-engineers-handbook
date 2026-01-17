@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>14. Internet-Scale Architectures on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/_archive/14-internet-scale-architectures/index.html</link>
+    <description>Recent content in 14. Internet-Scale Architectures on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/_archive/14-internet-scale-architectures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Feed</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-feed.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-feed.html</guid>
+      <description>&lt;p&gt;Fan-out-on-write vs. Fan-out-on-load, hybrid approaches for celebrities, timeline merging, redis clusters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Chat App</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-chat-app.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-chat-app.html</guid>
+      <description>&lt;p&gt;XMPP vs. custom protocols, maintaining millions of WebSocket connections (Erlang/Elixir models), end-to-end encryption (Signal protocol).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Video Stream</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-video-stream.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-video-stream.html</guid>
+      <description>&lt;p&gt;Adaptive Bitrate Streaming (DASH/HLS), CDN edge placement, encoding ladders, DRM.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Live Stream</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-live-stream.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-live-stream.html</guid>
+      <description>&lt;p&gt;RTMP ingestion, transcoding, low-latency HLS, chat scalability (IRC), handling massive spikes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Ride Hailing App</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-ride-hailing-app.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-ride-hailing-app.html</guid>
+      <description>&lt;p&gt;Real-time location tracking, hexagonal spatial indexing (H3), driver-rider matching algorithms, dynamic pricing engines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Payment Gateway</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-payment-gateway.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-payment-gateway.html</guid>
+      <description>&lt;p&gt;Idempotency keys, double-entry bookkeeping, distributed transactions (2PC/Sagas), PCI compliance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Cloud Drive</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-cloud-drive.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-cloud-drive.html</guid>
+      <description>&lt;p&gt;File synchronization logic, differential sync (rsync algorithms), block-level deduplication, version history.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Ad Engine</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-ad-engine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-ad-engine.html</guid>
+      <description>&lt;p&gt;Real-time bidding (RTB), latency constraints (&amp;lt;100ms), user targeting profiles, budget pacing (pacing algorithms).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Blockchain</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-blockchain.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-blockchain.html</guid>
+      <description>&lt;p&gt;The Merkle Tree, Proof of Work/Stake, distributed consensus, the &amp;ldquo;Double Spend&amp;rdquo; problem, peer-to-peer propagation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Global Search</title>
+      <link>http://localhost:53632/_archive/14-internet-scale-architectures/the-global-search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/14-internet-scale-architectures/the-global-search.html</guid>
+      <description>&lt;p&gt;The entire pipeline—Crawling (Frontier), Indexing (Barrel), Ranking (PageRank/ML), and Serving results.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

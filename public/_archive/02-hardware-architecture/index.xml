@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>02. Hardware Architecture on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/_archive/02-hardware-architecture/index.html</link>
+    <description>Recent content in 02. Hardware Architecture on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/_archive/02-hardware-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clock</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/clock.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/clock.html</guid>
+      <description>&lt;p&gt;Oscillators, quartz crystals, frequency (Hz), clock cycles, overclocking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memory Elements</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/memory-elements.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/memory-elements.html</guid>
+      <description>&lt;p&gt;Feedback loops, SR Latch, D Flip-Flop, storing a bit of state.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Registers</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/registers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/registers.html</guid>
+      <description>&lt;p&gt;Accumulators, Program Counter (PC), Instruction Register (IR), Stack Pointer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CPU</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/cpu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/cpu.html</guid>
+      <description>&lt;p&gt;The Von Neumann architecture, Control Unit (CU), ALU, data paths.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Instruction Cycle</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/instruction-cycle.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/instruction-cycle.html</guid>
+      <description>&lt;p&gt;Fetch, Decode, Execute, Store, the role of the clock.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAM</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/ram.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/ram.html</guid>
+      <description>&lt;p&gt;Static RAM (SRAM) vs. Dynamic RAM (DRAM), capacitors, refresh cycles, volatility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Memory Hierarchy</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/memory-hierarchy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/memory-hierarchy.html</guid>
+      <description>&lt;p&gt;Registers vs. L1/L2/L3 Cache vs. RAM vs. Disk, latency numbers everyone should know.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bus</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/bus.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/bus.html</guid>
+      <description>&lt;p&gt;Address bus, Data bus, Control bus, bus width (32-bit vs 64-bit), bandwidth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HDD Storage</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/hdd-storage.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/hdd-storage.html</guid>
+      <description>&lt;p&gt;Magnetic platters, seek time, rotational latency, fragmentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSD Storage</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/ssd-storage.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/ssd-storage.html</guid>
+      <description>&lt;p&gt;NAND flash, floating gate transistors, wear leveling, NVMe vs. SATA.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I/O Mechanisms</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/io-mechanisms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/io-mechanisms.html</guid>
+      <description>&lt;p&gt;Polling vs. Interrupts, Direct Memory Access (DMA), memory-mapped I/O.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GPU</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/gpu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/gpu.html</guid>
+      <description>&lt;p&gt;SIMD architecture, cores vs. threads, shaders, the graphics pipeline, CUDA cores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Moore’s Law</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/moores-law.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/moores-law.html</guid>
+      <description>&lt;p&gt;Transistor density, Dennard scaling, thermal walls, the shift to multi-core.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Centers</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/data-centers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/data-centers.html</guid>
+      <description>&lt;p&gt;Rack architecture, cooling systems, power redundancy, the physical internet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Computing</title>
+      <link>http://localhost:53632/_archive/02-hardware-architecture/quantum-computing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/02-hardware-architecture/quantum-computing.html</guid>
+      <description>&lt;p&gt;Qubits, superposition, entanglement, quantum logic gates, potential vs. reality.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

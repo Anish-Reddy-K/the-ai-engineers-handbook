@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. Foundations on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/01-foundations/index.html</link>
+    <description>Recent content in 1. Foundations on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/01-foundations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Essentials</title>
+      <link>http://localhost:53632/python-essentials.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/python-essentials.html</guid>
+      <description>&lt;p&gt;Python for AI/ML engineers. Virtual environments (venv, conda), pip &amp;amp; dependency management, key libraries (NumPy, Pandas), type hints, async basics, Jupyter notebooks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git &amp; Version Control</title>
+      <link>http://localhost:53632/git-version-control.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/git-version-control.html</guid>
+      <description>&lt;p&gt;Commits, branches, merges, pull requests. &lt;code&gt;.gitignore&lt;/code&gt; for Python/ML projects. Branching strategies (feature branches, trunk-based). Reviewing diffs, rolling back changes. Why AI shouldn&amp;rsquo;t auto-commit.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Environment &amp; Secrets</title>
+      <link>http://localhost:53632/environment-secrets.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/environment-secrets.html</guid>
+      <description>&lt;p&gt;&lt;code&gt;.env&lt;/code&gt; files for configuration. &lt;code&gt;.env.example&lt;/code&gt; with placeholders. Never hardcode API keys or secrets. Never share secrets in prompts. Local vs production parity. Secret managers (GCP Secret Manager, AWS Secrets Manager).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Docker &amp; Containers</title>
+      <link>http://localhost:53632/docker-containers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/docker-containers.html</guid>
+      <description>&lt;p&gt;Containerization for reproducible ML environments. Dockerfiles, images, containers. docker-compose for multi-service setups. GPU support with NVIDIA Docker. Container registries. Why containers matter for ML deployment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SQL &amp; Databases</title>
+      <link>http://localhost:53632/sql-databases.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/sql-databases.html</guid>
+      <description>&lt;p&gt;Relational databases (Postgres, MySQL). SQL fundamentals: SELECT, INSERT, UPDATE, DELETE, JOINs. Indexing and query optimization. BigQuery for analytics at scale. Database connections in Python.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>APIs &amp; HTTP</title>
+      <link>http://localhost:53632/apis-http.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/apis-http.html</guid>
+      <description>&lt;p&gt;HTTP fundamentals: verbs (GET, POST, PUT, DELETE), status codes, headers. REST API design. Building APIs with FastAPI. Authentication (API keys, OAuth, JWT). Rate limiting. OpenAPI/Swagger documentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Formats</title>
+      <link>http://localhost:53632/data-formats.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/data-formats.html</guid>
+      <description>&lt;p&gt;JSON for APIs and config. YAML for configuration files. CSV for tabular data. Parquet for efficient ML data storage. Serialization/deserialization in Python. Protocol Buffers for gRPC.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Structures &amp; Complexity</title>
+      <link>http://localhost:53632/data-structures.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/data-structures.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Data Structures&lt;/strong&gt;: Arrays and lists (contiguous memory, O(1) access). Hash tables (key-value mapping, O(1) lookup). Trees (hierarchical data, traversal). Graphs (nodes and edges, adjacency representations).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Complexity Analysis&lt;/strong&gt;: Big-O notation. Time complexity: O(1), O(log n), O(n), O(n²). Space complexity. Why complexity matters for ML inference at scale. Choosing the right structure for AI/ML pipelines.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>System Design Basics</title>
+      <link>http://localhost:53632/system-design-basics.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/system-design-basics.html</guid>
+      <description>&lt;p&gt;Scaling: vertical vs horizontal. Caching strategies: write-through, write-back, LRU eviction. Message queues: producers, consumers, async processing. Load balancing. Stateless vs stateful services. Designing for ML inference workloads.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

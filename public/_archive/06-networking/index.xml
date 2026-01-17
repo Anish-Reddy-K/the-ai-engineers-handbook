@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>06. Networking on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/_archive/06-networking/index.html</link>
+    <description>Recent content in 06. Networking on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/_archive/06-networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Stack</title>
+      <link>http://localhost:53632/_archive/06-networking/network-stack.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/network-stack.html</guid>
+      <description>&lt;p&gt;The OSI 7-Layer Model, The TCP/IP Model, encapsulation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Link Layer</title>
+      <link>http://localhost:53632/_archive/06-networking/link-layer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/link-layer.html</guid>
+      <description>&lt;p&gt;MAC Addresses, Ethernet frames, Collision domains, ARP.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Layer</title>
+      <link>http://localhost:53632/_archive/06-networking/network-layer.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/network-layer.html</guid>
+      <description>&lt;p&gt;IP Addresses (IPv4 vs IPv6), Packets, Time To Live (TTL).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Subnetting</title>
+      <link>http://localhost:53632/_archive/06-networking/subnetting.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/subnetting.html</guid>
+      <description>&lt;p&gt;CIDR notation, Subnet masks, Private vs. Public IPs, NAT.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Routing</title>
+      <link>http://localhost:53632/_archive/06-networking/routing.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/routing.html</guid>
+      <description>&lt;p&gt;Routers, Hops, BGP (Border Gateway Protocol), Routing tables.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transport Layer: TCP</title>
+      <link>http://localhost:53632/_archive/06-networking/transport-layer-tcp.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/transport-layer-tcp.html</guid>
+      <description>&lt;p&gt;Segments, The 3-Way Handshake, reliability, flow control, windowing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transport Layer: UDP</title>
+      <link>http://localhost:53632/_archive/06-networking/transport-layer-udp.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/transport-layer-udp.html</guid>
+      <description>&lt;p&gt;Datagrams, fire-and-forget, use cases (gaming, streaming).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ports &amp; Sockets</title>
+      <link>http://localhost:53632/_archive/06-networking/ports-sockets.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/ports-sockets.html</guid>
+      <description>&lt;p&gt;Ephemeral ports, reserved ports (80, 443), listening vs. connected sockets.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNS</title>
+      <link>http://localhost:53632/_archive/06-networking/dns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/dns.html</guid>
+      <description>&lt;p&gt;Domain names, A records, CNAME, MX, Recursive resolvers, propagation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTTP</title>
+      <link>http://localhost:53632/_archive/06-networking/http.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/http.html</guid>
+      <description>&lt;p&gt;Request/Response cycle, Verbs (GET, POST, PUT, DELETE), Status Codes (200, 404, 500).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TLS/SSL</title>
+      <link>http://localhost:53632/_archive/06-networking/tls-ssl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/tls-ssl.html</guid>
+      <description>&lt;p&gt;Symmetric vs Asymmetric encryption, Public Key Infrastructure (PKI), Certificates, The Handshake.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Browser</title>
+      <link>http://localhost:53632/_archive/06-networking/browser.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/browser.html</guid>
+      <description>&lt;p&gt;DOM tree, CSSOM, Render tree, Reflow vs. Repaint, JavaScript engine (V8).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web Communication</title>
+      <link>http://localhost:53632/_archive/06-networking/web-communication.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/web-communication.html</guid>
+      <description>&lt;p&gt;WebSockets, Long-polling, Server-Sent Events (SSE).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>APIs</title>
+      <link>http://localhost:53632/_archive/06-networking/apis.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/apis.html</guid>
+      <description>&lt;p&gt;REST constraints, GraphQL (fetching graphs), gRPC (Protobufs).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data Formats</title>
+      <link>http://localhost:53632/_archive/06-networking/data-formats.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/data-formats.html</guid>
+      <description>&lt;p&gt;JSON vs. XML vs. YAML vs. CSV, serialization/deserialization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Network Security</title>
+      <link>http://localhost:53632/_archive/06-networking/network-security.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/_archive/06-networking/network-security.html</guid>
+      <description>&lt;p&gt;Firewalls, VPNs, Tunneling, Proxy vs. Reverse Proxy.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

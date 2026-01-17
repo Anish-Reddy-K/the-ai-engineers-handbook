@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>_Archives on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/_archive/index.html</link>
+    <description>Recent content in _Archives on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/_archive/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

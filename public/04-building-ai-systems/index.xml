@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4. Building AI Systems on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/04-building-ai-systems/index.html</link>
+    <description>Recent content in 4. Building AI Systems on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/04-building-ai-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Embeddings &amp; Vector Search</title>
+      <link>http://localhost:53632/embeddings-vector-search.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/embeddings-vector-search.html</guid>
+      <description>&lt;p&gt;Understanding embeddings: turning text into high-dimensional vectors. Embedding models (OpenAI, Sentence Transformers). &lt;strong&gt;Vector databases&lt;/strong&gt;: Pinecone, Weaviate, Chroma, FAISS, pgvector, Qdrant. &lt;strong&gt;Vector search&lt;/strong&gt;: similarity metrics (cosine, dot product), indexing (HNSW, IVF), nearest-neighbor at scale. Use cases: semantic search, recommendations, anomaly detection.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG Systems</title>
+      <link>http://localhost:53632/rag-systems.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/rag-systems.html</guid>
+      <description>&lt;p&gt;Retrieval-Augmented Generation: the &amp;ldquo;open book&amp;rdquo; approach. &lt;strong&gt;Architecture&lt;/strong&gt;: grounding AI in external data to reduce hallucinations. &lt;strong&gt;Pipeline&lt;/strong&gt;: document ingestion, chunking strategies, embedding, retrieval (similarity search), generation (prompt augmentation). Evaluating RAG quality.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RAG Orchestration</title>
+      <link>http://localhost:53632/rag-orchestration.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/rag-orchestration.html</guid>
+      <description>&lt;p&gt;Frameworks for building RAG pipelines: &lt;strong&gt;LangChain&lt;/strong&gt;, &lt;strong&gt;LlamaIndex&lt;/strong&gt;, &lt;strong&gt;Haystack&lt;/strong&gt;. Chains and runnables. Document loaders and splitters. Retriever abstractions. Advanced patterns: hybrid search, reranking, query transformation. When to use a framework vs. building from scratch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agents</title>
+      <link>http://localhost:53632/ai-agents.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/ai-agents.html</guid>
+      <description>&lt;p&gt;Defining autonomy: models that use tools, reason through tasks, and pursue goals. &lt;strong&gt;Reasoning patterns&lt;/strong&gt;: ReAct (Reason + Act), Chain of Thought, step-back prompting, reflection. Agent loops: observe, think, act. Planning and task decomposition. Tool use and function calling.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Agents</title>
+      <link>http://localhost:53632/building-agents.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/building-agents.html</guid>
+      <description>&lt;p&gt;Implementation approaches: manual loops vs. frameworks. &lt;strong&gt;Tools&lt;/strong&gt;: OpenAI Functions/Tools API, Anthropic tool use. &lt;strong&gt;Frameworks&lt;/strong&gt;: LangGraph, Google ADK, CrewAI, AutoGen. Defining tools and schemas. Error handling and retries. Memory and state management.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multi-Agent Systems</title>
+      <link>http://localhost:53632/multi-agent-systems.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/multi-agent-systems.html</guid>
+      <description>&lt;p&gt;Orchestrating multiple agents. &lt;strong&gt;Patterns&lt;/strong&gt;: supervisor/worker, hierarchical, collaborative. Agent communication and handoffs. LangGraph for stateful multi-agent workflows. Parallel vs. sequential execution. Debugging and observability. Production considerations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Context Protocol</title>
+      <link>http://localhost:53632/model-context-protocol.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/model-context-protocol.html</guid>
+      <description>&lt;p&gt;MCP: a standard for connecting LLMs to data and tools. &lt;strong&gt;Architecture&lt;/strong&gt;: hosts, clients, servers, transport layer. Building MCP servers for custom data sources. Integrating with Cursor, Claude Desktop. Resources, tools, and prompts. Security considerations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multimodal AI</title>
+      <link>http://localhost:53632/multimodal-ai.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/multimodal-ai.html</guid>
+      <description>&lt;p&gt;Beyond text: handling images, audio, and video. &lt;strong&gt;Vision&lt;/strong&gt;: image understanding (GPT-4V, Claude Vision), image generation (DALL-E, Midjourney, Stable Diffusion). &lt;strong&gt;Audio&lt;/strong&gt;: speech-to-text (Whisper), text-to-speech. &lt;strong&gt;Video&lt;/strong&gt;: understanding and generation. Building multimodal applications.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Safety &amp; Security</title>
+      <link>http://localhost:53632/ai-safety-security.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/ai-safety-security.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Security risks&lt;/strong&gt;: prompt injection, jailbreaking, data extraction. &lt;strong&gt;Reliability&lt;/strong&gt;: hallucinations, bias, inconsistency. &lt;strong&gt;Mitigations&lt;/strong&gt;: input validation, output filtering, moderation APIs (OpenAI). Guardrails and content policies. End-user IDs for abuse prevention. Red-teaming and adversarial testing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLM Evaluation</title>
+      <link>http://localhost:53632/llm-evaluation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/llm-evaluation.html</guid>
+      <description>&lt;p&gt;Measuring LLM quality. &lt;strong&gt;Benchmarks&lt;/strong&gt;: MMLU, HumanEval, HELM. &lt;strong&gt;RAG metrics&lt;/strong&gt;: precision, recall, faithfulness. Custom evaluation frameworks. Human evaluation and annotation. A/B testing in production. LLM-as-a-judge patterns. Continuous monitoring and regression detection.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MLOps &amp; Cloud Platforms</title>
+      <link>http://localhost:53632/mlops-cloud-platforms.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/mlops-cloud-platforms.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Experiment tracking&lt;/strong&gt;: MLflow, Weights &amp;amp; Biases. Model registries and versioning. &lt;strong&gt;Pipeline orchestration&lt;/strong&gt;: Airflow, Prefect. CI/CD for ML. &lt;strong&gt;Cloud platforms&lt;/strong&gt;: GCP Vertex AI (training, serving, ADK), Azure ML, AWS SageMaker. Comparing costs, features, and when to use each.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

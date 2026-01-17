@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5. AI-Assisted Development on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/05-ai-assisted-development/index.html</link>
+    <description>Recent content in 5. AI-Assisted Development on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/05-ai-assisted-development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Coding Tools</title>
+      <link>http://localhost:53632/ai-coding-tools.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/ai-coding-tools.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What is vibe coding?&lt;/strong&gt; AI-assisted development for rapid prototyping and iteration. Trade-offs: speed vs. maintainability.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt;: &lt;strong&gt;Cursor&lt;/strong&gt; (AI IDE, Composer, agent mode, &lt;code&gt;.cursor/rules&lt;/code&gt;). &lt;strong&gt;Claude Code&lt;/strong&gt; (CLI, &lt;code&gt;/init&lt;/code&gt;, &lt;code&gt;/clear&lt;/code&gt;, &lt;code&gt;CLAUDE.md&lt;/code&gt;, thinking modes). &lt;strong&gt;GitHub Copilot&lt;/strong&gt; (autocomplete, chat). &lt;strong&gt;Others&lt;/strong&gt;: Windsurf, Aider, Cline. Comparing features and choosing the right tool.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Workflow Patterns</title>
+      <link>http://localhost:53632/workflow-patterns.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/workflow-patterns.html</guid>
+      <description>&lt;p&gt;Explore → Plan → Code → Commit workflow. Project structure and file organization for AI context. Permission modes for different tasks. Using &lt;code&gt;/clear&lt;/code&gt; between unrelated tasks. Parallel subagents for frontend/backend. Breaking large features into subtasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Code Review &amp; QA</title>
+      <link>http://localhost:53632/code-review-qa.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/code-review-qa.html</guid>
+      <description>&lt;p&gt;Treating AI output like a teammate&amp;rsquo;s PR. Inspecting diffs, running tests, verifying logic. Unit tests, integration tests, CI/CD. Using AI to write tests. Multiple agents for write/review separation. Never blindly accepting changes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Common Pitfalls</title>
+      <link>http://localhost:53632/common-pitfalls.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/common-pitfalls.html</guid>
+      <description>&lt;p&gt;Over-reliance on AI without review. Prompt drift (AI changing things you didn&amp;rsquo;t ask for). Dependency bloat. Skipping tests. Accepting fixes that mask root causes. Context pollution from stale conversations. Security risks from unreviewed code.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

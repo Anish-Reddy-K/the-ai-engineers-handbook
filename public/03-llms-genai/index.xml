@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3. LLMs &amp; Generative AI on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/03-llms-genai/index.html</link>
+    <description>Recent content in 3. LLMs &amp; Generative AI on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/03-llms-genai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transformers</title>
+      <link>http://localhost:53632/transformers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/transformers.html</guid>
+      <description>&lt;p&gt;The Attention Mechanism, Self-Attention, and the Encoder-Decoder architecture.&lt;/p&gt;&#xA;&lt;p&gt;The Attention Mechanism, Self-Attention, Encoders/Decoders.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How LLMs Work</title>
+      <link>http://localhost:53632/how-llms-work.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/how-llms-work.html</guid>
+      <description>&lt;p&gt;Predict-next-token logic, probability distributions, and the massive scale of pre-training.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LLM Parameters &amp; Control</title>
+      <link>http://localhost:53632/llm-parameters.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/llm-parameters.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Sampling parameters&lt;/strong&gt;: Temperature, Top-K, Top-P (Nucleus) sampling for tuning creativity. &lt;strong&gt;Output control&lt;/strong&gt;: Max tokens, stop sequences, repetition penalties (frequency/presence). Balancing determinism vs. creativity. JSON mode and structured outputs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Model Landscape</title>
+      <link>http://localhost:53632/model-landscape.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/model-landscape.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Proprietary models&lt;/strong&gt;: OpenAI (GPT series), Anthropic (Claude), Google (Gemini), xAI (Grok). &lt;strong&gt;Open source models&lt;/strong&gt;: Meta (Llama), Mistral, Qwen. The Hugging Face ecosystem. Comparing capabilities, costs, and use cases. When to use open vs. closed models.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompt Engineering</title>
+      <link>http://localhost:53632/prompt-engineering.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/prompt-engineering.html</guid>
+      <description>&lt;p&gt;Zero-shot vs. few-shot prompting. Chain of Thought (CoT) reasoning. Self-consistency and ensemble methods. Tree of Thoughts (ToT). Role prompting and persona setting. Structured prompts with examples. System vs. user prompts. Iterative refinement. Common patterns and anti-patterns.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Context Engineering</title>
+      <link>http://localhost:53632/context-engineering.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/context-engineering.html</guid>
+      <description>&lt;p&gt;Context window management and token budgeting. Chunking strategies for long documents. Memory architectures for conversations. &lt;strong&gt;Optimization&lt;/strong&gt;: KV cache mechanics, prompt caching, context compression. Balancing context length with latency and cost.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fine-tuning &amp; Deployment</title>
+      <link>http://localhost:53632/finetuning-deployment.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/finetuning-deployment.html</guid>
+      <description>&lt;p&gt;&lt;strong&gt;When to fine-tune&lt;/strong&gt;: vs. prompting, vs. RAG. Fine-tuning techniques: LoRA, QLoRA, full fine-tuning. &lt;strong&gt;Deployment options&lt;/strong&gt;: Cloud APIs (OpenAI, Anthropic). Self-hosting with Ollama, vLLM, TGI. Azure AI, AWS SageMaker, GCP Vertex AI. Cost and latency considerations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

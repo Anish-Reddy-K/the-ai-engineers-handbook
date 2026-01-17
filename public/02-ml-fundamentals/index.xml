@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2. AI/ML Fundamentals on The AI Engineer&#39;s Handbook</title>
+    <link>http://localhost:53632/02-ml-fundamentals/index.html</link>
+    <description>Recent content in 2. AI/ML Fundamentals on The AI Engineer&#39;s Handbook</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:53632/02-ml-fundamentals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI vs. ML vs. DL</title>
+      <link>http://localhost:53632/ai-vs-ml-vs-dl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/ai-vs-ml-vs-dl.html</guid>
+      <description>&lt;p&gt;Definitions and the hierarchy of intelligence. History of &amp;ldquo;Good Old Fashioned AI&amp;rdquo; (GOFAI) vs. connectionism. &lt;strong&gt;Key terminology&lt;/strong&gt;: tokens, context windows, model weights/parameters, AI vs. AGI. The three learning paradigms: supervised, unsupervised, and reinforcement learning (RLHF for LLMs).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Statistics for ML</title>
+      <link>http://localhost:53632/statistics-for-ml.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/statistics-for-ml.html</guid>
+      <description>&lt;p&gt;Probability, Bayes&amp;rsquo; Theorem, Standard Deviation, and the Normal Distribution.&lt;/p&gt;&#xA;&lt;p&gt;Probability, Bayes&amp;rsquo; Theorem, Standard Deviation, Distributions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data &amp; Feature Engineering</title>
+      <link>http://localhost:53632/data-feature-engineering.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/data-feature-engineering.html</guid>
+      <description>&lt;p&gt;Data collection and quality. Cleaning and preprocessing. Normalization and standardization. One-hot encoding and embeddings. Converting raw data into numerical vectors. Train/validation/test splits. Data augmentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supervised Learning</title>
+      <link>http://localhost:53632/supervised-learning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/supervised-learning.html</guid>
+      <description>&lt;p&gt;Regression (Linear/Logistic) and Classification; the process of training on labeled data.&lt;/p&gt;&#xA;&lt;p&gt;Regression (Linear/Logistic), Classification, Labeling data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unsupervised Learning</title>
+      <link>http://localhost:53632/unsupervised-learning.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/unsupervised-learning.html</guid>
+      <description>&lt;p&gt;Finding patterns in unlabeled data; Clustering (K-Means) and Dimensionality Reduction (PCA).&lt;/p&gt;&#xA;&lt;p&gt;Clustering (K-Means), Dimensionality reduction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neural Networks</title>
+      <link>http://localhost:53632/neural-networks.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/neural-networks.html</guid>
+      <description>&lt;p&gt;Perceptrons and multi-layer networks. Weights, biases, and activation functions (ReLU, Sigmoid, Softmax). &lt;strong&gt;Learning process&lt;/strong&gt;: loss functions, gradient descent, backpropagation. Epochs and batch sizes. Overfitting and regularization. CNNs for vision, RNNs for sequences.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Training &amp; Inference</title>
+      <link>http://localhost:53632/training-inference.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53632/training-inference.html</guid>
+      <description>&lt;p&gt;The computational cost of training vs. inference. GPU/TPU requirements. Pre-training vs. fine-tuning. Model optimization: quantization, distillation, pruning. Deployment considerations: latency, throughput, cost. Batch vs. real-time inference.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

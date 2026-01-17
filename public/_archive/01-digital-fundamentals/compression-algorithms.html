@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compression Algorithms</title>
+  
+  
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/markdown.css">
+  <link rel="stylesheet" href="/css/components/dark_starfield_bg.css">
+  <link rel="stylesheet" href="/css/components/light_grid_bg.css">
+  <link rel="stylesheet" href="/css/components/email-signup.css">
+  
+  
+  <script>
+    (function() {
+      try {
+        const saved = localStorage.getItem('arkr-theme');
+        if (saved) {
+          const state = JSON.parse(saved);
+          const theme = state.theme;
+          
+          window.__savedTheme = theme;
+          
+          if (theme === 'light') {
+            document.documentElement.classList.add('prefer-light-mode');
+            document.documentElement.classList.remove('prefer-dark-mode');
+          } else {
+            document.documentElement.classList.add('prefer-dark-mode');
+            document.documentElement.classList.remove('prefer-light-mode');
+          }
+        } else {
+          window.__savedTheme = 'dark';
+          document.documentElement.classList.add('prefer-dark-mode');
+        }
+      } catch (e) {
+        window.__savedTheme = 'dark';
+        document.documentElement.classList.add('prefer-dark-mode');
+      }
+    })();
+  </script>
+</head>
+<body class="dark-mode">
+  
+  <div id="background-container">
+    <canvas id="starfield-canvas" class="starfield-background"></canvas>
+  </div>
+  
+  
+  <div class="main-container">
+    
+    <aside class="sidebar" role="complementary" aria-label="Sidebar navigation">
+      <div class="sidebar-header">
+        <h2 class="sidebar-title">Table of Contents</h2>
+      </div>
+      <div class="sidebar-content" id="sidebar-content">
+        <nav class="sidebar-nav" aria-label="Table of Contents"><div class="sidebar-chapter">
+        <button class="sidebar-chapter-toggle" aria-expanded="false" aria-label="Toggle 1. Foundations">
+          <span class="sidebar-chapter-title">1. Foundations</span>
+          <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>
+        </button>
+        <ul class="sidebar-article-list"><li class="sidebar-article-item">
+              <a 
+                href="/python-essentials.html" 
+                class="sidebar-article-link draft"
+              >
+                Python Essentials
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/git-version-control.html" 
+                class="sidebar-article-link draft"
+              >
+                Git &amp; Version Control
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/environment-secrets.html" 
+                class="sidebar-article-link draft"
+              >
+                Environment &amp; Secrets
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/docker-containers.html" 
+                class="sidebar-article-link draft"
+              >
+                Docker &amp; Containers
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/sql-databases.html" 
+                class="sidebar-article-link draft"
+              >
+                SQL &amp; Databases
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/apis-http.html" 
+                class="sidebar-article-link draft"
+              >
+                APIs &amp; HTTP
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/data-formats.html" 
+                class="sidebar-article-link draft"
+              >
+                Data Formats
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/data-structures.html" 
+                class="sidebar-article-link draft"
+              >
+                Data Structures &amp; Complexity
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/system-design-basics.html" 
+                class="sidebar-article-link draft"
+              >
+                System Design Basics
+              </a>
+            </li></ul>
+      </div><div class="sidebar-chapter">
+        <button class="sidebar-chapter-toggle" aria-expanded="false" aria-label="Toggle 2. AI/ML Fundamentals">
+          <span class="sidebar-chapter-title">2. AI/ML Fundamentals</span>
+          <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>
+        </button>
+        <ul class="sidebar-article-list"><li class="sidebar-article-item">
+              <a 
+                href="/ai-vs-ml-vs-dl.html" 
+                class="sidebar-article-link draft"
+              >
+                AI vs. ML vs. DL
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/statistics-for-ml.html" 
+                class="sidebar-article-link draft"
+              >
+                Statistics for ML
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/data-feature-engineering.html" 
+                class="sidebar-article-link draft"
+              >
+                Data &amp; Feature Engineering
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/supervised-learning.html" 
+                class="sidebar-article-link draft"
+              >
+                Supervised Learning
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/unsupervised-learning.html" 
+                class="sidebar-article-link draft"
+              >
+                Unsupervised Learning
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/neural-networks.html" 
+                class="sidebar-article-link draft"
+              >
+                Neural Networks
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/training-inference.html" 
+                class="sidebar-article-link draft"
+              >
+                Training &amp; Inference
+              </a>
+            </li></ul>
+      </div><div class="sidebar-chapter">
+        <button class="sidebar-chapter-toggle" aria-expanded="false" aria-label="Toggle 3. LLMs &amp; Generative AI">
+          <span class="sidebar-chapter-title">3. LLMs &amp; Generative AI</span>
+          <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>
+        </button>
+        <ul class="sidebar-article-list"><li class="sidebar-article-item">
+              <a 
+                href="/transformers.html" 
+                class="sidebar-article-link draft"
+              >
+                Transformers
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/how-llms-work.html" 
+                class="sidebar-article-link draft"
+              >
+                How LLMs Work
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/llm-parameters.html" 
+                class="sidebar-article-link draft"
+              >
+                LLM Parameters &amp; Control
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/model-landscape.html" 
+                class="sidebar-article-link draft"
+              >
+                Model Landscape
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/prompt-engineering.html" 
+                class="sidebar-article-link draft"
+              >
+                Prompt Engineering
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/context-engineering.html" 
+                class="sidebar-article-link draft"
+              >
+                Context Engineering
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/finetuning-deployment.html" 
+                class="sidebar-article-link draft"
+              >
+                Fine-tuning &amp; Deployment
+              </a>
+            </li></ul>
+      </div><div class="sidebar-chapter">
+        <button class="sidebar-chapter-toggle" aria-expanded="false" aria-label="Toggle 4. Building AI Systems">
+          <span class="sidebar-chapter-title">4. Building AI Systems</span>
+          <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>
+        </button>
+        <ul class="sidebar-article-list"><li class="sidebar-article-item">
+              <a 
+                href="/embeddings-vector-search.html" 
+                class="sidebar-article-link draft"
+              >
+                Embeddings &amp; Vector Search
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/rag-systems.html" 
+                class="sidebar-article-link draft"
+              >
+                RAG Systems
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/rag-orchestration.html" 
+                class="sidebar-article-link draft"
+              >
+                RAG Orchestration
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/ai-agents.html" 
+                class="sidebar-article-link draft"
+              >
+                AI Agents
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/building-agents.html" 
+                class="sidebar-article-link draft"
+              >
+                Building Agents
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/multi-agent-systems.html" 
+                class="sidebar-article-link draft"
+              >
+                Multi-Agent Systems
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/model-context-protocol.html" 
+                class="sidebar-article-link draft"
+              >
+                Model Context Protocol
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/multimodal-ai.html" 
+                class="sidebar-article-link draft"
+              >
+                Multimodal AI
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/ai-safety-security.html" 
+                class="sidebar-article-link draft"
+              >
+                AI Safety &amp; Security
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/llm-evaluation.html" 
+                class="sidebar-article-link draft"
+              >
+                LLM Evaluation
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/mlops-cloud-platforms.html" 
+                class="sidebar-article-link draft"
+              >
+                MLOps &amp; Cloud Platforms
+              </a>
+            </li></ul>
+      </div><div class="sidebar-chapter">
+        <button class="sidebar-chapter-toggle" aria-expanded="false" aria-label="Toggle 5. AI-Assisted Development">
+          <span class="sidebar-chapter-title">5. AI-Assisted Development</span>
+          <span class="sidebar-chapter-icon material-symbols-outlined">expand_more</span>
+        </button>
+        <ul class="sidebar-article-list"><li class="sidebar-article-item">
+              <a 
+                href="/ai-coding-tools.html" 
+                class="sidebar-article-link draft"
+              >
+                AI Coding Tools
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/workflow-patterns.html" 
+                class="sidebar-article-link draft"
+              >
+                Workflow Patterns
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/code-review-qa.html" 
+                class="sidebar-article-link draft"
+              >
+                Code Review &amp; QA
+              </a>
+            </li><li class="sidebar-article-item">
+              <a 
+                href="/common-pitfalls.html" 
+                class="sidebar-article-link draft"
+              >
+                Common Pitfalls
+              </a>
+            </li></ul>
+      </div></nav>
+
+
+      </div>
+    </aside>
+    
+    
+    <main class="main-content" role="main">
+      <div class="content-wrapper">
+        
+        <header class="header-zone-a">
+          <div class="zone-a-left">
+            <p class="site-description">
+              <span class="static-text">The open-source blueprint for </span>
+              <br class="mobile-break">
+              <span id="typewriter-text" class="typewriter-text"></span><span class="cursor">|</span>
+            </p>
+            <p class="site-author">Written and illustrated by <a href="https://arkr.ca" class="author-link" target="_blank" rel="noopener noreferrer">Anish Reddy</a>.</p>
+          </div>
+          <div class="zone-a-right">
+            <h1 class="site-title">
+              <a href="/" class="site-title-link">THE ARKR MANUAL</a>
+            </h1>
+          </div>
+        </header>
+        
+        
+        <header class="header-zone-b">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            
+              <div class="breadcrumb-nav"><span class="action-button breadcrumb-nav-prev breadcrumb-nav-disabled" aria-label="No previous article">
+      <span class="material-symbols-outlined">arrow_back</span>
+    </span><span class="breadcrumb-content"><span class="breadcrumb-chapter">01. Digital Fundamentals</span>
+        <span class="breadcrumb-separator">/</span><span class="breadcrumb-item">Compression Algorithms</span>
+  </span><span class="action-button breadcrumb-nav-next breadcrumb-nav-disabled" aria-label="No next article">
+      <span class="material-symbols-outlined">arrow_forward</span>
+    </span></div>
+
+
+            
+          </nav>
+          <div class="action-cluster">
+            <a href="https://github.com/Anish-Reddy-K/the-arkr-manual/issues/new?body=Article%3A&#43;Compression&#43;Algorithms%0AURL%3A&#43;http%3A%2F%2Flocalhost%3A53632%2F_archive%2F01-digital-fundamentals%2Fcompression-algorithms.html%0AChapter%3A&#43;01.&#43;Digital&#43;Fundamentals%0AArticle&#43;Number%3A&#43;000%0A%0AIssue&#43;Type&#43;%28put&#43;X&#43;in&#43;square&#43;brackets%29%3A%0A%5B&#43;%5D&#43;Mistake%2FCorrection%0A%5B&#43;%5D&#43;Missing&#43;Concept%0A%5B&#43;%5D&#43;Other%0A%0ADescription%3A%0A" target="_blank" rel="noopener noreferrer" class="feedback-link">Feedback/issue?</a>
+            <button id="menu-toggle" class="action-button menu-toggle" aria-label="Toggle sidebar">
+              <span class="material-symbols-outlined menu-icon">menu</span>
+            </button>
+            <button id="sound-toggle" class="action-button sound-toggle" aria-label="Toggle sound">
+              <span class="material-symbols-outlined sound-icon">volume_up</span>
+            </button>
+            <button id="theme-toggle" class="action-button theme-toggle" aria-label="Toggle theme">
+              <span class="material-symbols-outlined toggle-icon">dark_mode</span>
+            </button>
+          </div>
+        </header>
+        
+        
+        <div class="content-area">
+          <article class="article-content">
+  <header class="article-header"><p class="article-number">No. 000</p>
+    <h1 class="article-title">Compression Algorithms</h1>
+    <p class="article-meta">
+      <span class="article-reading-time">XX min read</span><span class="article-meta-separator">|</span><span class="article-author">Anish Reddy</span>
+    </p>
+  </header>
+  <div class="article-body"><blockquote>
+<p>I&rsquo;m still working on this article and will publish it soon.</p>
+</blockquote>
+<div class="email-signup-component">
+  <p class="email-signup-text">I'll email you when a new article drops. No spam, no fluff, just the good stuff.</p>
+  <form class="email-signup-form" action="/submit.php" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="> enter your email" 
+      required 
+      class="email-input"
+      aria-label="Email address"
+      autocomplete="email"
+    >
+    <button type="submit" class="email-submit-button">
+      <span class="button-text">JOIN MAILING LIST</span>
+    </button>
+  </form>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  
+  const components = document.querySelectorAll('.email-signup-component');
+  
+  components.forEach(function(component) {
+    const form = component.querySelector('.email-signup-form');
+    
+    if (!form) return;
+    
+    
+    if (form.dataset.initialized === 'true') return;
+    form.dataset.initialized = 'true';
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      
+      if (window.playClickSound) {
+        window.playClickSound();
+      }
+      
+      const formData = new FormData(form);
+      const submitButton = form.querySelector('.email-submit-button');
+      const buttonText = submitButton.querySelector('.button-text');
+      const originalButtonText = buttonText.textContent;
+      
+      
+      submitButton.disabled = true;
+      submitButton.classList.remove('email-submit-button-success', 'email-submit-button-error');
+      buttonText.textContent = 'Saving...';
+      
+      fetch('/submit.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(async response => {
+        
+        let data;
+        const contentType = response.headers.get('content-type');
+        
+        if (contentType && contentType.includes('application/json')) {
+          try {
+            data = await response.json();
+          } catch (e) {
+            throw new Error('Invalid JSON response from server');
+          }
+        } else {
+          
+          const text = await response.text();
+          throw new Error('Server returned non-JSON response: ' + text.substring(0, 100));
+        }
+        
+        
+        if (!response.ok) {
+          throw new Error(data.message || 'Server error: ' + response.status);
+        }
+        
+        return data;
+      })
+      .then(data => {
+        if (data.success) {
+          
+          submitButton.classList.add('email-submit-button-success');
+          submitButton.classList.remove('email-submit-button-error');
+          buttonText.textContent = data.message || 'Submitted!';
+          submitButton.disabled = true; 
+          
+          const emailInput = form.querySelector('.email-input');
+          if (emailInput) {
+            emailInput.style.display = 'none';
+          }
+        } else {
+          
+          submitButton.classList.add('email-submit-button-error');
+          submitButton.classList.remove('email-submit-button-success');
+          buttonText.textContent = data.message || 'An error occurred. Please try again.';
+          submitButton.disabled = false;
+          
+          setTimeout(function() {
+            buttonText.textContent = originalButtonText;
+            submitButton.classList.remove('email-submit-button-error');
+          }, 3000);
+        }
+      })
+      .catch(error => {
+        
+        console.error('Email signup error:', error);
+        submitButton.classList.add('email-submit-button-error');
+        submitButton.classList.remove('email-submit-button-success');
+        
+        const errorMessage = error.message && error.message.includes('Server') 
+          ? error.message 
+          : 'Network error. Please try again.';
+        buttonText.textContent = errorMessage;
+        submitButton.disabled = false;
+        
+        setTimeout(function() {
+          buttonText.textContent = originalButtonText;
+          submitButton.classList.remove('email-submit-button-error');
+        }, 3000);
+      });
+    });
+  });
+})();
+</script></div>
+</article>
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="/js/components/dark_starfield_bg.js"></script>
+  <script src="/js/components/light_grid_bg.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/sound.js"></script>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/code-copy.js"></script>
+  <script src="/js/image-captions.js"></script>
+</body>
+</html>

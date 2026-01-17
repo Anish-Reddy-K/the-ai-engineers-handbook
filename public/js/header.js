@@ -7,9 +7,9 @@
 
   const words = [
     "AI Engineering.",
-    "Machine Learning.",
-    "LLM Systems.",
-    "RAG & Agents."
+    "AI Systems.",
+    "RAG & AI Agents.",
+    "Vibe Coding."
   ];
 
   const typewriterElement = document.getElementById('typewriter-text');

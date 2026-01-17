@@ -6,7 +6,7 @@ The open-source blueprint for AI Engineering. A free, illustrated curriculum tak
 
 ## What is this?
 
-A structured curriculum for becoming an AI engineer. Clear explanations, visual diagrams, and practical knowledge — from ML foundations through LLMs, RAG architectures, and AI agents. No fluff. No scattered tutorials. Just a unified path to mastery.
+A structured curriculum for becoming an AI engineer. Clear explanations, visual diagrams, and practical knowledge - from ML foundations through LLMs, RAG architectures, and AI agents. No fluff. No scattered tutorials. Just a unified path to mastery.
 
 ## Curriculum
 
@@ -30,7 +30,7 @@ I am doing this completely for free, on my own time, simply because I just like 
 
 ## 100% Human Crafted
 
-**A Note on AI:** I use AI tools during my own research, but I do not use AI to write. Every word is typed by me, and every diagram is hand-crafted by me. This is simply human knowledge, distilled for humans.
+**A Note on AI:** I use AI tools during my own research, but I do not use AI to write. This is simply human knowledge, distilled for humans.
 
 ## Built with
 

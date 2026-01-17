@@ -16,7 +16,7 @@ Two reasons:
 I am doing this completely for free, on my own time, simply because I just like doing it.
 
 ## 100% Human Crafted
-**A Note on AI:** I use AI tools during my own research, but I do not use AI to write. Every word is typed by me, and every diagram is hand-crafted by me. This is simply human knowledge, distilled for humans.
+**A Note on AI:** I use AI tools during my own research, but I do not use AI to write. This is simply human knowledge, distilled for humans.
 
 {{< email-signup >}}
 

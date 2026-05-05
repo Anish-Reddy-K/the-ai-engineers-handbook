@@ -2,7 +2,7 @@
 
 The open-source blueprint for AI Engineering. A free, illustrated curriculum taking you from ML fundamentals to production AI systems.
 
-**Live at:** [ai.arkr.ca](https://ai.arkr.ca)
+**Live at:** [learn.arkr.ca](https://learn.arkr.ca)
 
 ## What is this?
 
@@ -27,10 +27,6 @@ Two reasons:
 2. **Fundamentals matter more than ever.** When everyone can prompt an LLM, the engineers who understand *how* these systems actually work will build better products. This handbook is about that deeper understanding.
 
 I am doing this completely for free, on my own time, simply because I just like doing it.
-
-## 100% Human Crafted
-
-**A Note on AI:** I use AI tools during my own research, but I do not use AI to write. This is simply human knowledge, distilled for humans.
 
 ## Built with
 

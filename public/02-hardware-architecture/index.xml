@@ -2,114 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>02. Hardware Architecture on Bits by Anish Reddy</title>
-    <link>http://localhost:1313/02-hardware-architecture/index.html</link>
+    <link>https://bits.arkr.ca/02-hardware-architecture/index.html</link>
     <description>Recent content in 02. Hardware Architecture on Bits by Anish Reddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/02-hardware-architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bits.arkr.ca/02-hardware-architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clock</title>
-      <link>http://localhost:1313/clock.html</link>
+      <link>https://bits.arkr.ca/clock.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/clock.html</guid>
+      <guid>https://bits.arkr.ca/clock.html</guid>
       <description>&lt;p&gt;Oscillators, quartz crystals, frequency (Hz), clock cycles, overclocking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memory Elements</title>
-      <link>http://localhost:1313/memory-elements.html</link>
+      <link>https://bits.arkr.ca/memory-elements.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/memory-elements.html</guid>
+      <guid>https://bits.arkr.ca/memory-elements.html</guid>
       <description>&lt;p&gt;Feedback loops, SR Latch, D Flip-Flop, storing a bit of state.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Registers</title>
-      <link>http://localhost:1313/registers.html</link>
+      <link>https://bits.arkr.ca/registers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/registers.html</guid>
+      <guid>https://bits.arkr.ca/registers.html</guid>
       <description>&lt;p&gt;Accumulators, Program Counter (PC), Instruction Register (IR), Stack Pointer.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CPU</title>
-      <link>http://localhost:1313/cpu.html</link>
+      <link>https://bits.arkr.ca/cpu.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cpu.html</guid>
+      <guid>https://bits.arkr.ca/cpu.html</guid>
       <description>&lt;p&gt;The Von Neumann architecture, Control Unit (CU), ALU, data paths.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Instruction Cycle</title>
-      <link>http://localhost:1313/instruction-cycle.html</link>
+      <link>https://bits.arkr.ca/instruction-cycle.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/instruction-cycle.html</guid>
+      <guid>https://bits.arkr.ca/instruction-cycle.html</guid>
       <description>&lt;p&gt;Fetch, Decode, Execute, Store, the role of the clock.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RAM</title>
-      <link>http://localhost:1313/ram.html</link>
+      <link>https://bits.arkr.ca/ram.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ram.html</guid>
+      <guid>https://bits.arkr.ca/ram.html</guid>
       <description>&lt;p&gt;Static RAM (SRAM) vs. Dynamic RAM (DRAM), capacitors, refresh cycles, volatility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memory Hierarchy</title>
-      <link>http://localhost:1313/memory-hierarchy.html</link>
+      <link>https://bits.arkr.ca/memory-hierarchy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/memory-hierarchy.html</guid>
+      <guid>https://bits.arkr.ca/memory-hierarchy.html</guid>
       <description>&lt;p&gt;Registers vs. L1/L2/L3 Cache vs. RAM vs. Disk, latency numbers everyone should know.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bus</title>
-      <link>http://localhost:1313/bus.html</link>
+      <link>https://bits.arkr.ca/bus.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bus.html</guid>
+      <guid>https://bits.arkr.ca/bus.html</guid>
       <description>&lt;p&gt;Address bus, Data bus, Control bus, bus width (32-bit vs 64-bit), bandwidth.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HDD Storage</title>
-      <link>http://localhost:1313/hdd-storage.html</link>
+      <link>https://bits.arkr.ca/hdd-storage.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hdd-storage.html</guid>
+      <guid>https://bits.arkr.ca/hdd-storage.html</guid>
       <description>&lt;p&gt;Magnetic platters, seek time, rotational latency, fragmentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSD Storage</title>
-      <link>http://localhost:1313/ssd-storage.html</link>
+      <link>https://bits.arkr.ca/ssd-storage.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ssd-storage.html</guid>
+      <guid>https://bits.arkr.ca/ssd-storage.html</guid>
       <description>&lt;p&gt;NAND flash, floating gate transistors, wear leveling, NVMe vs. SATA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>I/O Mechanisms</title>
-      <link>http://localhost:1313/io-mechanisms.html</link>
+      <link>https://bits.arkr.ca/io-mechanisms.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/io-mechanisms.html</guid>
+      <guid>https://bits.arkr.ca/io-mechanisms.html</guid>
       <description>&lt;p&gt;Polling vs. Interrupts, Direct Memory Access (DMA), memory-mapped I/O.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GPU</title>
-      <link>http://localhost:1313/gpu.html</link>
+      <link>https://bits.arkr.ca/gpu.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gpu.html</guid>
+      <guid>https://bits.arkr.ca/gpu.html</guid>
       <description>&lt;p&gt;SIMD architecture, cores vs. threads, shaders, the graphics pipeline, CUDA cores.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Moore’s Law</title>
-      <link>http://localhost:1313/moores-law.html</link>
+      <link>https://bits.arkr.ca/moores-law.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/moores-law.html</guid>
+      <guid>https://bits.arkr.ca/moores-law.html</guid>
       <description>&lt;p&gt;Transistor density, Dennard scaling, thermal walls, the shift to multi-core.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data Centers</title>
-      <link>http://localhost:1313/data-centers.html</link>
+      <link>https://bits.arkr.ca/data-centers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/data-centers.html</guid>
+      <guid>https://bits.arkr.ca/data-centers.html</guid>
       <description>&lt;p&gt;Rack architecture, cooling systems, power redundancy, the physical internet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quantum Computing</title>
-      <link>http://localhost:1313/quantum-computing.html</link>
+      <link>https://bits.arkr.ca/quantum-computing.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/quantum-computing.html</guid>
+      <guid>https://bits.arkr.ca/quantum-computing.html</guid>
       <description>&lt;p&gt;Qubits, superposition, entanglement, quantum logic gates, potential vs. reality.&lt;/p&gt;</description>
     </item>
   </channel>

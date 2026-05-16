@@ -938,11 +938,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://bits.arkr.ca/categories/index.html</loc>
+    <loc>https://bits.arkr.ca/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://bits.arkr.ca/index.html</loc>
+    <loc>https://bits.arkr.ca/categories/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

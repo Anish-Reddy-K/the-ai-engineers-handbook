@@ -2,13 +2,11 @@ import os
 import re
 import shutil
 import urllib.parse
-from dotenv import load_dotenv
 
-load_dotenv()
-
-hugo_posts_dir = os.getenv("HUGO_POSTS_DIR")
-attachments_dir = os.getenv("ATTACHMENTS_DIR")
-static_images_dir = os.getenv("STATIC_IMAGES_DIR")
+# env vars are expected to be set by the caller (upload.sh / sync.sh sources .env)
+hugo_posts_dir = os.environ["HUGO_POSTS_DIR"]
+attachments_dir = os.environ["ATTACHMENTS_DIR"]
+static_images_dir = os.environ["STATIC_IMAGES_DIR"]
 
 os.makedirs(static_images_dir, exist_ok=True)
 

@@ -1,7 +1,7 @@
 ---
-title: "Home - The ARKR Manual"
+title: Bits by Anish Reddy
 ---
-The open-source blueprint for Computer Science, Software Engineering, Digital Systems and System Design. A free, illustrated curriculum taking you from raw binary to complex system architecture.
+The open-source blueprint for AI, Computer Science, Software Engineering, Digital Systems and System Design. A free, illustrated curriculum taking you from raw binary to complex system architecture.
 
 ## What is this?
 It's a library of articles and a free education project where I deconstruct computer science and software systems concepts from scratch. No fluff. Just clear analogies, hand-crafted diagrams, and the raw code that runs the world.
@@ -14,9 +14,6 @@ Two reasons:
 2. **Back to basics.** In the age of AI, it's easy to generate code we don't understand. I built this to prove that understanding the fundamentals, the actual code and logic, matters more now than ever. Even in the age of AI. Especially in the age of AI.
 
 I am doing this completely for free, on my own time, simply because I just like doing it.
-
-## 100% Human Crafted
-**A Note on AI:** I use AI tools during my own research, but I do not use AI to write. Every word is typed by me, and every diagram is hand-crafted by me. This is simply human knowledge, distilled for humans.
 
 {{< email-signup >}}
 
@@ -37,13 +34,13 @@ Anyone who wants to understand how computers actually work. Whether you're a stu
 <details>
 <summary>Who are you?</summary>
 
-I'm an engineer and a builder. I research these topics obsessively until I understand them well enough to explain them simply. My goal isn't to lecture you, but to document the path to mastery clearly and visually.
+I'm an engineer and a builder. I research these topics deeply until I understand them well enough to explain them simply. My goal isn't to lecture you, but to document the path to mastery clearly and visually.
 </details>
 
 <details>
 <summary>Where should I start?</summary>
 
-[Article 1](https://manual.arkr.ca/bit.html). We start at the very basics (Bits & Information) and build our way up to the cloud (AI & Distributed Systems).
+[Article 1](https://bits.arkr.ca/bit.html). We start at the very basics (Bits & Information) and build our way up to the cloud (AI & Distributed Systems).
 </details>
 
 <details>
@@ -67,5 +64,4 @@ I'm **Anish Reddy**, the author and builder of this manual. You can find me on:
   <li><a href="https://www.linkedin.com/in/anishreddyk/" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">work</span>LinkedIn</a></li>
   <li><a href="https://arkr.ca" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">language</span>Portfolio</a></li>
   <li><a href="mailto:anishreddy3456@gmail.com"><span class="material-symbols-outlined">mail</span>Email</a></li>
-  <li><a href="https://instagram.com/anishreddy.k" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">photo_camera</span>Instagram</a></li>
 </ul>
